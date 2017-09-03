@@ -1,0 +1,1345 @@
+#!/bin/bash
+
+# Sparky APTus Extra is a simply GUI frontend for APT-GET
+# It lets you install aditional software from Sparky and 3th party repositories
+# Created by Paweł "pavroo" Pijanowski 2014/08/15
+# Copyright 2014, 2015, 2016, 2017 under the GNU GPL2 License
+# Last updated 2017/08/20
+
+# get default's locale file
+DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
+if [ "`cat /etc/default/locale | grep el_GR`" != "" ]; then
+. $DEFLOCDIR/el
+elif [ "`cat /etc/default/locale | grep es_AR`" != "" ]; then
+. $DEFLOCDIR/es
+elif [ "`cat /etc/default/locale | grep fr_FR`" != "" ]; then
+. $DEFLOCDIR/fr
+elif [ "`cat /etc/default/locale | grep it_IT`" != "" ]; then
+. $DEFLOCDIR/it
+elif [ "`cat /etc/default/locale | grep ja_JP`" != "" ]; then
+. $DEFLOCDIR/ja
+elif [ "`cat /etc/default/locale | grep pl_PL`" != "" ]; then
+. $DEFLOCDIR/pl
+elif [ "`cat /etc/default/locale | grep pt_BR`" != "" ]; then
+. $DEFLOCDIR/pt_BR
+elif [ "`cat /etc/default/locale | grep pt_PT`" != "" ]; then
+. $DEFLOCDIR/pt_PT
+elif [ "`cat /etc/default/locale | grep ru_RU`" != "" ]; then
+. $DEFLOCDIR/ru
+elif [ "`cat /etc/default/locale | grep sv_SE`" != "" ]; then
+. $DEFLOCDIR/se
+else
+. $DEFLOCDIR/en
+fi
+
+testroot="`whoami`"
+
+if [ "$testroot" != "root" ]; then
+	echo "Must be root...exiting"
+fi
+
+MENU1="yad --window-icon=system-software-install --width=850 --height=450 --center"
+DIALOG="yad --window-icon=system-software-install --width=450 --height=200 --center"
+TITLE="--always-print-result --dialog-sep --image=system-software-install --title="
+TEXT="--text="
+MENU="--list --column=$LOCAL1 --column=$LOCAL2 --column=$LOCAL3"
+OKEXIT=" --button=Ok:0 --button=$LOCAL63:1 "
+MSGBOX=" --button=Ok:0 "
+TITLETEXT="APTus Extra"
+TEXTBREAK="$LOCAL4"
+TEXTDONE="$LOCAL5"
+TEXTDONEOPT="$LOCAL6"
+TEXTSTOP="$LOCAL7"
+if [ -f /opt/sparky/sparky-xterm ]; then
+. /opt/sparky/sparky-xterm
+else
+SPARKYXTERM="x-terminal-emulator"
+fi
+INSTALL="apt-get install"
+REMOVE="apt-get remove"
+
+## Get status of the application to be displayed in the main menu ###
+if [ -f /usr/bin/bluegriffon ]; then
+	BLUEGR1="$LOCAL8"
+else
+	BLUEGR1=""
+fi
+
+if [ -f /usr/bin/Ceni ]; then
+	CENI1="$LOCAL8"
+else
+	CENI1=""
+fi
+
+if [ -f /usr/bin/sparky-codecs ]; then
+	CODE1="$LOCAL8"
+else
+	CODE1=""
+fi
+
+if [ -f /usr/bin/custom-iso-builder ]; then
+	CIB1="$LOCAL8"
+else
+	CIB1=""
+fi
+
+if [ -f /usr/bin/ddm ]; then
+	DDM1="$LOCAL8"
+else
+	DDM1=""
+fi
+
+if [ -f /usr/bin/deb-package-builder ]; then
+	DEB1="$LOCAL8"
+else
+	DEB1=""
+fi
+
+if [ -f /usr/bin/dropbox ]; then
+	DROP1="$LOCAL8"
+else
+	DROP1=""
+fi
+
+if [ -f /usr/bin/sparky-eraser ]; then
+	ERASER1="$LOCAL8"
+else
+	ERASER1=""
+fi
+
+if [ -f /usr/bin/google-earth ] || [ -f /usr/bin/googleearth ]; then
+	GEARTH1="$LOCAL8"
+else
+	GEARTH1=""
+fi
+
+if [ -f /usr/bin/gradio ]; then
+	GRADIO1="$LOCAL8"
+else
+	GRADIO1=""
+fi
+
+if [ -f /usr/bin/grub-customizer ]; then
+	GRUB1="$LOCAL8"
+else
+	GRUB1=""
+fi
+
+if [ -f /usr/bin/lightdm-manager ]; then
+	LIGHTDM1="$LOCAL8"
+else
+	LIGHTDM1=""
+fi
+
+if [ -f /usr/bin/lightscribe-launcher ]; then
+	LIGHTSC1="$LOCAL8"
+else
+	LIGHTSC1=""
+fi
+
+if [ -f /usr/bin/lightzone ]; then
+	LIGHTZO1="$LOCAL8"
+else
+	LIGHTZO1=""
+fi
+
+if [ -f /usr/bin/sparky-live-usb-creator ]; then
+	LIVE1="$LOCAL8"
+else
+	LIVE1=""
+fi
+
+if [ -f /usr/bin/lxmed ]; then
+	LXMED1="$LOCAL8"
+else
+	LXMED1=""
+fi
+
+if [ -f /opt/master-pdf-editor-4/masterpdfeditor4 ]; then
+	MASTER1="$LOCAL8"
+else
+	MASTER1=""
+fi
+
+if [ -f /usr/bin/megasync ]; then
+	MEGA1="$LOCAL8"
+else
+	MEGA1=""
+fi
+
+if [ -f /usr/bin/sparky-office ]; then
+	OFFICE1="$LOCAL8"
+else
+	OFFICE1=""
+fi
+
+if [ -f /usr/bin/opentoonz ]; then
+	OPENTOO1="$LOCAL8"
+else
+	OPENTOO1=""
+fi
+
+if [ -f /usr/bin/pmrp ]; then
+	PMRP1="$LOCAL8"
+else
+	PMRP1=""
+fi
+
+if [ -f /usr/bin/rssowl ]; then
+	OWL1="$LOCAL8"
+else
+	OWL1=""
+fi
+
+if [ -f /opt/skype/skype-installer ]; then
+	SKYPE1="$LOCAL8"
+else
+	SKYPE1=""
+fi
+
+if [ -f /usr/bin/sparky-aptus ]; then
+	APT1="$LOCAL8"
+else
+	APT1=""
+fi
+
+if [ -f /usr/bin/sparky-aptus-gamer ]; then
+	APTGAM1="$LOCAL8"
+else
+	APTGAM1=""
+fi
+
+if [ -f /usr/bin/sparky-aptus-upgrade ]; then
+	APTUPG1="$LOCAL8"
+else
+	APTUPG1=""
+fi
+
+if [ -f /usr/bin/sparky-autostart ]; then
+	AUTO1="$LOCAL8"
+else
+	AUTO1=""
+fi
+
+if [ -f /usr/bin/sparkybackup-gui ]; then
+	BACKSYS1="$LOCAL8"
+else
+	BACKSYS1=""
+fi
+
+if [ -f /usr/bin/sparky-compton ]; then
+	COMPTON1="$LOCAL8"
+else
+	COMPTON1=""
+fi
+
+if [ -f /usr/bin/sparky-conky ]; then
+	CONKY1="$LOCAL8"
+else
+	CONKY1=""
+fi
+
+if [ -f /usr/bin/sparky-optical ]; then
+	OPT1="$LOCAL8"
+else
+	OPT1=""
+fi
+
+if [ -f /usr/bin/sparky-passwdchange ]; then
+	PASS1="$LOCAL8"
+else
+	PASS1=""
+fi
+
+if [ -f /usr/bin/sparky-screenshot ]; then
+	SHOT1="$LOCAL8"
+else
+	SHOT1=""
+fi
+
+if [ -f /usr/bin/sparky-tray ]; then
+	TRAY1="$LOCAL8"
+else
+	TRAY1=""
+fi
+
+if [ -f /usr/bin/sparky-usb-formatter ]; then
+	FORMATTER1="$LOCAL8"
+else
+	FORMATTER1=""
+fi
+
+if [ -f /usr/bin/sparky-users ]; then
+	USER1="$LOCAL8"
+else
+	USER1=""
+fi
+
+if [ -f /usr/bin/sparky-webbrowser ]; then
+	WEBBROW1="$LOCAL8"
+else
+	WEBBROW1=""
+fi
+
+if [ -f /usr/bin/sparky-xdf ]; then
+	XDF1="$LOCAL8"
+else
+	XDF1=""
+fi
+
+if [ -f /usr/bin/SpiderOakONE ]; then
+	SPIDER1="$LOCAL8"
+else
+	SPIDER1=""
+fi
+
+if [ -f /usr/bin/spotify ]; then
+	SPOTIFY1="$LOCAL8"
+else
+	SPOTIFY1=""
+fi
+
+if [ -f /usr/games/steam ]; then
+	STEAM1="$LOCAL8"
+else
+	STEAM1=""
+fi
+
+if [ -f /usr/bin/teamviewer ]; then
+	TEAM1="$LOCAL8"
+else
+	TEAM1=""
+fi
+
+if [ -f /usr/bin/start-tor-messenger ]; then
+	TORMES1="$LOCAL8"
+else
+	TORMES1=""
+fi
+
+if [ -f /usr/bin/trojita ]; then
+	TROJITA1="$LOCAL8"
+else
+	TROJITA1=""
+fi
+
+if [ -f /usr/bin/truecrypt ]; then
+	TRUE1="$LOCAL8"
+else
+	TRUE1=""
+fi
+
+if [ -f /usr/bin/youtube-dl-gui ]; then
+	YOU1="$LOCAL8"
+else
+	YOU1=""
+fi
+
+if [ -f /usr/bin/variety ]; then
+	VARIETY1="$LOCAL8"
+else
+	VARIETY1=""
+fi
+
+if [ -f /usr/bin/veracrypt ]; then
+	VERA1="$LOCAL8"
+else
+	VERA1=""
+fi
+
+if [ -f /opt/vmplayer/vmplayer-installer ]; then
+	VPLAYER1="$LOCAL8"
+else
+	VPLAYER1=""
+fi
+
+if [ -f /opt/vuze/vuze ]; then
+	VUZE1="$LOCAL8"
+else
+	VUZE1=""
+fi
+
+if [ -f /usr/bin/xnview ]; then
+	NVIEW1="$LOCAL8"
+else
+	XNVIEW1=""
+fi
+
+mainmenu () {
+CHOICES=`$MENU1 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL9" \
+BlueGriffon "$LOCAL72" "$BLUEGR1" \
+Ceni "$LOCAL10" "$CENI1" \
+Codecs "$LOCAL11" "$CODE1" \
+Custom_ISO_Builder "$LOCAL12" "$CIB1" \
+DDM "$LOCAL13" "$DDM1" \
+DEB_Package_Builder "$LOCAL14" "$DEB1" \
+Dropbox "$LOCAL15" "$DROP1" \
+Eraser "$LOCAL16" "$ERASER1" \
+Google-Earth "$LOCAL18" "$GEARTH1" \
+Gradio "$LOCAL86" "$GRADIO1" \
+Grub_Customizer "$LOCAL60" "$GRUB1" \
+LightDM_Manager "$LOCAL20" "$LIGHTDM1" \
+LightScribe "$LOCAL70" "$LIGHTSC1" \
+LightZone "$LOCAL78" "$LIGHTZO1" \
+Live_USB_Creator "$LOCAL21" "$LIVE1" \
+Lxmed "$LOCAL22" "$LXMED1" \
+Master_PDF_Editor "$LOCAL23" "$MASTER1" \
+MEGAsync "$LOCAL24" "$MEGA1" \
+Office "$LOCAL26" "$OFFICE1" \
+OpenToonz "$LOCAL79" "$OPENTOO1" \
+PMRP "$LOCAL87" "$PMRP1" \
+RSSOwl "$LOCAL27" "$OWL1" \
+Skype "$LOCAL29" "$SKYPE1" \
+Sparky_APTus "$LOCAL30" "$APT1" \
+Sparky_APTus_Gamer "$LOCAL31" "$APTGAM1" \
+Sparky_APTus_Upgrade "$LOCAL32" "$APTUPG1" \
+Sparky_Autostart "$LOCAL33" "$AUTO1" \
+Sparky_Backup_Sys "$LOCAL35" "$BACKSYS1" \
+Sparky_Compton "$LOCAL36" "$COMPTON1" \
+Sparky_Conky "$LOCAL37" "$CONKY1" \
+Sparky_Optical "$LOCAL38" "$OPT1" \
+Sparky_Password "$LOCAL39" "$PASS1" \
+Sparky_Screenshot "$LOCAL40" "$SHOT1" \
+Sparky_Tray "$LOCAL41" "$TRAY1" \
+Sparky_USB_Formatter "$LOCAL42" "$FORMATTER1" \
+Sparky_Users "$LOCAL43" "$USER1" \
+Sparky_WWW "$LOCAL88" "$WEBBROW1" \
+Sparky_Xdf "$LOCAL44" "$XDF1" \
+SpiderOak "$LOCAL46" "$SPIDER1" \
+Spotify "$LOCAL84" "$SPOTIFY1" \
+Steam "$LOCAL47" "$STEAM1" \
+TeamViewer "$LOCAL48" "$TEAM1" \
+TOR_Messenger "$LOCAL69" "$TORMES1" \
+Trojita "$LOCAL83" "$TROJITA1" \
+TrueCrypt "$LOCAL50" "$TRUE1" \
+YouTube-DLG "$LOCAL77" "$YOU1" \
+Variety "$LOCAL51" "$VARIETY1" \
+VeraCrypt "$LOCAL52" "$VERA1" \
+VMware_Player "$LOCAL53" "$VPLAYER1" \
+Vuze "$LOCAL54" "$VUZE1" \
+XnViewMP "$LOCAL55" "$XNVIEW1"`
+
+if [ "$?" = "0" ]; then
+	CHOICE=`echo $CHOICES | cut -d "|" -f 1`
+else
+	exit 0
+fi
+
+if [ "$CHOICE" = "BlueGriffon" ]; then
+	bluegrmenu
+elif [ "$CHOICE" = "Ceni" ]; then
+	cenimenu
+elif [ "$CHOICE" = "Codecs" ]; then
+	codecsmenu
+elif [ "$CHOICE" = "Custom_ISO_Builder" ]; then
+	cibmenu
+elif [ "$CHOICE" = "DDM" ]; then
+	ddmmenu
+elif [ "$CHOICE" = "DEB_Package_Builder" ]; then
+	debmenu
+elif [ "$CHOICE" = "Dropbox" ]; then
+	dropmenu
+elif [ "$CHOICE" = "Eraser" ]; then
+	erasermenu
+elif [ "$CHOICE" = "Google-Earth" ]; then
+	gearthmenu
+elif [ "$CHOICE" = "Gradio" ]; then
+	gradiomenu
+elif [ "$CHOICE" = "Grub_Customizer" ]; then
+	grubmenu
+elif [ "$CHOICE" = "LightDM_Manager" ]; then
+	lightdmmenu
+elif [ "$CHOICE" = "LightScribe" ]; then
+	lightscribemenu
+elif [ "$CHOICE" = "LightZone" ]; then
+	lightzonemenu
+elif [ "$CHOICE" = "Live_USB_Creator" ]; then
+	livemenu
+elif [ "$CHOICE" = "Lxmed" ]; then
+	lxmedmenu
+elif [ "$CHOICE" = "Master_PDF_Editor" ]; then
+	masterpdfmenu
+elif [ "$CHOICE" = "MEGAsync" ]; then
+	megamenu
+elif [ "$CHOICE" = "Nightingale" ]; then
+	ngalemenu
+elif [ "$CHOICE" = "Office" ]; then
+	officemenu
+elif [ "$CHOICE" = "OpenToonz" ]; then
+	opentoonzmenu
+elif [ "$CHOICE" = "PMRP" ]; then
+	pmrpmenu
+elif [ "$CHOICE" = "RSSOwl" ]; then
+	owlmenu
+elif [ "$CHOICE" = "Skype" ]; then
+	skypemenu
+elif [ "$CHOICE" = "Sparky_APTus" ]; then
+	aptusmenu
+elif [ "$CHOICE" = "Sparky_APTus_Gamer" ]; then
+	aptgamermenu
+elif [ "$CHOICE" = "Sparky_APTus_Upgrade" ]; then
+	aptupgmenu
+elif [ "$CHOICE" = "Sparky_Autostart" ]; then
+	automenu
+elif [ "$CHOICE" = "Sparky_Backup_Sys" ]; then
+	bsysmenu
+elif [ "$CHOICE" = "Sparky_Compton" ]; then
+	comptonmenu
+elif [ "$CHOICE" = "Sparky_Conky" ]; then
+	conkymenu
+elif [ "$CHOICE" = "Sparky_Optical" ]; then
+	optmenu
+elif [ "$CHOICE" = "Sparky_Password" ]; then
+	passmenu
+elif [ "$CHOICE" = "Sparky_Screenshot" ]; then
+	screenmenu
+elif [ "$CHOICE" = "Sparky_Tray" ]; then
+	traymenu
+elif [ "$CHOICE" = "Sparky_USB_Formatter" ]; then
+	formattermenu
+elif [ "$CHOICE" = "Sparky_Users" ]; then
+	usermenu
+elif [ "$CHOICE" = "Sparky_WWW" ]; then
+	wwwmenu
+elif [ "$CHOICE" = "Sparky_Xdf" ]; then
+	xdfmenu
+elif [ "$CHOICE" = "SpiderOak" ]; then
+	spidermenu
+elif [ "$CHOICE" = "Spotify" ]; then
+	spotifymenu
+elif [ "$CHOICE" = "Steam" ]; then
+	steammenu
+elif [ "$CHOICE" = "TeamViewer" ]; then
+	teammenu
+elif [ "$CHOICE" = "TOR_Messenger" ]; then
+	tormesmenu
+elif [ "$CHOICE" = "Trojita" ]; then
+	trojitamenu
+elif [ "$CHOICE" = "TrueCrypt" ]; then
+	truemenu
+elif [ "$CHOICE" = "YouTube-DLG" ]; then
+	youmenu
+elif [ "$CHOICE" = "Variety" ]; then
+	varietymenu
+elif [ "$CHOICE" = "VeraCrypt" ]; then
+	veramenu
+elif [ "$CHOICE" = "VMware_Player" ]; then
+	vmplayermenu
+elif [ "$CHOICE" = "Vuze" ]; then
+	vuzemenu
+elif [ "$CHOICE" = "XnViewMP" ]; then
+	xnviewmenu
+else
+	exit 0
+fi
+}
+
+bluegrmenu() {
+if [ -f /usr/bin/bluegriffon ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL bluegriffon"
+	if [ -f /usr/bin/bluegriffon ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+cenimenu () {
+if [ -f /usr/bin/Ceni ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL ceni"
+	if [ -f /usr/bin/Ceni ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+codecsmenu () {
+if [ -f /usr/bin/sparky-codecs ]; then
+	/usr/bin/sparky-codecs
+else
+	$SPARKYXTERM -e "$INSTALL sparky-codecs"
+	if [ -f /usr/bin/sparky-codecs ]; then
+		/usr/bin/sparky-codecs
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+cibmenu () {
+if [ -f /usr/bin/custom-iso-builder ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL custom-iso-builder"
+	if [ -f /usr/bin/custom-iso-builder ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+ddmmenu () {
+if [ -f /usr/bin/ddm ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL ddm"
+	if [ -f /usr/bin/ddm ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+debmenu () {
+if [ -f /usr/bin/deb-package-builder ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL deb-package-builder"
+	if [ -f /usr/bin/deb-package-builder ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+dropmenu () {
+if [ -f /usr/bin/dropbox ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL dropbox"
+	if [ -f /usr/bin/dropbox ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+erasermenu () {
+if [ -f /usr/bin/sparky-eraser ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-eraser"
+	if [ -f /usr/bin/sparky-eraser ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+gearthmenu () {
+if [ -f /usr/bin/google-earth ] || [ -f /usr/bin/googleearth ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	/usr/lib/sparky-aptus-extra/bin/install-earth
+fi
+mainmenu
+}
+
+gradiomenu () {
+if [ -f /usr/bin/gradio ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL gradio"
+	if [ -f /usr/bin/gradio ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+grubmenu () {
+if [ -f /usr/bin/grub-customizer ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL grub-customizer"
+	if [ -f /usr/bin/grub-customizer ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+lightdmmenu () {
+if [ -f /usr/bin/lightdm-manager ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL lightdm-manager"
+	if [ -f /usr/bin/lightdm-manager ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+lightscribemenu () {
+if [ -f /usr/bin/lightscribe-launcher ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL71"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL lightscribe-installer"
+	if [ -f /usr/bin/lightscribe-launcher ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL71"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+lightzonemenu () {
+if [ -f /usr/bin/lightzone ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL lightzone"
+	if [ -f /usr/bin/lightzone ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+livemenu () {
+if [ -f /usr/bin/sparky-live-usb-creator ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-live-usb-creator"
+	if [ -f /usr/bin/sparky-live-usb-creator ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+lxmedmenu () {
+if [ -f /usr/bin/lxmed ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL lxmed"
+	if [ -f /usr/bin/lxmed ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+masterpdfmenu () {
+if [ -f /opt/master-pdf-editor-4/masterpdfeditor4 ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	if [ -f /opt/master-pdf-editor-3/masterpdfeditor3 ]; then
+		$SPARKYXTERM -e "$REMOVE master-pdf-editor3 -y"
+	fi
+	$SPARKYXTERM -e "$INSTALL master-pdf-editor"
+	if [ -f /opt/master-pdf-editor-4/masterpdfeditor4 ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+megamenu () {
+if [ -f /usr/bin/megasync ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL megasync"
+	if [ -f /usr/bin/megasync ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+officemenu () {
+if [ -f /usr/bin/sparky-office ]; then
+	/usr/bin/sparky-office
+else
+	$SPARKYXTERM -e "$INSTALL sparky-office"
+	if [ -f /usr/bin/sparky-office ]; then
+		/usr/bin/sparky-office
+		else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+opentoonzmenu () {
+if [ -f /usr/bin/opentoonz ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL opentoonz"
+	if [ -f /usr/bin/opentoonz ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+pmrpmenu () {
+if [ -f /usr/bin/pmrp ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL pmrp"
+	if [ -f /usr/bin/pmrp ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+owlmenu () {
+if [ -f /usr/bin/rssowl ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL rssowl"
+	if [ -f /usr/bin/rssowl ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+skypemenu () {
+if [ -f /opt/skype/skype-installer ]; then
+	/opt/skype/skype-installer
+else
+	$SPARKYXTERM -e "$INSTALL skype-installer"
+	if [ -f /opt/skype/skype-installer ]; then
+		/opt/skype/skype-installer
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+aptusmenu () {
+if [ -f /usr/bin/sparky-aptus ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-aptus"
+	if [ -f /usr/bin/sparky-aptus ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+aptgamermenu () {
+if [ -f /usr/bin/sparky-aptus-gamer ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-aptus-gamer"
+	if [ -f /usr/bin/sparky-aptus-gamer ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+aptupgmenu () {
+if [ -f /usr/bin/sparky-aptus-upgrade ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-aptus-upgrade"
+	if [ -f /usr/bin/sparky-aptus-upgrade ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+automenu () {
+if [ -f /usr/bin/sparky-autostart ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-autostart"
+	if [ -f /usr/bin/sparky-autostart ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+bsysmenu () {
+if [ -f /usr/bin/sparkybackup-gui ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-backup-sys"
+	if [ -f /usr/bin/sparkybackup-gui ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+comptonmenu () {
+if [ -f /usr/bin/sparky-compton ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-compton"
+	if [ -f /usr/bin/sparky-compton ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+conkymenu () {
+if [ -f /usr/bin/sparky-conky ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-conky"
+	if [ -f /usr/bin/sparky-conky ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+optmenu () {
+if [ -f /usr/bin/sparky-optical ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-optical"
+	if [ -f /usr/bin/sparky-optical ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONEOPT"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+passmenu () {
+if [ -f /usr/bin/sparky-passwdchange ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-passwdchange"
+	if [ -f /usr/bin/sparky-passwdchange ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+screenmenu () {
+if [ -f /usr/bin/sparky-screenshot ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-screenshot"
+	if [ -f /usr/bin/sparky-screenshot ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+traymenu () {
+if [ -f /usr/bin/sparky-tray ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-tray"
+	if [ -f /usr/bin/sparky-tray ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+formattermenu () {
+if [ -f /usr/bin/sparky-usb-formatter ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-usb-formatter"
+	if [ -f /usr/bin/sparky-usb-formatter ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+usermenu () {
+if [ -f /usr/bin/sparky-users ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-users"
+	if [ -f /usr/bin/sparky-users ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+wwwmenu () {
+if [ -f /usr/bin/sparky-webbrowser ]; then
+	/usr/bin/sparky-webbrowser
+else
+	$SPARKYXTERM -e "$INSTALL sparky-webbrowser-installer"
+	if [ -f /usr/bin/sparky-webbrowser ]; then
+		/usr/bin/sparky-webbrowser
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+xdfmenu () {
+if [ -f /usr/bin/sparky-xdf ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL sparky-xdf"
+	if [ -f /usr/bin/sparky-xdf ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+spidermenu () {
+if [ -f /usr/bin/SpiderOak ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL57"
+	mainmenu
+fi
+
+if [ -f /usr/bin/SpiderOakONE ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL spideroakone"
+	if [ -f /usr/bin/SpiderOakONE ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+spotifymenu () {
+if [ -f /usr/bin/spotify ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL spotify-client"
+	if [ -f /usr/bin/spotify ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+steammenu () {
+if [ -f /usr/games/steam ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL steam"
+	if [ -f /usr/games/steam ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+teammenu () {
+if [ -f /usr/bin/teamviewer ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL teamviewer"
+	if [ -f /usr/bin/teamviewer ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+tormesmenu () {
+if [ -f /usr/bin/start-tor-messenger ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL tor-messenger"
+	if [ -f /usr/bin/start-tor-messenger ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+trojitamenu () {
+if [ -f /usr/bin/trojita ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL trojita"
+	if [ -f /usr/bin/trojita ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+truemenu () {
+if [ -f /usr/bin/truecrypt ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL truecrypt"
+	if [ -f /usr/bin/truecrypt ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+youmenu () {
+if [ -f /usr/bin/youtube-dl-gui ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL youtube-dlg"
+	if [ -f /usr/bin/youtube-dl-gui ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+varietymenu () {
+if [ -f /usr/bin/variety ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL variety"
+	if [ -f /usr/bin/variety ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+veramenu () {
+if [ -f /usr/bin/veracrypt ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL veracrypt"
+	if [ -f /usr/bin/veracrypt ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+vmplayermenu () {
+if [ -f /opt/vmplayer/vmplayer-installer ]; then
+	/opt/vmplayer/vmplayer-installer
+else
+	$SPARKYXTERM -e "$INSTALL vmplayer-installer"
+	if [ -f /opt/vmplayer/vmplayer-installer ]; then
+		/opt/vmplayer/vmplayer-installer
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+vuzemenu () {
+if [ -f /opt/vuze/vuze ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL vuze"
+	if [ -f /opt/vuze/vuze ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+xnviewmenu () {
+if [ -f /usr/bin/xnview ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL xnview"
+	if [ -f /usr/bin/xnview ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+mainmenu
