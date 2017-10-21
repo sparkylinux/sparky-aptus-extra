@@ -4,7 +4,7 @@
 # from Google server. It supports the current version 7 and older version 6 for older machines.
 #
 # Created by Paweł "pavroo" Pijanowski 2015/06/01
-# Last updated 2017/01/09
+# Last updated 2017/10/21
 # Copyright 2015, 2016, 2017 under the GNU GPL2 License
 
 # get default's locale file
@@ -62,8 +62,8 @@ TEXTSTOP="$LOCAL7"
 SERVERD="https://www.dropbox.com/s/nmue9o6tfug23ho"
 PACK632="googleearth_6.0.3.2197%2B1.2.0-1_i386.deb"
 SERVERG="https://dl.google.com/dl/earth/client/current"
-PACK732="google-earth-stable_current_i386.deb"
-PACK764="google-earth-stable_current_amd64.deb"
+PACK732="google-earth-pro-stable_current_i386.deb"
+PACK764="google-earth-pro-stable_current_amd64.deb"
 FOREIGN=`dpkg --print-foreign-architectures | grep "i386" | awk '{print $1}'`
 
 mainmenu () {
@@ -181,7 +181,7 @@ fi
 
 install7menu () {
 # check is google-earth 7 installed
-if [ -f /usr/bin/google-earth ]; then
+if [ -f /usr/bin/google-earth-pro ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	xit 0
 
@@ -220,7 +220,7 @@ else
 fi
 
 # check has the package been installed
-if [ -f /usr/bin/google-earth ]; then
+if [ -f /usr/bin/google-earth-pro ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 	exit 0
 
