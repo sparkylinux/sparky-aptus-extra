@@ -4,7 +4,7 @@
 # from Google server. It supports the current version 7 and older version 6 for older machines.
 #
 # Created by Paweł "pavroo" Pijanowski 2015/06/01
-# Last updated 2017/10/21
+# Last updated 2017/11/11
 # Copyright 2015, 2016, 2017 under the GNU GPL2 License
 
 # get default's locale file
@@ -65,6 +65,11 @@ SERVERG="https://dl.google.com/dl/earth/client/current"
 PACK732="google-earth-pro-stable_current_i386.deb"
 PACK764="google-earth-pro-stable_current_amd64.deb"
 FOREIGN=`dpkg --print-foreign-architectures | grep "i386" | awk '{print $1}'`
+ARCHARM="`uname -m | grep arm`"
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 
 mainmenu () {
 CHOICES=`$DIALOG2 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL65" \

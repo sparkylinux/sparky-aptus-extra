@@ -2,8 +2,7 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
 # Under the GNU GPL v2
 # Translated from English by pavroo
-# Last update 2017/08/20 by pavroo
-
+# Last update 2017/11/10 by pavroo
 LOCAL1="Nazwa"
 LOCAL2="Opis"
 LOCAL3="Status"
@@ -92,6 +91,7 @@ LOCAL85="Bezpieczna i otwarto źródłowa przeglądarka stron www"
 LOCAL86="Aplikacja GTK3 do słuchania stacji radio internetowego"
 LOCAL87="Prawdopodobnie najlepszy skrypt radio internetowego"
 LOCAL88="Instalacja przeglądarki stron www"
-
+LOCAL89="Ta aplikacja nie może być zainstalowany na obecnej wersji Debiana/Sparky."
+LOCAL90="Wyjście..."
 ### .desktop file, również do przetłumaczenia
 # Comment[pl_PL]=Zainstaluj dodatkowe aplikacje z repozytorium SparkyLinux

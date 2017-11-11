@@ -1,8 +1,7 @@
 # File di localizzazione in Italiano per Sparky APTus Extra.
 # Copyright 2015 Carlo, "malato" Troiani <assolutooccidentale@gmail.com> 20/10/2015
 # Rilasciato sotto licenza GNU GPL v2
-# Last update 2017/08/20 by pavroo
-
+# Last update 2017/11/10 by pavroo
 LOCAL1="Nome"
 LOCAL2="Descrizione"
 LOCAL3="Status"
@@ -91,6 +90,7 @@ LOCAL85="A secure and open source web browser"
 LOCAL86="GTK3 app for listening to internet radio stations"
 LOCAL87="Probably best Internet radio player script"
 LOCAL88="Web Browser Installer"
-
+LOCAL89="Non può essere installato sulla tua versione di Debian/Sparky."
+LOCAL90="Sto uscendo..."
 ### .desktop file to be translated too
 # Comment[it_IT]=Installa applicazioni ulteriori dai repository di SparkyLinux

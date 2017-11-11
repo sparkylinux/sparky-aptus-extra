@@ -4,7 +4,7 @@
 # It lets you install aditional software from Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014, 2015, 2016, 2017 under the GNU GPL2 License
-# Last updated 2017/10/21
+# Last updated 2017/11/11
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -57,6 +57,7 @@ SPARKYXTERM="x-terminal-emulator"
 fi
 INSTALL="apt-get install"
 REMOVE="apt-get remove"
+ARCHARM="`uname -m | grep arm`"
 
 ## Get status of the application to be displayed in the main menu ###
 if [ -f /usr/bin/bluegriffon ]; then
@@ -213,12 +214,6 @@ if [ -f /usr/bin/sparky-aptus-upgrade ]; then
 	APTUPG1="$LOCAL8"
 else
 	APTUPG1=""
-fi
-
-if [ -f /usr/bin/sparky-autostart ]; then
-	AUTO1="$LOCAL8"
-else
-	AUTO1=""
 fi
 
 if [ -f /usr/bin/sparkybackup-gui ]; then
@@ -393,7 +388,6 @@ Skype "$LOCAL29" "$SKYPE1" \
 Sparky_APTus "$LOCAL30" "$APT1" \
 Sparky_APTus_Gamer "$LOCAL31" "$APTGAM1" \
 Sparky_APTus_Upgrade "$LOCAL32" "$APTUPG1" \
-Sparky_Autostart "$LOCAL33" "$AUTO1" \
 Sparky_Backup_Sys "$LOCAL35" "$BACKSYS1" \
 Sparky_Compton "$LOCAL36" "$COMPTON1" \
 Sparky_Conky "$LOCAL37" "$CONKY1" \
@@ -479,8 +473,6 @@ elif [ "$CHOICE" = "Sparky_APTus_Gamer" ]; then
 	aptgamermenu
 elif [ "$CHOICE" = "Sparky_APTus_Upgrade" ]; then
 	aptupgmenu
-elif [ "$CHOICE" = "Sparky_Autostart" ]; then
-	automenu
 elif [ "$CHOICE" = "Sparky_Backup_Sys" ]; then
 	bsysmenu
 elif [ "$CHOICE" = "Sparky_Compton" ]; then
@@ -535,6 +527,10 @@ fi
 }
 
 bluegrmenu() {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/bluegriffon ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -661,6 +657,10 @@ mainmenu
 }
 
 gearthmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/google-earth-pro ] || [ -f /usr/bin/googleearth ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -687,6 +687,10 @@ mainmenu
 }
 
 grubmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/grub-customizer ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -719,6 +723,10 @@ mainmenu
 }
 
 lightscribemenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/lightscribe-launcher ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL71"
 	mainmenu
@@ -735,6 +743,10 @@ mainmenu
 }
 
 lightzonemenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/lightzone ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -751,6 +763,10 @@ mainmenu
 }
 
 livemenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/sparky-live-usb-creator ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -783,6 +799,10 @@ mainmenu
 }
 
 masterpdfmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /opt/master-pdf-editor-4/masterpdfeditor4 ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -802,6 +822,10 @@ mainmenu
 }
 
 megamenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/megasync ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -832,6 +856,10 @@ mainmenu
 }
 
 opentoonzmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/opentoonz ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -864,6 +892,10 @@ mainmenu
 }
 
 owlmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/rssowl ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -880,6 +912,10 @@ mainmenu
 }
 
 skypemenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /opt/skype/skype-installer ]; then
 	/opt/skype/skype-installer
 else
@@ -941,23 +977,11 @@ fi
 mainmenu
 }
 
-automenu () {
-if [ -f /usr/bin/sparky-autostart ]; then
-	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
-	mainmenu
-else
-	$SPARKYXTERM -e "$INSTALL sparky-autostart"
-	if [ -f /usr/bin/sparky-autostart ]; then
-		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
-		mainmenu
-	else
-		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
-	fi
-fi
-mainmenu
-}
-
 bsysmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/sparkybackup-gui ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -1132,6 +1156,10 @@ mainmenu
 }
 
 spidermenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/SpiderOak ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL57"
 	mainmenu
@@ -1153,6 +1181,10 @@ mainmenu
 }
 
 spotifymenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/spotify ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -1169,6 +1201,10 @@ mainmenu
 }
 
 steammenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/games/steam ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -1185,6 +1221,10 @@ mainmenu
 }
 
 teammenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/teamviewer ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -1201,6 +1241,10 @@ mainmenu
 }
 
 tormesmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/start-tor-messenger ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -1217,6 +1261,10 @@ mainmenu
 }
 
 trojitamenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/trojita ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -1233,28 +1281,16 @@ mainmenu
 }
 
 truemenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/truecrypt ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
 	$SPARKYXTERM -e "$INSTALL truecrypt"
 	if [ -f /usr/bin/truecrypt ]; then
-		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
-		mainmenu
-	else
-		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
-	fi
-fi
-mainmenu
-}
-
-youmenu () {
-if [ -f /usr/bin/youtube-dl-gui ]; then
-	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
-	mainmenu
-else
-	$SPARKYXTERM -e "$INSTALL youtube-dlg"
-	if [ -f /usr/bin/youtube-dl-gui ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
 	else
@@ -1281,6 +1317,10 @@ mainmenu
 }
 
 veramenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/veracrypt ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
@@ -1297,6 +1337,10 @@ mainmenu
 }
 
 vmplayermenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /opt/vmplayer/vmplayer-installer ]; then
 	/opt/vmplayer/vmplayer-installer
 else
@@ -1327,12 +1371,32 @@ mainmenu
 }
 
 xnviewmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
 if [ -f /usr/bin/xnview ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
 	$SPARKYXTERM -e "$INSTALL xnview"
 	if [ -f /usr/bin/xnview ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+youmenu () {
+if [ -f /usr/bin/youtube-dl-gui ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL youtube-dlg"
+	if [ -f /usr/bin/youtube-dl-gui ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
 	else

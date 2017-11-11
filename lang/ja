@@ -2,8 +2,7 @@
 # Copyright 2015 Paweł‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/20
 # Under the GNU GPL v2
 # Translated to Japanese by BALLOON a.k.a. Fu-sen.
-# Last update 2017/08/20 by pavroo
-
+# Last update 2017/11/10 by pavroo
 LOCAL1="名前"
 LOCAL2="説明"
 LOCAL3="状況"
@@ -92,6 +91,7 @@ LOCAL85="A secure and open source web browser"
 LOCAL86="GTK3 app for listening to internet radio stations"
 LOCAL87="Probably best Internet radio player script"
 LOCAL88="Web Browser Installer"
-
+LOCAL89="It can not be installed on your version of Debian/Sparky."
+LOCAL90="Exiting..."
 ### .desktop file to be translated too
 # Comment[ja_JP]=SparkyLinux リポジトリから追加アプリケーションをインストールします
