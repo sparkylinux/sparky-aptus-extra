@@ -2,7 +2,7 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
 # Under the GNU GPL v2
 # Translated from English by pavroo
-# Last update 2017/11/10 by pavroo
+# Last update 2018/01/01 by pavroo
 LOCAL1="Nazwa"
 LOCAL2="Opis"
 LOCAL3="Status"
@@ -93,5 +93,12 @@ LOCAL87="Prawdopodobnie najlepszy skrypt radio internetowego"
 LOCAL88="Instalacja przeglądarki stron www"
 LOCAL89="Ta aplikacja nie może być zainstalowany na obecnej wersji Debiana/Sparky."
 LOCAL90="Wyjście..."
+LOCAL91="Edytor Leo to PIM oraz IDE napisany w 100% w Pythonie"
+LOCAL92="GUI do zapisu obrazów .img lub .iso na pamięć USB"
+LOCAL93="MotionBox to przeglądarka wideo dla Motion Freedom"
+LOCAL94="Odtwarzacz audio i wideo obsługujący wszystkie formaty wspierane przez FFmpeg i libmodplug"
+LOCAL95="Instalacja, aktualizacja lub usunięcie komunikatora TeamSpeak"
+LOCAL96="GUI dla Tomb, prostego narzędzia do zarządzania szyfrowanymi dyskami"
+LOCAL97="WoeUSB tworzy bootowalny dysk windows instalator usb"
 ### .desktop file, również do przetłumaczenia
 # Comment[pl_PL]=Zainstaluj dodatkowe aplikacje z repozytorium SparkyLinux
