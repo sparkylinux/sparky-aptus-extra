@@ -2,7 +2,7 @@
 # Copyright 2015 Paweł‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/20
 # Under the GNU GPL v2
 # Translated to Japanese by BALLOON a.k.a. Fu-sen.
-# Last update 2018/01/01 by pavroo
+# Last update 2018/02/16 by pavroo
 LOCAL1="名前"
 LOCAL2="説明"
 LOCAL3="状況"
@@ -96,9 +96,10 @@ LOCAL90="Exiting..."
 LOCAL91="Leo Editor is a PIM, IDE and outliner written in 100% pure Python"
 LOCAL92="A GUI to write .img or .iso files to a USB Key"
 LOCAL93="MotionBox is a Video Browser for Motion Freedom"
-LOCAL94="A video and audio player, it can play all formats supported by FFmpeg, libmodplug"
+LOCAL94="Video and audio player, which supports all formats and codecs"
 LOCAL95="This tool lets you install, upgrade or remove TeamSpeak communicator"
 LOCAL96="A GUI of Tomb, a simple tool to manage encrypted storage"
 LOCAL97="WoeUSB can create bootable windows installer on usb"
+LOCAL98="A lightweight and fast library manager and music player"
 ### .desktop file to be translated too
 # Comment[ja_JP]=SparkyLinux リポジトリから追加アプリケーションをインストールします
