@@ -3,8 +3,8 @@
 # Sparky APTus Extra is a simply GUI frontend for APT-GET
 # It lets you install aditional software from Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
-# Copyright 2014, 2015, 2016, 2017, 2018 under the GNU GPL2 License
-# Last updated 2018/02/16
+# Copyright 2014-2018 under the GNU GPL2 License
+# Last updated 2018/02/20
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -214,6 +214,12 @@ if [ -f /usr/bin/QMPlay2 ]; then
 	QMPLAY1="$LOCAL8"
 else
 	QMPLAY1=""
+fi
+
+if [ -f /usr/bin/rssguard ]; then
+	RSSG1="$LOCAL8"
+else
+	RSSG1=""
 fi
 
 if [ -f /usr/bin/rssowl ]; then
@@ -434,6 +440,7 @@ Office "$LOCAL26" "$OFFICE1" \
 OpenToonz "$LOCAL79" "$OPENTOO1" \
 PMRP "$LOCAL87" "$PMRP1" \
 QMPlay2 "$LOCAL94" "$QMPLAY1" \
+RSS_Guard "$LOCAL99" "$RSSG1" \
 RSSOwl "$LOCAL27" "$OWL1" \
 Sayonara "$LOCAL98" "$SAYONARA1" \
 Skype "$LOCAL29" "$SKYPE1" \
@@ -530,6 +537,8 @@ elif [ "$CHOICE" = "PMRP" ]; then
 	pmrpmenu
 elif [ "$CHOICE" = "QMPlay2" ]; then
 	qmplaymenu
+elif [ "$CHOICE" = "RSS_Guard" ]; then
+	rssgmenu
 elif [ "$CHOICE" = "RSSOwl" ]; then
 	owlmenu
 elif [ "$CHOICE" = "Sayonara" ]; then
@@ -1039,6 +1048,26 @@ if [ -f /usr/bin/QMPlay2 ]; then
 else
 	$SPARKYXTERM -e "$INSTALL qmplay2"
 	if [ -f /usr/bin/QMPlay2 ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+rssgmenu () {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
+if [ -f /usr/bin/rssguard ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM -e "$INSTALL rssguard"
+	if [ -f /usr/bin/rssguard ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
 	else

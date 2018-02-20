@@ -1,7 +1,7 @@
 # File di localizzazione in Italiano per Sparky APTus Extra.
 # Copyright 2015 Carlo, "malato" Troiani <assolutooccidentale@gmail.com> 20/10/2015
 # Rilasciato sotto licenza GNU GPL v2
-# Last update 2018/02/16 by pavroo
+# Last update 2018/02/20 by pavroo
 LOCAL1="Nome"
 LOCAL2="Descrizione"
 LOCAL3="Status"
@@ -100,5 +100,6 @@ LOCAL95="This tool lets you install, upgrade or remove TeamSpeak communicator"
 LOCAL96="A GUI of Tomb, a simple tool to manage encrypted storage"
 LOCAL97="WoeUSB can create bootable windows installer on usb"
 LOCAL98="A lightweight and fast library manager and music player"
+LOCAL99="A simple, light and easy-to-use RSS and ATOM feed aggregator"
 ### .desktop file to be translated too
 # Comment[it_IT]=Installa applicazioni ulteriori dai repository di SparkyLinux
