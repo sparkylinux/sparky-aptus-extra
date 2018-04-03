@@ -2,10 +2,9 @@
 
 # Sparky Install Earth script can download and install Google Earth application
 # from Google server. It supports the current version 7 and older version 6 for older machines.
-#
 # Created by Paweł "pavroo" Pijanowski 2015/06/01
-# Last updated 2017/11/11
-# Copyright 2015, 2016, 2017 under the GNU GPL2 License
+# Copyright 2015-2018 under the GNU GPL2 License
+# Last updated 2018/03/29
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -34,9 +33,8 @@ else
 fi
 
 testroot="`whoami`"
-
 if [ "$testroot" != "root" ]; then
-	echo "Must be root, exiting now..."
+	echo "Must be root... Exiting now..."
 fi
 
 DIALOG="yad --window-icon=google-earth --width=450 --height=200 --center"
@@ -49,11 +47,11 @@ MENU="--list --column=$LOCAL1 --column=$LOCAL2"
 TITLETEXT="$LOCAL64"
 WORKDIR="/tmp/sparky-earth"
 ARCH=`uname -r | grep "amd64" | awk '{print $1}'`
-
-if [ -f /opt/sparky/sparky-xterm ]; then
-. /opt/sparky/sparky-xterm
+if [ -f /usr/bin/sparky-xterm ];then
+	SPARKYXTERM="/usr/bin/sparky-xterm"
 else
-SPARKYXTERM="x-terminal-emulator"
+	echo "sparky-xterm is missing... Exiting..."
+	exit 1
 fi
 
 TEXTBROKEN="$LOCAL4"
@@ -115,14 +113,14 @@ else
 	rm -rf $WORKDIR
 	mkdir -p $WORKDIR
 	cd $WORKDIR
-	$SPARKYXTERM -e "wget $SERVERD/$PACK632 -O google32.deb"
+	$SPARKYXTERM "wget $SERVERD/$PACK632 -O google32.deb"
 fi
 
 # install deb package
 if [ -f $WORKDIR/*.deb ]; then
 	cd $WORKDIR
-	$SPARKYXTERM -e "dpkg -i google32.deb"
-	$SPARKYXTERM -e "apt-get install -f -y"
+	$SPARKYXTERM "dpkg -i google32.deb"
+	$SPARKYXTERM "apt-get install -f -y"
 
 else
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBROKEN"
@@ -141,49 +139,6 @@ fi
 
 }
 
-#install664menu () {
-# check is google-earth 6 installed
-#if [ -f /usr/bin/googleearth ]; then
-#	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
-#	mainmenu
-
-	# download deb package from the project server
-#else
-#	rm -rf $WORKDIR
-#	mkdir -p $WORKDIR
-#	cd $WORKDIR
-#	$SPARKYXTERM -e "wget $SERVERD/$PACK632 -O google32.deb"
-#fi
-
-# check does your 64 bit system have multi-arch support enabled for i386 architecture
-#if [ "$FOREIGN" = "" ]; then
-#	dpkg --add-architecture i386
-#	$SPARKYXTERM -e "apt-get update"
-#fi
-
-# install deb package
-#if [ -f $WORKDIR/*.deb ]; then
-#	cd $WORKDIR
-#	$SPARKYXTERM -e "dpkg -i google32.deb"
-#	$SPARKYXTERM -e "apt-get install -f -y"
-
-#else
-#	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBROKEN"
-#	mainmenu
-#fi
-
-# check has the deb been installed
-#if [ -f /usr/bin/googleearth ]; then
-#	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
-#	exit 0
-
-#else
-#	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBROKEN"
-#	mainmenu
-#fi
-
-#}
-
 install7menu () {
 # check is google-earth 7 installed
 if [ -f /usr/bin/google-earth-pro ]; then
@@ -198,9 +153,9 @@ else
 	cd $WORKDIR
 
 	if [ "$ARCH" = "" ]; then
-		$SPARKYXTERM -e "wget $SERVERG/$PACK732"
+		$SPARKYXTERM "wget $SERVERG/$PACK732"
 	else
-		$SPARKYXTERM -e "wget $SERVERG/$PACK764"
+		$SPARKYXTERM "wget $SERVERG/$PACK764"
 	fi
 
 fi
@@ -210,14 +165,14 @@ if [ -f $WORKDIR/*.deb ]; then
 	cd $WORKDIR
 
 	if [ "$ARCH" = "" ]; then
-		$SPARKYXTERM -e "dpkg -i $PACK732"
+		$SPARKYXTERM "dpkg -i $PACK732"
 
 	else
-		$SPARKYXTERM -e "dpkg -i $PACK764"
+		$SPARKYXTERM "dpkg -i $PACK764"
 
 	fi
 
-	$SPARKYXTERM -e "apt-get install -f -y"
+	$SPARKYXTERM "apt-get install -f -y"
 
 else
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBROKEN"

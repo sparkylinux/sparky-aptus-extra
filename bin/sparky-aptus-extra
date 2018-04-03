@@ -4,7 +4,7 @@
 # It lets you install aditional software from Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2018 under the GNU GPL2 License
-# Last updated 2018/02/20
+# Last updated 2018/03/29
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -33,9 +33,8 @@ else
 fi
 
 testroot="`whoami`"
-
 if [ "$testroot" != "root" ]; then
-	echo "Must be root...exiting"
+	echo "Must be root... Exiting..."
 fi
 
 MENU1="yad --window-icon=system-software-install --width=850 --height=450 --center"
@@ -50,10 +49,11 @@ TEXTBREAK="$LOCAL4"
 TEXTDONE="$LOCAL5"
 TEXTDONEOPT="$LOCAL6"
 TEXTSTOP="$LOCAL7"
-if [ -f /opt/sparky/sparky-xterm ]; then
-. /opt/sparky/sparky-xterm
+if [ -f /usr/bin/sparky-xterm ];then
+	SPARKYXTERM="/usr/bin/sparky-xterm"
 else
-SPARKYXTERM="x-terminal-emulator"
+	echo "sparky-xterm is missing... Exiting..."
+	exit 1
 fi
 INSTALL="apt-get install"
 REMOVE="apt-get remove"
@@ -617,7 +617,7 @@ if [ -f /usr/bin/bluegriffon ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL bluegriffon"
+	$SPARKYXTERM "$INSTALL bluegriffon"
 	if [ -f /usr/bin/bluegriffon ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -633,7 +633,7 @@ if [ -f /usr/bin/Ceni ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL ceni"
+	$SPARKYXTERM "$INSTALL ceni"
 	if [ -f /usr/bin/Ceni ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -648,7 +648,7 @@ codecsmenu () {
 if [ -f /usr/bin/sparky-codecs ]; then
 	/usr/bin/sparky-codecs
 else
-	$SPARKYXTERM -e "$INSTALL sparky-codecs"
+	$SPARKYXTERM "$INSTALL sparky-codecs"
 	if [ -f /usr/bin/sparky-codecs ]; then
 		/usr/bin/sparky-codecs
 	else
@@ -663,7 +663,7 @@ if [ -f /usr/bin/custom-iso-builder ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL custom-iso-builder"
+	$SPARKYXTERM "$INSTALL custom-iso-builder"
 	if [ -f /usr/bin/custom-iso-builder ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -679,7 +679,7 @@ mainmenu
 #	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 #	mainmenu
 #else
-#	$SPARKYXTERM -e "$INSTALL ddm"
+#	$SPARKYXTERM "$INSTALL ddm"
 #	if [ -f /usr/bin/ddm ]; then
 #		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 #		mainmenu
@@ -695,7 +695,7 @@ if [ -f /usr/bin/deb-package-builder ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL deb-package-builder"
+	$SPARKYXTERM "$INSTALL deb-package-builder"
 	if [ -f /usr/bin/deb-package-builder ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -711,7 +711,7 @@ if [ -f /usr/bin/dropbox ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL dropbox"
+	$SPARKYXTERM "$INSTALL dropbox"
 	if [ -f /usr/bin/dropbox ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -727,7 +727,7 @@ if [ -f /usr/bin/sparky-eraser ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-eraser"
+	$SPARKYXTERM "$INSTALL sparky-eraser"
 	if [ -f /usr/bin/sparky-eraser ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -757,7 +757,7 @@ if [ -f /usr/bin/gradio ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL gradio"
+	$SPARKYXTERM "$INSTALL gradio"
 	if [ -f /usr/bin/gradio ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -777,7 +777,7 @@ if [ -f /usr/bin/grub-customizer ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL grub-customizer"
+	$SPARKYXTERM "$INSTALL grub-customizer"
 	if [ -f /usr/bin/grub-customizer ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -793,7 +793,7 @@ if [ -f /usr/bin/gtomb ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL gtomb"
+	$SPARKYXTERM "$INSTALL gtomb"
 	if [ -f /usr/bin/gtomb ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -809,7 +809,7 @@ if [ -f /usr/bin/leo-editor ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL leo"
+	$SPARKYXTERM "$INSTALL leo"
 	if [ -f /usr/bin/leo-editor ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -825,7 +825,7 @@ mainmenu
 #	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 #	mainmenu
 #else
-#	$SPARKYXTERM -e "$INSTALL lightdm-manager"
+#	$SPARKYXTERM "$INSTALL lightdm-manager"
 #	if [ -f /usr/bin/lightdm-manager ]; then
 #		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 #		mainmenu
@@ -845,7 +845,7 @@ if [ -f /usr/bin/lightscribe-launcher ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL71"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL lightscribe-installer"
+	$SPARKYXTERM "$INSTALL lightscribe-installer"
 	if [ -f /usr/bin/lightscribe-launcher ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL71"
 		mainmenu
@@ -865,7 +865,7 @@ if [ -f /usr/bin/lightzone ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL lightzone"
+	$SPARKYXTERM "$INSTALL lightzone"
 	if [ -f /usr/bin/lightzone ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -885,7 +885,7 @@ if [ -f /usr/bin/sparky-live-usb-creator ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-live-usb-creator"
+	$SPARKYXTERM "$INSTALL sparky-live-usb-creator"
 	if [ -f /usr/bin/sparky-live-usb-creator ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -901,7 +901,7 @@ if [ -f /usr/bin/lxmed ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL lxmed"
+	$SPARKYXTERM "$INSTALL lxmed"
 	if [ -f /usr/bin/lxmed ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -922,9 +922,9 @@ if [ -f /opt/master-pdf-editor-4/masterpdfeditor4 ]; then
 	mainmenu
 else
 	if [ -f /opt/master-pdf-editor-3/masterpdfeditor3 ]; then
-		$SPARKYXTERM -e "$REMOVE master-pdf-editor3 -y"
+		$SPARKYXTERM "$REMOVE master-pdf-editor3 -y"
 	fi
-	$SPARKYXTERM -e "$INSTALL master-pdf-editor"
+	$SPARKYXTERM "$INSTALL master-pdf-editor"
 	if [ -f /opt/master-pdf-editor-4/masterpdfeditor4 ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -944,7 +944,7 @@ if [ -f /usr/bin/megasync ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL megasync"
+	$SPARKYXTERM "$INSTALL megasync"
 	if [ -f /usr/bin/megasync ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -960,7 +960,7 @@ if [ -f /usr/bin/mintstick ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL mintstick"
+	$SPARKYXTERM "$INSTALL mintstick"
 	if [ -f /usr/bin/mintstick ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -980,7 +980,7 @@ if [ -f /usr/bin/motionbox ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL motionbox"
+	$SPARKYXTERM "$INSTALL motionbox"
 	if [ -f /usr/bin/motionbox ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -995,7 +995,7 @@ officemenu () {
 if [ -f /usr/bin/sparky-office ]; then
 	/usr/bin/sparky-office
 else
-	$SPARKYXTERM -e "$INSTALL sparky-office"
+	$SPARKYXTERM "$INSTALL sparky-office"
 	if [ -f /usr/bin/sparky-office ]; then
 		/usr/bin/sparky-office
 		else
@@ -1014,7 +1014,7 @@ if [ -f /usr/bin/opentoonz ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL opentoonz"
+	$SPARKYXTERM "$INSTALL opentoonz"
 	if [ -f /usr/bin/opentoonz ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1030,7 +1030,7 @@ if [ -f /usr/bin/pmrp ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL pmrp"
+	$SPARKYXTERM "$INSTALL pmrp"
 	if [ -f /usr/bin/pmrp ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1046,7 +1046,7 @@ if [ -f /usr/bin/QMPlay2 ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL qmplay2"
+	$SPARKYXTERM "$INSTALL qmplay2"
 	if [ -f /usr/bin/QMPlay2 ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1066,7 +1066,7 @@ if [ -f /usr/bin/rssguard ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL rssguard"
+	$SPARKYXTERM "$INSTALL rssguard"
 	if [ -f /usr/bin/rssguard ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1086,7 +1086,7 @@ if [ -f /usr/bin/rssowl ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL rssowl"
+	$SPARKYXTERM "$INSTALL rssowl"
 	if [ -f /usr/bin/rssowl ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1106,7 +1106,7 @@ if [ -f /usr/bin/sayonara ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sayonara"
+	$SPARKYXTERM "$INSTALL sayonara"
 	if [ -f /usr/bin/sayonara ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1125,7 +1125,7 @@ fi
 if [ -f /opt/skype/skype-installer ]; then
 	/opt/skype/skype-installer
 else
-	$SPARKYXTERM -e "$INSTALL skype-installer"
+	$SPARKYXTERM "$INSTALL skype-installer"
 	if [ -f /opt/skype/skype-installer ]; then
 		/opt/skype/skype-installer
 	else
@@ -1140,7 +1140,7 @@ if [ -f /usr/bin/sparky-aptus ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-aptus"
+	$SPARKYXTERM "$INSTALL sparky-aptus"
 	if [ -f /usr/bin/sparky-aptus ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1156,7 +1156,7 @@ if [ -f /usr/bin/sparky-aptus-gamer ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-aptus-gamer"
+	$SPARKYXTERM "$INSTALL sparky-aptus-gamer"
 	if [ -f /usr/bin/sparky-aptus-gamer ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1172,7 +1172,7 @@ if [ -f /usr/bin/sparky-aptus-upgrade ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-aptus-upgrade"
+	$SPARKYXTERM "$INSTALL sparky-aptus-upgrade"
 	if [ -f /usr/bin/sparky-aptus-upgrade ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1192,7 +1192,7 @@ if [ -f /usr/bin/sparkybackup-gui ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-backup-sys"
+	$SPARKYXTERM "$INSTALL sparky-backup-sys"
 	if [ -f /usr/bin/sparkybackup-gui ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1208,7 +1208,7 @@ if [ -f /usr/bin/sparky-compton ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-compton"
+	$SPARKYXTERM "$INSTALL sparky-compton"
 	if [ -f /usr/bin/sparky-compton ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1224,7 +1224,7 @@ if [ -f /usr/bin/sparky-conky ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-conky"
+	$SPARKYXTERM "$INSTALL sparky-conky"
 	if [ -f /usr/bin/sparky-conky ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1240,7 +1240,7 @@ if [ -f /usr/bin/sparky-optical ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-optical"
+	$SPARKYXTERM "$INSTALL sparky-optical"
 	if [ -f /usr/bin/sparky-optical ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONEOPT"
 		mainmenu
@@ -1256,7 +1256,7 @@ if [ -f /usr/bin/sparky-passwdchange ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-passwdchange"
+	$SPARKYXTERM "$INSTALL sparky-passwdchange"
 	if [ -f /usr/bin/sparky-passwdchange ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1272,7 +1272,7 @@ if [ -f /usr/bin/sparky-screenshot ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-screenshot"
+	$SPARKYXTERM "$INSTALL sparky-screenshot"
 	if [ -f /usr/bin/sparky-screenshot ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1288,7 +1288,7 @@ if [ -f /usr/bin/sparky-tray ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-tray"
+	$SPARKYXTERM "$INSTALL sparky-tray"
 	if [ -f /usr/bin/sparky-tray ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1304,7 +1304,7 @@ if [ -f /usr/bin/sparky-usb-formatter ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-usb-formatter"
+	$SPARKYXTERM "$INSTALL sparky-usb-formatter"
 	if [ -f /usr/bin/sparky-usb-formatter ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1320,7 +1320,7 @@ if [ -f /usr/bin/sparky-users ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-users"
+	$SPARKYXTERM "$INSTALL sparky-users"
 	if [ -f /usr/bin/sparky-users ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1335,7 +1335,7 @@ wwwmenu () {
 if [ -f /usr/bin/sparky-webbrowser ]; then
 	/usr/bin/sparky-webbrowser
 else
-	$SPARKYXTERM -e "$INSTALL sparky-webbrowser-installer"
+	$SPARKYXTERM "$INSTALL sparky-webbrowser-installer"
 	if [ -f /usr/bin/sparky-webbrowser ]; then
 		/usr/bin/sparky-webbrowser
 	else
@@ -1350,7 +1350,7 @@ if [ -f /usr/bin/sparky-xdf ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL sparky-xdf"
+	$SPARKYXTERM "$INSTALL sparky-xdf"
 	if [ -f /usr/bin/sparky-xdf ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1375,7 +1375,7 @@ if [ -f /usr/bin/SpiderOakONE ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL spideroakone"
+	$SPARKYXTERM "$INSTALL spideroakone"
 	if [ -f /usr/bin/SpiderOakONE ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1395,7 +1395,7 @@ if [ -f /usr/bin/spotify ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL spotify-client"
+	$SPARKYXTERM "$INSTALL spotify-client"
 	if [ -f /usr/bin/spotify ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1415,7 +1415,7 @@ if [ -f /usr/games/steam ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL steam"
+	$SPARKYXTERM "$INSTALL steam"
 	if [ -f /usr/games/steam ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1435,7 +1435,7 @@ if [ -f /usr/bin/teamspeak-installer ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL teamspeak-installer"
+	$SPARKYXTERM "$INSTALL teamspeak-installer"
 	if [ -f /usr/bin/teamspeak-installer ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1455,7 +1455,7 @@ if [ -f /usr/bin/teamviewer ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL teamviewer"
+	$SPARKYXTERM "$INSTALL teamviewer"
 	if [ -f /usr/bin/teamviewer ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1475,7 +1475,7 @@ if [ -f /usr/bin/start-tor-messenger ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL tor-messenger"
+	$SPARKYXTERM "$INSTALL tor-messenger"
 	if [ -f /usr/bin/start-tor-messenger ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1495,7 +1495,7 @@ if [ -f /usr/bin/trojita ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL trojita"
+	$SPARKYXTERM "$INSTALL trojita"
 	if [ -f /usr/bin/trojita ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1515,7 +1515,7 @@ if [ -f /usr/bin/truecrypt ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL truecrypt"
+	$SPARKYXTERM "$INSTALL truecrypt"
 	if [ -f /usr/bin/truecrypt ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1531,7 +1531,7 @@ if [ -f /usr/bin/variety ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL variety"
+	$SPARKYXTERM "$INSTALL variety"
 	if [ -f /usr/bin/variety ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1551,7 +1551,7 @@ if [ -f /usr/bin/veracrypt ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL veracrypt"
+	$SPARKYXTERM "$INSTALL veracrypt"
 	if [ -f /usr/bin/veracrypt ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1570,7 +1570,7 @@ fi
 if [ -f /opt/vmplayer/vmplayer-installer ]; then
 	/opt/vmplayer/vmplayer-installer
 else
-	$SPARKYXTERM -e "$INSTALL vmplayer-installer"
+	$SPARKYXTERM "$INSTALL vmplayer-installer"
 	if [ -f /opt/vmplayer/vmplayer-installer ]; then
 		/opt/vmplayer/vmplayer-installer
 	else
@@ -1585,7 +1585,7 @@ if [ -f /opt/vuze/vuze ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL vuze"
+	$SPARKYXTERM "$INSTALL vuze"
 	if [ -f /opt/vuze/vuze ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1605,7 +1605,7 @@ if [ -f /usr/bin/woeusb ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL woeusb"
+	$SPARKYXTERM "$INSTALL woeusb"
 	if [ -f /usr/bin/woeusb ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1626,7 +1626,7 @@ if [ -f /usr/bin/xnview ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL xnview"
+	$SPARKYXTERM "$INSTALL xnview"
 	if [ -f /usr/bin/xnview ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
@@ -1642,7 +1642,7 @@ if [ -f /usr/bin/youtube-dl-gui ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
 	mainmenu
 else
-	$SPARKYXTERM -e "$INSTALL youtube-dlg"
+	$SPARKYXTERM "$INSTALL youtube-dlg"
 	if [ -f /usr/bin/youtube-dl-gui ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
