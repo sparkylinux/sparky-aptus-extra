@@ -1,7 +1,7 @@
 ﻿# Fichier de localisation française de Sparky APTus Extra.
 # Copyright 2016 hiver <hiver@club-internet.fr> 2016/06/05
 # Sous licence GNU GPL v2
-# Last update 2018/02/20 by pavroo
+# Last update 2018/04/15 by pavroo
 LOCAL1="Nom"
 LOCAL2="Description"
 LOCAL3="État"
@@ -101,5 +101,7 @@ LOCAL96="A GUI of Tomb, a simple tool to manage encrypted storage"
 LOCAL97="WoeUSB can create bootable windows installer on usb"
 LOCAL98="A lightweight and fast library manager and music player"
 LOCAL99="A simple, light and easy-to-use RSS and ATOM feed aggregator"
+LOCAL100="Nettoyeur de fichiers inutiles"
+LOCAL101="Notepadqq éditeur de code source"
 ### .desktop file to be translated too
 # Comment[fr_FR]=Installer des applications supplémentaires depuis le dépôt SparkyLinux 

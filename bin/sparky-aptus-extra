@@ -4,7 +4,7 @@
 # It lets you install aditional software from Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2018 under the GNU GPL2 License
-# Last updated 2018/03/29
+# Last updated 2018/04/15
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -60,6 +60,12 @@ REMOVE="apt-get remove"
 ARCHARM="`uname -m | grep arm`"
 
 ## Get status of the application to be displayed in the main menu ###
+if [ -f /usr/bin/bleachbit ]; then
+	BLEACH1="$LOCAL8"
+else
+	BLEACH1=""
+fi
+
 if [ -f /usr/bin/bluegriffon ]; then
 	BLUEGR1="$LOCAL8"
 else
@@ -190,6 +196,12 @@ if [ -f /usr/bin/motionbox ]; then
 	MOTION1="$LOCAL8"
 else
 	MOTION1=""
+fi
+
+if [ -f /usr/bin/notepadqq ] || [ -f /usr/bin/nqq ]; then
+	NOTEPAD1="$LOCAL8"
+else
+	NOTEPAD1=""
 fi
 
 if [ -f /usr/bin/sparky-office ]; then
@@ -416,6 +428,7 @@ fi
 
 mainmenu () {
 CHOICES=`$MENU1 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL9" \
+BleachBit "$LOCAL100" "$BLEACH1" \
 BlueGriffon "$LOCAL72" "$BLUEGR1" \
 Ceni "$LOCAL10" "$CENI1" \
 Codecs "$LOCAL11" "$CODE1" \
@@ -436,6 +449,7 @@ Master_PDF_Editor "$LOCAL23" "$MASTER1" \
 Mintstick "$LOCAL92" "$MSTICK1" \
 MEGAsync "$LOCAL24" "$MEGA1" \
 MotionBox "$LOCAL93" "$MOTION1" \
+Notepadqq "$LOCAL101" "$NOTEPAD1" \
 Office "$LOCAL26" "$OFFICE1" \
 OpenToonz "$LOCAL79" "$OPENTOO1" \
 PMRP "$LOCAL87" "$PMRP1" \
@@ -483,7 +497,9 @@ else
 	exit 0
 fi
 
-if [ "$CHOICE" = "BlueGriffon" ]; then
+if [ "$CHOICE" = "BleachBit" ]; then
+	bleachmenu
+elif [ "$CHOICE" = "BlueGriffon" ]; then
 	bluegrmenu
 elif [ "$CHOICE" = "Ceni" ]; then
 	cenimenu
@@ -527,8 +543,8 @@ elif [ "$CHOICE" = "Mintstick" ]; then
 	mstickmenu
 elif [ "$CHOICE" = "MotionBox" ]; then
 	motionmenu
-elif [ "$CHOICE" = "Nightingale" ]; then
-	ngalemenu
+elif [ "$CHOICE" = "Notepadqq" ]; then
+	notepadmenu
 elif [ "$CHOICE" = "Office" ]; then
 	officemenu
 elif [ "$CHOICE" = "OpenToonz" ]; then
@@ -606,6 +622,22 @@ elif [ "$CHOICE" = "XnViewMP" ]; then
 else
 	exit 0
 fi
+}
+
+bleachmenu () {
+if [ -f /usr/bin/bleachbit ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM "$INSTALL bleachbit"
+	if [ -f /usr/bin/bleachbit ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
 }
 
 bluegrmenu() {
@@ -982,6 +1014,26 @@ if [ -f /usr/bin/motionbox ]; then
 else
 	$SPARKYXTERM "$INSTALL motionbox"
 	if [ -f /usr/bin/motionbox ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
+		mainmenu
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTBREAK"
+	fi
+fi
+mainmenu
+}
+
+notepadmenu() {
+if [ "$ARCHARM" != "" ]; then
+	$DIALOG $TEXT"\n$LOCAL89\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+	exit 1
+fi
+if [ -f /usr/bin/notepadqq ] || [ -f /usr/bin/nqq ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTSTOP"
+	mainmenu
+else
+	$SPARKYXTERM "$INSTALL notepadqq"
+	if [ -f /usr/bin/notepadqq ] || [ -f /usr/bin/nqq ]; then
 		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$TEXTDONE"
 		mainmenu
 	else

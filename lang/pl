@@ -2,7 +2,7 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
 # Under the GNU GPL v2
 # Translated from English by pavroo
-# Last update 2018/02/20 by pavroo
+# Last update 2018/04/15 by pavroo
 LOCAL1="Nazwa"
 LOCAL2="Opis"
 LOCAL3="Status"
@@ -102,5 +102,7 @@ LOCAL96="GUI dla Tomb, prostego narzędzia do zarządzania szyfrowanymi dyskami"
 LOCAL97="WoeUSB tworzy bootowalny dysk windows instalator usb"
 LOCAL98="Lekki i szybki manager biblioteki i odtwarzacz muzyki"
 LOCAL99="Lekki, szybki i prosty w użyciu agregator kanałów RSS i ATOM"
+LOCAL100="Program czyszczący niepotrzebne pliki"
+LOCAL101="Edytor kodu źródłowego Notepadqq"
 ### .desktop file, również do przetłumaczenia
 # Comment[pl_PL]=Zainstaluj dodatkowe aplikacje z repozytorium SparkyLinux
