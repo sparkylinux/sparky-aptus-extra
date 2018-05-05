@@ -21,10 +21,19 @@ Dependencies:
 apt
 coreutils
 grep
+iputils-ping
 sparky-remsu
 sparky-xterm (>= 0.2.0)
 wget
 yad
+
+Conflicts:
+-------------
+skype-installer
+
+Replaces:
+-------------
+skype-installer
 
 Install:
 -------------

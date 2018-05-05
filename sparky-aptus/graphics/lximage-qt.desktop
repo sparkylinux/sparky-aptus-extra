@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=LXImage
+Comment=LXQt image viewer
+Comment[ca]=El visualitzador d'imatges de LXQt
+Comment[da]=LXQt-billedfremviseren
+Comment[de]=Der LXQt-Bildbetrachter
+Comment[el]=Ο προβολέας εικόνων του LXQt
+Comment[fr]=Visionneuse d'images de LXQt
+Comment[hu]=Az LXQt képnézegetője
+Comment[it]=Il visualizzatore immagini di LXQt
+Comment[lt]=LXQt paveikslų žiūryklė
+Comment[pl]=Przeglądarka obrazów LXQt
+Comment[pt]=O visualizador de imagens do LXQt
+Comment[ru]=Просмотрщик изображений LXQt
+Exec=remsu /usr/bin/sparky-aptus-extra lximage-qt
+Icon=lximage-qt
+Terminal=false
+Type=Application
+Categories=Applications;System
+

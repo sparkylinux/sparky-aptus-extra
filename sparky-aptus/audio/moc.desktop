@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=moc
+Comment=ncurses based console audio player
+Comment[de]=ncurses basiert Konsolen-Audio-Player
+Comment[el]=ncurses κονσόλα αναπαραγωγής ήχου
+Comment[es]=Reproductor de audio basado en ncurses
+Comment[fr]=Lecteur audio de console basé sur ncurses
+Comment[it]=Lettore audio per console basato su ncurses
+Comment[ja]=ncursesベースのコンソールオーディオプレーヤー
+Comment[pl]=Konsolowy odtwarzacz audio bazujacy na ncurses
+Comment[pt]=ncurses baseado no console de áudio do console
+Comment[ru]=консольный аудиоплеер на основе ncurses
+Comment[sv]=ncurses baserad konsol ljudspelare
+Exec=remsu /usr/bin/sparky-aptus-extra moc
+Icon=applications-audio
+Terminal=false
+Type=Application
+Categories=Applications;System
+

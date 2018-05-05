@@ -1,0 +1,32 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Smuxi
+Comment=Smuxi IRC Client
+Comment[ca]=Client d'IRC Smuxi
+Comment[cs]=Smuxi klient IRC
+Comment[da]=Smuxi - IRC-klient
+Comment[de]=Smuxi - Chat Client
+Comment[el]=Πελάτης IRC Smuxi
+Comment[es]=Cliente IRC Smuxi
+Comment[fi]=Smuxi IRC-asiakasohjelma
+Comment[fr]=Client IRC Smuxi
+Comment[hr]=Smuxi IRC klijent
+Comment[it]=Client di IRC Smuxi
+Comment[lt]=Smuxi IRC Kliento Programa
+Comment[nl]=Smuxi IRC Client
+Comment[pl]=Klient sieci IRC Smuxi
+Comment[pt]=Cliente de IRC Smuxi
+Comment[pt_BR]=Smuxi Cliente IRC
+Comment[ru]=IRC-клиент Smuxi
+Comment[sk]=IRC klient Smuxi
+Comment[sv]=Smuxi IRC-klient
+Comment[tr]=Smuxi IRC İstemci
+Comment[ur]=Smuxi IRC Client
+Comment[zh_CN]=Smuxi IRC 客户端
+Exec=remsu /usr/bin/sparky-aptus-extra smuxi
+Icon=smuxi-frontend-gnome
+Terminal=false
+Type=Application
+Categories=Applications;System
+

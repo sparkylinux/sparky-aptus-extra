@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=OpenToonz
+Comment=An open-source full-featured 2D animation creation software
+Comment[de]=Eine offene und freie Version des Programms zum Erstellen von zweidimensionalen Animationen
+Comment[el]=Μια ανοικτή και δωρεάν έκδοση του προγράμματος για τη δημιουργία δισδιάστατων κινούμενων σχεδίων
+Comment[es]=Una versión abierta y gratuita del programa para crear animaciones bidimensionales
+Comment[fr]=Une version ouverte et gratuite du programme de création d'animations en deux dimensions
+Comment[it]=Una versione aperta e gratuita del programma per la creazione di animazioni bidimensionali
+Comment[ja]=2次元アニメーションを作成するためのオープンでフリーなプログラム
+Comment[pl]=Otwarta i darmowa wersja programu do tworzenia dwuwymiarowych animacji
+Comment[pt]=Uma versão aberta e gratuita do programa para criar animações bidimensionais
+Comment[ru]=Открытая и бесплатная версия программы для создания двумерных анимаций
+Comment[sv]=En öppen och fri version av programmet för att skapa tvådimensionella animeringar
+Exec=remsu /usr/bin/sparky-aptus-extra opentoonz
+Icon=opentoonz
+Terminal=false
+Type=Application
+Categories=Applications;System
+

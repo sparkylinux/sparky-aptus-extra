@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=fotoxx
+Comment=Photo Editor
+Comment[de]=Foto Bearbeitung
+Comment[es]=Editor fotográfico
+Comment[fr]=Gestionnaire de photos
+Comment[gl]=Editor fotográfico
+Comment[it]=Editor di foto
+Comment[ja]=写真編集者
+Comment[pl]=Edytor zdjęć
+Comment[pt]=Editor de foto
+Comment[ru]=Редактор фото
+Comment[sv]=Fotoredigerare
+Exec=remsu /usr/bin/sparky-aptus-extra fotoxx
+Icon=/usr/share/fotoxx/icons/fotoxx.png
+Terminal=false
+Type=Application
+Categories=Applications;System
+

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Dradio
+Comment=A terminal based frontend to MPlayer
+Comment[de]=Ein terminalbasiertes Frontend für MPlayer
+Comment[el]=Ένα τερματικό με βάση το MPlayer
+Comment[es]=Una interfaz basada en terminal para MPlayer
+Comment[fr]=Un frontend basé sur MPlayer
+Comment[it]=Un frontend basato su terminale per MPlayer
+Comment[ja]=MPlayerへの端末ベースのフロントエンド
+Comment[pl]=Frontend oparty na terminalu dla MPlayera
+Comment[pt]=Um frontend baseado em terminal para o MPlayer
+Comment[ru]=Терминальный интерфейс для MPlayer
+Comment[sv]=En terminalbaserad frontend till MPlayer
+Exec=remsu /usr/bin/sparky-aptus-extra dradio
+Icon=applications-audio
+Terminal=false
+Type=Application
+Categories=Applications;System
+

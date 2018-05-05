@@ -1,1 +1,0 @@
-?package(sparky-aptus-extra):needs="X11" section="Applications/System"        title="APTus Extra" command="remsu /usr/bin/sparky-aptus-extra" icon="system-software-install"

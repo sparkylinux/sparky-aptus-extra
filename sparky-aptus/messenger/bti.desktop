@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=bti
+Comment=Command line Twitter client
+Comment[de]=Befehlszeilen-Twitter-Client
+Comment[el]=Γραμμή εντολών Twitter
+Comment[es]=Línea de comando cliente de Twitter
+Comment[fr]=Ligne de commande client Twitter
+Comment[it]=Client Twitter della riga di comando
+Comment[pl]=Klient Twitter z linii poleceń
+Comment[pt]=Cliente de linha de comando do Twitter
+Comment[ru]=Клиент командной строки Twitter
+Comment[sv]=Kommandorad Twitter klient
+Exec=remsu /usr/bin/sparky-aptus-extra bti
+Icon=emesene
+Terminal=false
+Type=Application
+Categories=Applications;System
+

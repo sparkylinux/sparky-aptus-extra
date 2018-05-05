@@ -1,0 +1,25 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=MPV
+Comment=Multimedia player
+Comment[cs]=Multimediální přehrávač
+Comment[da]=Multimedieafspiller
+Comment[de]=Multimediaspelare
+Comment[el]=Πολυμέσα αναπαραγωγής
+Comment[es]=Reproductor multimedia
+Comment[fr]=Lecteur multimédia
+Comment[it]=Lettore multimediale
+Comment[ja]=マルチメディアプレーヤー
+Comment[pl]=Odtwarzacz multimedialny
+Comment[pt]=Jogador multimídia
+Comment[ru]=Мультимедийный проигрыватель
+Comment[sv]=Multimediaspelare
+Comment[zh_CN]=多媒体播放器
+Comment[zh_TW]=多媒體播放器
+Exec=remsu /usr/bin/sparky-aptus-extra mpv
+Icon=mpv
+Terminal=false
+Type=Application
+Categories=Applications;System
+

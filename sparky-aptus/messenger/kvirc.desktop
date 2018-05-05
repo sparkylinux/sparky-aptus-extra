@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=KVIrc
+Comment=Connect to Internet Relay Chat
+Comment[de]=Internet Relay Chat betreten.
+Comment[el]=Συνδεθείτε στο Chat Internet Relay Chat
+Comment[es]=Conectar al chat IRC
+Comment[fr]=Connectez-vous à Internet Relay Chat
+Comment[it]=Connetti a Internet Relay Chat
+Comment[pl]=Połącz się z Internet Relay Chat (IRC)
+Comment[pt]=Conectar ao IRC (Internet Relay Chat)
+Comment[ru]=Подключение к интернет-релейному чату
+Comment[sv]=Anslut till Internet Relay Chat
+Comment[tr]=IRC'e bağlanın
+Exec=remsu /usr/bin/sparky-aptus-extra kvirc
+Icon=kvirc
+Terminal=false
+Type=Application
+Categories=Applications;System
+

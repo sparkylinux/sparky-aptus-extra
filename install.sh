@@ -16,26 +16,46 @@
 
 if [ "$1" = "uninstall" ]; then
    	rm -f /usr/bin/sparky-aptus-extra
-	rm -rf /usr/lib/sparky-aptus-extra/bin
-	rm -r /usr/lib/sparky-aptus/inst/sparky-aptus-extra.desktop
-	rm -f /usr/share/applications/sparky-aptus-extra.desktop
-	rm -f /usr/share/menu/sparky-aptus-extra
 	rm -rf /usr/share/sparky/sparky-aptus-extra
+	rm -f /usr/lib/sparky-aptus/audio/*
+	rm -r /usr/lib/sparky-aptus/email/*
+	rm -f /usr/lib/sparky-aptus/filetranfer/*
+	rm -f /usr/lib/sparky-aptus/graphics/*
+	rm -f /usr/lib/sparky-aptus/messenger/*
+	rm -f /usr/lib/sparky-aptus/rss/*
+	rm -f /usr/lib/sparky-aptus/video/*
 else
 	cp bin/sparky-aptus-extra /usr/bin/sparky-aptus-extra
-	if [ ! -d /usr/lib/sparky-aptus-extra/bin ]; then
-		mkdir -p /usr/lib/sparky-aptus-extra/bin
-	fi
-	cp bin/install-chrome /usr/lib/sparky-aptus-extra/bin/install-chrome
-	cp bin/install-earth /usr/lib/sparky-aptus-extra/bin/install-earth
-	if [ ! -d /usr/lib/sparky-aptus/inst ]; then
-		mkdir -p /usr/lib/sparky-aptus/inst
-	fi
-	cp lib/sparky-aptus-extra.desktop /usr/lib/sparky-aptus/inst/sparky-aptus-extra.desktop
-	cp lib/sparky-aptus-extra.desktop /usr/share/applications/sparky-aptus-extra.desktop
-	cp menu/sparky-aptus-extra /usr/share/menu/sparky-aptus-extra
 	if [ ! -d /usr/share/sparky/sparky-aptus-extra ]; then
 		mkdir -p /usr/share/sparky/sparky-aptus-extra
 	fi
 	cp lang/* /usr/share/sparky/sparky-aptus-extra/
+	if [ ! -d /usr/lib/sparky-aptus/audio ]; then
+		mkdir -p /usr/lib/sparky-aptus/audio
+	fi
+	cp -a sparky-aptus/audio/* /usr/lib/sparky-aptus/audio/
+	if [ ! -d /usr/lib/sparky-aptus/email ]; then
+		mkdir -p /usr/lib/sparky-aptus/email
+	fi
+	cp -a sparky-aptus/email/* /usr/lib/sparky-aptus/email/
+	if [ ! -d /usr/lib/sparky-aptus/filetransfer ]; then
+		mkdir -p /usr/lib/sparky-aptus/filetransfer
+	fi
+	cp -a sparky-aptus/filetransfer/* /usr/lib/sparky-aptus/filetransfer/
+	if [ ! -d /usr/lib/sparky-aptus/graphics ]; then
+		mkdir -p /usr/lib/sparky-aptus/graphics
+	fi
+	cp -a sparky-aptus/graphics/* /usr/lib/sparky-aptus/graphics/
+	if [ ! -d /usr/lib/sparky-aptus/messenger ]; then
+		mkdir -p /usr/lib/sparky-aptus/messenger
+	fi
+	cp -a sparky-aptus/messenger/* /usr/lib/sparky-aptus/messenger/
+	if [ ! -d /usr/lib/sparky-aptus/rss ]; then
+		mkdir -p /usr/lib/sparky-aptus/rss
+	fi
+	cp -a sparky-aptus/rss/* /usr/lib/sparky-aptus/rss/
+	if [ ! -d /usr/lib/sparky-aptus/video ]; then
+		mkdir -p /usr/lib/sparky-aptus/video
+	fi
+	cp -a sparky-aptus/video/* /usr/lib/sparky-aptus/video/
 fi

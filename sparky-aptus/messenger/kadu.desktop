@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Kadu
+Comment=Gadu-Gadu and XMPP Client
+Comment[de]=Gadu-Gadu und XMPP-Client
+Comment[el]=Gadu-Gadu και πελάτη XMPP
+Comment[es]=Gadu-Gadu y el cliente XMPP
+Comment[fr]=Gadu-Gadu et le client XMPP
+Comment[it]=Gadu-Gadu e XMPP Client
+Comment[pl]=Klient Gadu-Gadu i XMPP
+Comment[pt]=Cliente Gadu-Gadu e XMPP
+Comment[ru]=Gadu-Gadu и клиент XMPP
+Exec=remsu /usr/bin/sparky-aptus-extra kadu
+Icon=kadu
+Terminal=false
+Type=Application
+Categories=Applications;System
+

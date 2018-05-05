@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=cmus
+Comment=Lightweight ncurses audio player
+Comment[de]=Leichter Ncurses-Audioplayer
+Comment[el]=Ελαφριά συσκευή
+Comment[es]=Reproductor de audio ncurses liviano
+Comment[fr]=Lecteur audio léger ncurses
+Comment[it]=Leggero lettore audio ncurses
+Comment[ja]=軽量ncursesオーディオプレーヤー
+Comment[pl]=Lekki odtwarzacz audio z interfejsem ncurses
+Comment[pt]=Leve ncurses leitor de áudio
+Comment[ru]=Легкий аудиопроигрыватель ncurses
+Comment[sv]=Lättviktiga ljudspelare
+Exec=remsu /usr/bin/sparky-aptus-extra cmus
+Icon=applications-audio
+Terminal=false
+Type=Application
+Categories=Applications;System
+

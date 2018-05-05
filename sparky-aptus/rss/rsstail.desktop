@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Rsstail
+Comment=Console RSS reader
+Comment[de]=Konsolen-RSS-Reader
+Comment[el]=Κονσόλα RSS Reader
+Comment[es]=Lector de consola de RSS
+Comment[fr]=Console lecteur RSS
+Comment[pl]=Konsolowy czytnik kanałów RSS
+Comment[pt]=Leitor de RSS do console
+Comment[ru]=Консоль RSS-ридер
+Comment[sv]=Konsol RSS-läsare
+Exec=remsu /usr/bin/sparky-aptus-extra rsstail
+Icon=rss
+Terminal=false
+Type=Application
+Categories=Applications;System
+

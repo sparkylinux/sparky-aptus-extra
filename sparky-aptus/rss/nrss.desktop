@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=NRSS
+Comment=A ncurses-based RSS reader
+Comment[pl]=Bazujący na ncurses czytnik RSS
+Exec=remsu /usr/bin/sparky-aptus-extra nrss
+Icon=rss
+Terminal=false
+Type=Application
+Categories=Applications;System
+

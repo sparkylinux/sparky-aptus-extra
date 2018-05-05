@@ -1,0 +1,29 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Qmmp
+Comment=Qt-based Multimedia Player
+Comment[cs]=Přehrávač hudby založený na Qt
+Comment[de]=Qt-basierter Audio-Player
+Comment[el]=Αναπαραγωγέας πολυμέσων βασισμένος στην Qt
+Comment[es]=Reproductor de Medios basado sobre Qt
+Comment[fi]=Qt-pohjainen multimediasoitin
+Comment[fr]=Lecteur multimédia en Qt
+Comment[he]=נגן מולטימדיה מבוסס Qt
+Comment[id]=Pemain Multimedia Berbasis-Qt
+Comment[ja]=Qt を用いたマルティミディアプレイヤー
+Comment[pl]=Odtwarzacz muzyczny bazujący na Qt
+Comment[pt_PT]=Reprodutor multimédia em Qt
+Comment[pt_BR]=Reprodutor multimídia em Qt
+Comment[ru]=Медиа-проигрыватель на базе Qt
+Comment[sr]=Кут медија плејер
+Comment[tr]=Qt tabanlı Çokluortam Oynatıcı
+Comment[uk]=Медіа-програвач на базі Qt
+Comment[zh_CN]=基于Qt的多媒体播放器
+Comment[zh_TW]=基于Qt的多媒體播放器
+Exec=remsu /usr/bin/sparky-aptus-extra qmmp
+Icon=qmmp
+Terminal=false
+Type=Application
+Categories=Applications;System
+

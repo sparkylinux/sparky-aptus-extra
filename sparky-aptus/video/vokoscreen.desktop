@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=vokoscreen
+Comment=Record a video of your desktop
+Comment[de]=Zeichnen Sie ein Video von Ihrem Desktop auf
+Comment[el]=Καταγράψτε ένα βίντεο από την επιφάνεια εργασίας σας
+Comment[es]=Graba en vídeo las acciones que haces en tu escritorio
+Comment[fr]=Enregistrer une vidéo de votre bureau
+Comment[it]=Registra un video del tuo desktop
+Comment[ja]=デスクトップのビデオを録画する
+Comment[pl]=Nagraj wideo swojego pulpitu
+Comment[pt]=Grave um vídeo da sua área de trabalho
+Comment[ru]=Запись видео на рабочий стол
+Comment[sv]=Spela in en video på ditt skrivbord
+Comment[zh_CN]=把屏幕录制成视频
+Exec=remsu /usr/bin/sparky-aptus-extra vokoscreen
+Icon=vokoscreen
+Terminal=false
+Type=Application
+Categories=Applications;System
+

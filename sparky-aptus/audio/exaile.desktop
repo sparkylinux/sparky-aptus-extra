@@ -1,0 +1,27 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Exaile
+Comment=Listen to, explore, or manage your audio collection
+Comment[ca]=Escolteu, navegueu o gestioneu la vostra col·lecció de fitxers d'àudio
+Comment[de]=Audiodateien und -streams wiedergeben, verwalten und Tags bearbeiten
+Comment[el]=Ακούστε, εξερευνήστε ή διαχειριστείτε τη συλλογή ήχου σας
+Comment[es]=Escuche, explore o administre su colección de audio
+Comment[fi]=Kuuntele, selaa, tai hallitse musiikkikokoelmaasi
+Comment[fr]=Écouter, parcourir et gérer votre musique
+Comment[hu]=Zene-, és stream lejátszás, és tag módosítás
+Comment[it]=Ascolta, sfoglia o modifica la tua raccolta musicale
+Comment[ja]=あなたのオーディオコレクションを聞く、探検する、または管理する
+Comment[nn]=Høyr på, utforsk og handsam musikksamlinga di
+Comment[pl]=Słuchanie, przeglądanie i modyfikowanie twojej kolekcji muzyczynej
+Comment[pt_PT]=Ouça, explore ou gerencie sua coleção de áudio
+Comment[pt_BR]=Escute, gerencie ou edite sua coleção de músicas
+Comment[ro]=Ascultați, răsfoiți sau editați-vă colecția de muzică
+Comment[ru]=Слушайте, исследуйте или управляйте своей аудиосписью
+Comment[sv]=Spela, utforska och hantera din musiksamling
+Exec=remsu /usr/bin/sparky-aptus-extra exaile
+Icon=exaile
+Terminal=false
+Type=Application
+Categories=Applications;System
+

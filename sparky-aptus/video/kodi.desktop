@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Kodi
+Comment=Multimedia Center
+Comment[de]=Multimedia Center
+Comment[el]=Κέντρο πολυμέσων
+Comment[es]=Centro multimedia
+Comment[fr]=Centre multimédia
+Comment[it]=Centro multimediale
+Comment[ja]=マルチメディアセンター
+Comment[pl]=Centrum multimedialne
+Comment[pt]=Centro multimídia
+Comment[ru]=Мультимедийный центр
+Exec=remsu /usr/bin/sparky-aptus-extra kodi
+Icon=kodi
+Terminal=false
+Type=Application
+Categories=Applications;System
+

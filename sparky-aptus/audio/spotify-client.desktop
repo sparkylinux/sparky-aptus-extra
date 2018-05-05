@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Spotify
+Comment=Music player
+Comment[de]=Musikspieler
+Comment[el]=Μουσική
+Comment[es]=Reproductor de música
+Comment[fr]=Lecteur de musique
+Comment[it]=Lettore musicale
+Comment[ja]=音楽プレーヤー
+Comment[pl]=Odtwarzacz muzyki
+Comment[pt]=Reprodutor de música
+Comment[ru]=Музыкальный проигрыватель
+Comment[sv]=Musikspelare
+Exec=remsu /usr/bin/sparky-aptus-extra spotify-client
+Icon=spotify-client
+Terminal=false
+Type=Application
+Categories=Applications;System
+

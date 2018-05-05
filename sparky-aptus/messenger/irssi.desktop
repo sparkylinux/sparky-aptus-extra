@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=irssi
+Comment=IRC console client
+Comment[de]=IRC-Konsolenclient
+Comment[el]=Πελάτη κονσόλας IRC
+Comment[es]=Cliente de consola IRC
+Comment[fr]=Client de console IRC
+Comment[it]=Client console IRC
+Comment[ja]=IRCコンソールクライアント
+Comment[pl]=Konsolowy klient IRC
+Comment[pt]=Cliente do console IRC
+Comment[ru]=Клиент консоли IRC
+Comment[sv]=RC-konsolklient
+Exec=remsu /usr/bin/sparky-aptus-extra irssi
+Icon=irc
+Terminal=false
+Type=Application
+Categories=Applications;System
+

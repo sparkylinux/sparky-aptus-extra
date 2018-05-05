@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Kamera
+Comment=Digital camera support for KDE applications
+Comment[pl]=Obsługa aparatów cyfrowych do aplikacji KDE 
+Exec=remsu /usr/bin/sparky-aptus-extra kamera
+Icon=camera-photo
+Terminal=false
+Type=Application
+Categories=Applications;System
+

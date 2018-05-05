@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=QuiteRSS
+Comment=RSS/Atom feed reader written in C++/Qt4
+Comment[de]=RSS/Atom-Feed-Reader in C++/Qt4 geschrieben
+Comment[el]=RSS/Atom reader τροφοδοσίας γραμμένο σε C++/Qt4
+Comment[es]=Lector de noticias RSS/Atom escrito en C++/Qt4
+Comment[fr]=Lecteur de flux RSS/Atom écrit en C++/Qt4
+Comment[it]=Lettore di feed RSS/Atom scritto in C++/Qt4
+Comment[pl]=Czytnik kanałów RSS/Atom napisany w C++/Qt4
+Comment[pt]=Leitor de feed RSS/Atom escrito em C++/Qt4
+Comment[ru]=Устройство чтения RSS/Atom, написанное на C++/Qt4
+Comment[sv]=RSS/Atommatare läsare skrivet i C++/Qt4
+Exec=remsu /usr/bin/sparky-aptus-extra quiterss
+Icon=quiterss
+Terminal=false
+Type=Application
+Categories=Applications;System
+

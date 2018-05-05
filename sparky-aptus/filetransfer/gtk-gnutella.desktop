@@ -1,0 +1,25 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=gtk-gnutella
+Comment=A GUI based Gnutella Servent
+Comment[de]=Ein grafischer Gnutella-Servent
+Comment[el]=Ένα Gnutella Servent βασισμένο σε GUI
+Comment[fr]=Un servent Gnutella graphique
+Comment[hu]=Grafikus Gnutella-kiszolgáló
+Comment[it]=Un servizio Gnutella basato sulla GUI
+Comment[ja]=GUI ベースの Gnutella サーバントです
+Comment[nb]=En grafisk Gnutella-tjenent
+Comment[nl]=Een grafische Gnutella servent
+Comment[nn]=Ein grafisk Gnutella-tenent
+Comment[pl]=Klient Gnutella z GUI
+Comment[pt]=Uma Gnutella baseada em GUI Servent
+Comment[ru]=Gnutella Servent, основанный на графическом интерфейсе
+Comment[sv]=En GUI-baserad Gnutella Servent
+Comment[tr]=Grafik arayüzlü Gnutella istemcisi
+Exec=remsu /usr/bin/sparky-aptus-extra gtk-gnutella
+Icon=gtk-gnutella
+Terminal=false
+Type=Application
+Categories=Applications;System
+

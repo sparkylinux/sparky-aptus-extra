@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=LostIRC
+Comment=Chat on IRC-networks
+Comment[da]=Chat på IRC-netværk
+Comment[de]=Chat in IRC-Netzwerken
+Comment[el]=Συζήτηση σε δίκτυα IRC
+Comment[es]=Chat en IRC-networks
+Comment[fr]=Chat sur les réseaux IRC
+Comment[it]=Chatta su reti IRC
+Comment[ja]=IRCネットワークでのチャット
+Comment[pl]=Czat w sieciach IRC
+Comment[pt]=Bate-papo em redes de IRC
+Comment[ru]=Чат в IRC-сетях
+Comment[sv]=Chatt på IRC-nätverk
+Exec=remsu /usr/bin/sparky-aptus-extra lostirc
+Icon=lostirc
+Terminal=false
+Type=Application
+Categories=Applications;System
+

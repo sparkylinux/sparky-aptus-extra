@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=ScrollZ
+Comment=Advanced ircII-based IRC client
+Comment[de]=Fortgeschrittener ircII-basierter IRC-Client
+Comment[el]=Προχωρημένος πελάτης IRC βασισμένος σε ircII
+Comment[fr]=Client IRC avancé basé sur ircII
+Comment[it]=Client IRC avanzato basato su ircII
+Comment[ja]=高度なircIIベースのIRCクライアント
+Comment[pl]=Zaawansowany klient IRC oparty na IRcII
+Comment[pt]=Cliente de IRC avançado baseado em ircII
+Comment[ru]=Расширенный IRC-клиент на основе ircII
+Comment[sv]=Avancerad ircII-baserad IRC-klient
+Exec=remsu /usr/bin/sparky-aptus-extra scrollz
+Icon=irc
+Terminal=false
+Type=Application
+Categories=Applications;System
+

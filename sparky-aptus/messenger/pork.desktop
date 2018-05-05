@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Pork
+Comment=Console-based AOL Instant Messenger & IRC client
+Comment[de]=Konsolenbasierter AOL Instant Messenger & IRC-Client
+Comment[el]=Κονσόλα AOL Instant Messenger και πελάτη IRC
+Comment[es]=Consola basada en AOL Instant Messenger y IRC de cliente
+Comment[fr]=Client AOL Instant Messenger et IRC basé sur la console
+Comment[it]=AOL Instant Messenger basato su console e client IRC
+Comment[ja]=コンソールベースのAOLインスタントメッセンジャー＆IRCクライアント
+Comment[pl]=Konsolowy klient AOL Instant Messenger i IRC
+Comment[pt]=Cliente AOL Instant Messenger e IRC baseado em console
+Comment[ru]=Консольный клиент AOL Instant Messenger и IRC
+Comment[sv]=Konsolbaserad AOL Instant Messenger och IRC-klient
+Exec=remsu /usr/bin/sparky-aptus-extra pork
+Icon=emesene
+Terminal=false
+Type=Application
+Categories=Applications;System
+

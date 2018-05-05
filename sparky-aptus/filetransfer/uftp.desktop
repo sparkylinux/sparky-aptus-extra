@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=uftp
+Comment=Encrypted multicast file transfer program
+Comment[de]=Verschlüsselte Multicast-Dateiübertragungsprogramm
+Comment[el]=Κρυπτογραφημένο πρόγραμμα μεταφοράς αρχείων πολυεκπομπής
+Comment[es]=Programa de transferencia de archivos de multidifusión cifrado
+Comment[fr]=Programme de transfert de fichiers multicast crypté
+Comment[it]=Programma di trasferimento file multicast crittografato
+Comment[ja]=暗号化されたマルチキャストファイル転送プログラム
+Comment[pl]=Program do szyfrowanego przesyłania plików
+Comment[pt]=Programa de transferência de arquivos multicast criptografado
+Comment[ru]=Зашифрованная программа передачи файлов многоадресной передачи
+Comment[sv]=Krypterat multicast-filöverföringsprogram
+Exec=remsu /usr/bin/sparky-aptus-extra uftp
+Icon=download
+Terminal=false
+Type=Application
+Categories=Applications;System
+

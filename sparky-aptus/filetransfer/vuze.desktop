@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Vuze
+Comment=Multimedia Bittorrent Client 
+Comment[de]=Multimedia-Bittorrent-Client
+Comment[el]=Multimedia Bittorrent Client
+Comment[es]=Cliente de Bittorrent multimedia
+Comment[fr]=Multimédia Bittorrent Client
+Comment[it]=Multimedia Client Bittorrent
+Comment[ja]=マルチメディアビットトレントクライアント
+Comment[pl]=Multimedialny klient Bittorrent
+Comment[pt]=Cliente Bittorrent Multimídia
+Comment[ru]=Мультимедиа Bittorrent Client
+Comment[sv]=Multimedia Bittorrent Client
+Exec=remsu /usr/bin/sparky-aptus-extra vuze
+Icon=Azureus
+Terminal=false
+Type=Application
+Categories=Applications;System
+

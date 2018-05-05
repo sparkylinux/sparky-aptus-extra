@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=lftp
+Comment=A command-line FTP / HTTP / BitTorrent client
+Comment[de]=Ein Befehlszeilen-FTP / HTTP / BitTorrent-Client
+Comment[el]=Ένας πελάτης FTP / HTTP / BitTorrent γραμμής εντολών
+Comment[es]=Un cliente FTP / HTTP / BitTorrent de línea de comando
+Comment[fr]=Un client FTP / HTTP / BitTorrent en ligne de commande
+Comment[it]=Un client FTP / HTTP / BitTorrent a linea di comando
+Comment[ja]=コマンドラインFTP / HTTP / BitTorrentクライアント
+Comment[pl]=Klient FTP / HTTP / BitTorrent z linii poleceń
+Comment[pt]=Um cliente FTP / HTTP / BitTorrent de linha de comando
+Comment[ru]=Клиент командной строки FTP / HTTP / BitTorrent
+Comment[sv]=En kommandorad FTP / HTTP / BitTorrent-klient
+Exec=remsu /usr/bin/sparky-aptus-extra lftp
+Icon=lftp-icon
+Terminal=false
+Type=Application
+Categories=Applications;System
+

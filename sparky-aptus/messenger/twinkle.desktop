@@ -1,0 +1,35 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Twinkle
+Comment=A SIP softphone
+Comment[cy]=Ffôn meddal SIP
+Comment[da]=SIP IP-telefoni
+Comment[el]=Λογισμικό τηλέφωνο SIP
+Comment[es]=Un teléfono liviano SIP
+Comment[et]=SIP-arvutitelefon
+Comment[eu]=SIP softfono bat
+Comment[fi]=SIP-ohjelmistopuhelin
+Comment[fr]=Téléphone logiciel SIP
+Comment[gl]=Un teléfono SIP por software
+Comment[hu]=Szoftveres telefon (SIP)
+Comment[it]=Telefono VoIP SIP
+Comment[ja]=SIP ビデオ電話
+Comment[nb]=SIP IP-telefoni
+Comment[nl]=Een SIP-softphone
+Comment[nn]=SIP IP-telefoni
+Comment[pl]=Telefon SIP
+Comment[pt]=Um softphone SIP
+Comment[pt_BR]=Um softphone SIP
+Comment[ro]=Un program de telefonie SIP
+Comment[ru]=Программный телефон SIP
+Comment[sl]=Programski telefon za SIP
+Comment[sv]=En SIP Videotelefon
+Comment[tr]=Bir SIP telefon
+Comment[uk]=Програмний телефон SIP
+Exec=remsu /usr/bin/sparky-aptus-extra twinkle
+Icon=twinkle
+Terminal=false
+Type=Application
+Categories=Applications;System
+

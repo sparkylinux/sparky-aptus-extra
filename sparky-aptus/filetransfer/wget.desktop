@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Wget
+Comment=Retrieves files from the web
+Comment[de]=
+Comment[el]=Ανάκτηση αρχείων από τον ιστό
+Comment[es]=Recupera archivos de la web
+Comment[fr]=Récupère des fichiers sur le Web
+Comment[it]=Recupera file dal web
+Comment[ja]=ウェブからファイルを取得する
+Comment[pl]=Pobiera pliki z internetu
+Comment[pt]=Recupera arquivos da web
+Comment[ru]=Извлекает файлы из Интернета
+Comment[sv]=Hämtar filer från webben
+Exec=remsu /usr/bin/sparky-aptus-extra wget
+Icon=download
+Terminal=false
+Type=Application
+Categories=Applications;System
+

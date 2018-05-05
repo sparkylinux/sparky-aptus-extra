@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=WeeChat
+Comment=Fast, light and extensible chat client
+Comment[de]=Schneller, leichter und erweiterbarer Chat-Client
+Comment[el]=Γρήγορος, ελαφρύς και επεκτάσιμος πελάτης συνομιλίας
+Comment[es]=Cliente de chat rápido, ligero y extensible
+Comment[fr]=Client de chat rapide, léger et extensible
+Comment[it]=Chat client veloce, leggera ed estensibile
+Comment[ja]=高速で、軽く、拡張可能なクライアントチャット
+Comment[pl]=Szybki, lekki i rozszerzalny czat klient
+Comment[pt]=Bate-papo do cliente rápido, leve e extensível
+Comment[ru]=Быстрый, легкий и расширяемый клиентский чат
+Comment[sv]=Snabb, lätt och utdragbar klientchatt
+Exec=remsu /usr/bin/sparky-aptus-extra weechat
+Icon=emesene
+Terminal=false
+Type=Application
+Categories=Applications;System
+
