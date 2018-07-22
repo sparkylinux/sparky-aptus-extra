@@ -1,0 +1,19 @@
+# Indonesian localization file for Sparky APTus Extra.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/20
+# Under the GNU GPL v2
+# Last update 2018/07/22 by pavroo
+# Translated to Indonesian by les kompie
+LOCAL4="Ada yang salah! \nMungkin anda telah menghentikan proses instal atau server repositori sedang mati.\nPeriksa koneksi internet anda, perbarui daftar paket dan coba lagi. \n\nKeluar..."
+LOCAL63 = "Keluar"
+LOCAL90 = "Keluar ..."
+LOCAL102 = "Hapus"
+LOCAL103="Instal ulang"
+LOCAL104="Instal"
+LOCAL105 = "Paket ini sudah ter-instal."
+LOCAL106 = "Apa yang ingin anda lakukan sekarang?"
+LOCAL107="Uji koneksi internet gagal!\n\nMungkin anda TIDAK terhubung ke Internet atau server repositori utama sedang mati.\n\nPeriksa dan coba lagi."
+LOCAL108 = "Apakah perlu menginstal paket yang anda pilih?"
+LOCAL109 = "Paket sudah berhasil di-instal."
+LOCAL110 = "Paket ini tidak tersedia untuk versi sistem anda."
+### .desktop file to be translated too
+# Comment[id_ID]=Instal aplikasi tambahan dari repositori SparkyLinux
