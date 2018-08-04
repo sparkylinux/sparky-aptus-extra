@@ -3,18 +3,17 @@
 # Sob a licença GNU GPL v2
 # Traduzido por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 2015/12/06
 # Last update 2018/05/04 by pavroo
-LOCAL4="Alguma coisa está errada! \nProvavelmente voce parou 
-a instalação ou houve uma queda no repositório do servidor, ou seja, servidor indisponível. \nComo caminho alternativo, verifique a sua conexão de internet, atualize a lista de pacotes e tente novamente. \n\nSaindo..."
-LOCAL63="Saída"
-LOCAL90="Exiting..."
-LOCAL102="Remove"
-LOCAL103="Reinstall"
-LOCAL104="Install"
-LOCAL105="This package is already installed."
-LOCAL106="What would you like to do now?"
-LOCAL107="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the main repository server is down.\n\nCheck it out and try again."
-LOCAL108="Should I install the package you have chosen?"
-LOCAL109="The package has been successfully installed."
-LOCAL110="This package is not available for your system version."
+LOCAL4="Algo está errado!\nProvavelmente você parou a instalação ou o servidor de repositório está inativo.\nVerifique sua conexão com a Internet, atualize a lista de pacotes e tente novamente.\n\nSaindo..."
+LOCAL63="Sair"
+LOCAL90="Saindo..."
+LOCAL102="Remover"
+LOCAL103="Reinstalar"
+LOCAL104="Instalar"
+LOCAL105="Esse pacote já está instalado."
+LOCAL106="O que você gostaria de fazer agora?"
+LOCAL107="Falha no teste de conexão com a Internet!\n\nProvavelmente você NÃO está conectado à Internet ou o servidor de repositório principal está desativado.\n\nVerifique e tente novamente."
+LOCAL108="Gostaria de instalar o pacote que você escolheu?"
+LOCAL109="O pacote foi instalado com sucesso."
+LOCAL110="Esse pacote não está disponível para a versão do seu sistema."
 ### .desktop file to be translated too
 #Comment[pt_BR]=Instale aplicações extras do repositório do SparkyLinux
