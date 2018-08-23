@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debiam, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2018 under the GNU GPL2 License
-# Last updated 2018/08/03
+# Last updated 2018/08/23
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -66,6 +66,7 @@ DEBIANVERCHECK9="`cat /etc/issue | grep stretch`"
 SPARKYVERCHECK5="`cat /etc/issue | grep 5`"
 DEBIANVERCHECK10="`cat /etc/issue | grep buster`"
 PINGTEST=$(ping -c 1 debian.org | grep [0-9])
+WORKDIR="/tmp/aptus-extra-tmp"
 
 # recive package name
 case $1 in
@@ -441,8 +442,23 @@ case $1 in
   bti)
 	PACKAGE="bti"
      ;;
+  caprine)
+	if [ "$ARCH64" = "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="caprine"
+    ;;
   corebird)
 	PACKAGE="corebird"
+     ;;
+  discord)
+	if [ "$ARCH64" = "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKDISCORD="discord.deb"
+	PACKAGE="discord"
      ;;
   ekg2)
 	PACKAGE="ekg2-ui-gtk"
@@ -492,6 +508,9 @@ case $1 in
   quassel)
 	PACKAGE="quassel"
      ;;
+  ring)
+	PACKAGE="ring"
+     ;;
   scrollz)
 	PACKAGE="scrollz"
      ;;
@@ -507,7 +526,6 @@ case $1 in
 		exit 1
 	fi
 	PACKAGE="skypeforlinux"
-	WORKDIRSKYPE="/tmp/skype-tmp"
 	SERVER64SKYPE="https://go.skype.com"
 	PACK64SKYPE="skypeforlinux-64.deb"
      ;;
@@ -636,9 +654,9 @@ if [ "$1" = "skypeforlinux" ]; then
 				$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL107 \n\n$LOCAL90"
 				exit 1
 			fi
-			rm -rf $WORKDIRSKYPE
-			mkdir -p $WORKDIRSKYPE
-			cd $WORKDIRSKYPE
+			rm -rf $WORKDIR
+			mkdir -p $WORKDIR
+			cd $WORKDIR
 			$SPARKYXTERM "wget $SERVER64SKYPE/$PACK64SKYPE"
 			$SPARKYXTERM "$INSTALL ./$PACK64SKYPE"
 			#$SPARKYXTERM "$INSTALL -f -y"
@@ -652,9 +670,9 @@ if [ "$1" = "skypeforlinux" ]; then
 				$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL107 \n\n$LOCAL90"
 				exit 1
 			fi
-			rm -rf $WORKDIRSKYPE
-			mkdir -p $WORKDIRSKYPE
-			cd $WORKDIRSKYPE
+			rm -rf $WORKDIR
+			mkdir -p $WORKDIR
+			cd $WORKDIR
 			$SPARKYXTERM "wget $SERVER64SKYPE/$PACK64SKYPE"
 			$SPARKYXTERM "$INSTALL ./$PACK64SKYPE"
 			#$SPARKYXTERM "$INSTALL -f -y"
@@ -671,9 +689,55 @@ if [ "$1" = "skypeforlinux" ]; then
 		fi
 	fi
 
-else
+# install, reinstall or remove discord
+elif [ "$1" = "discord" ]; then
+
+	if [ -d "$CHECKPACKAGE" ]; then
+		$DIALOG $TEXT"\n$LOCAL105\n$LOCAL106" $TITLE"$TITLETEXT" $BUTTONREMOVE $BUTTONREINSTALL $BUTTONEXIT
+		ret=$?
+		if [[ $ret -eq 3 ]]; then
+			$SPARKYXTERM "$UNINSTALL $PACKAGE"
+		elif [[ $ret -eq 4 ]]; then
+			if [ "$PINGTEST" = "" ]; then
+				$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL107 \n\n$LOCAL90"
+				exit 1
+			fi
+			rm -rf $WORKDIR
+			mkdir -p $WORKDIR
+			cd $WORKDIR
+			$SPARKYXTERM `wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"`
+			$SPARKYXTERM "$INSTALL ./$PACKDISCORD"
+		else
+			exit 1
+		fi
+	elif [ ! -d "$CHECKPACKAGE" ]; then
+		$DIALOG $TEXT"\n$LOCAL108" $TITLE"$TITLETEXT" $BUTTONINSTALL $BUTTONEXIT
+		if [ "$?" = "0" ]; then
+			if [ "$PINGTEST" = "" ]; then
+				$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL107 \n\n$LOCAL90"
+				exit 1
+			fi
+			rm -rf $WORKDIR
+			mkdir -p $WORKDIR
+			cd $WORKDIR
+			$SPARKYXTERM `wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"`
+			$SPARKYXTERM "$INSTALL ./$PACKDISCORD"
+			if [ ! -d "$CHECKPACKAGE" ]; then
+				$DIALOG $TEXT"\n$LOCAL4" $TITLE"$TITLETEXT" $MSGBOX
+				exit 1
+			else
+				$DIALOG $TEXT"\n$LOCAL109\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+				exit 1
+			fi
+
+		elif [ "$?" != "0" ]; then
+			exit 1
+		fi
+	fi
 
 # install, reinstall or remove anything else
+else
+
 	if [ -d "$CHECKPACKAGE" ]; then
 		$DIALOG $TEXT"\n$LOCAL105\n$LOCAL106" $TITLE"$TITLETEXT" $BUTTONREMOVE $BUTTONREINSTALL $BUTTONEXIT
 		ret=$?
