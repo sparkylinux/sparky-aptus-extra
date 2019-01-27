@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=asciinema
+Comment=Record and share your terminal sessions
+Comment[fr]=Enregistrement et partage de sessions de terminal
+Comment[it]=Registra e condivide la sessione in terminale dell'utente
+Comment[pl]=Nagraj i podziel się sesjami terminala
+Comment[pt]=Grave e compartilhe suas sessões de terminal
+Comment[ru]=Запись и распространение сессий терминалов
+Exec=remsu /usr/bin/sparky-aptus-extra asciinema
+Icon=gtk-recordmydesktop
+Terminal=false
+Type=Application
+Categories=Applications;System
+

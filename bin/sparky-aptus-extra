@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debiam, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2019 under the GNU GPL2 License
-# Last updated 2019/01/19
+# Last updated 2019/01/27
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -301,6 +301,9 @@ case $1 in
 	PACKAGE="youtube-dlg"
      ;;
 ######graphics###############################################
+  asciinema)
+	PACKAGE="asciinema"
+     ;;
   blender)
 	PACKAGE="blender"
      ;;
@@ -405,6 +408,9 @@ case $1 in
 		exit 1
 	fi
 	PACKAGE="opentoonz"
+     ;;
+  peek)
+	PACKAGE="peek"
      ;;
   rawtherapee)
 	PACKAGE="rawtherapee"
