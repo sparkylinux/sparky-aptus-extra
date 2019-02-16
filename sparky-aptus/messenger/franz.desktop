@@ -3,6 +3,7 @@ Version=1.0
 Encoding=UTF-8
 Name=Franz
 Comment=Franz is your messaging app
+Comment[de]=Franz ist deine Messaging-App
 Exec=remsu /usr/bin/sparky-aptus-extra franz
 Icon=franz
 Terminal=false

@@ -1,0 +1,18 @@
+# German localization file by Sajmon
+# Copyright 2019 Piotr "Sajmon" Simon <sajmon@inode.at> 2019/02/14
+# Under the GNU GPL v2
+# Last update 2018/05/04 by pavroo
+LOCAL4="Etwas stimmt nicht! \nWahrscheinlich haben Sie die Installation gestoppt oder der Repository-Server ist ausgefallen.\nAndernfalls überprüfen Sie Ihre Internetverbindung, aktualisieren Sie die Paketliste und versuchen Sie es erneut. \n\nBeenden..."
+LOCAL63="Exit"
+LOCAL90="Beenden..."
+LOCAL102="Entfernen"
+LOCAL103="Reinstall"
+LOCAL104="Install"
+LOCAL105="Dieses Paket ist bereits installiert."
+LOCAL106="Was möchtest du jetzt tun?"
+LOCAL107="Internetverbindungstest fehlgeschlagen!\n\nWahrscheinlich sind Sie NICHT mit dem Internet verbunden oder der Hauptrepository Server ist ausgefallen.\n\nBitte überprüfen und erneut versuchen"
+LOCAL108="Soll ich das von Ihnen gewählte Paket installieren?"
+LOCAL109="Das Paket wurde erfolgreich installiert."
+LOCAL110="Dieses Paket ist für Ihre Systemversion nicht verfügbar."
+### .desktop file to be translated too
+# Comment[de_DE]=Extras aus dem SparkyLinux-Repository installieren

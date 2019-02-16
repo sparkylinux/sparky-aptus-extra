@@ -3,6 +3,7 @@ Version=1.0
 Encoding=UTF-8
 Name=asciinema
 Comment=Record and share your terminal sessions
+Comment[de]=Aufzeichnung und Freigabe von Terminalsitzungen
 Comment[fr]=Enregistrement et partage de sessions de terminal
 Comment[it]=Registra e condivide la sessione in terminale dell'utente
 Comment[pl]=Nagraj i podziel się sesjami terminala

@@ -3,6 +3,7 @@ Version=1.0
 Encoding=UTF-8
 Name=LightZone
 Comment=Post-processing software for digital photos
+Comment[de]=Nachbearbeitungssoftware für Digitalfotos
 Exec=remsu /usr/bin/sparky-aptus-extra lightzone
 Icon=lightzone
 Terminal=false
