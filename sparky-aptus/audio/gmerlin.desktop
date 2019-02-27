@@ -7,7 +7,7 @@ Comment[de]=Multiformat mediaplayer
 Comment[es]=Reproductor de medios multiformato
 Comment[it]=Mediaplayer multiformato
 Comment[ja]=マルチフォーマットメディアプレイヤー
-Comment[pl]=Wieloformatoey odtwarzacz multimediów
+Comment[pl]=Wieloformatowy odtwarzacz multimediów
 Comment[pt]=Mediaplayer multiformato
 Comment[ru]=Мультиформатный медиаплеер
 Comment[sv]=Multiformat mediaplayer
@@ -15,5 +15,5 @@ Exec=remsu /usr/bin/sparky-aptus-extra gmerlin
 Icon=gmerlin-player
 Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

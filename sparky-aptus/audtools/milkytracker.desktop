@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=MilkyTracker
+Comment=Fasttracker 2 Clone
+Comment[pl]=Klon Fasttracker 2
+Terminal=false
+Exec=remsu /usr/bin/sparky-aptus-extra milkytracker
+Type=Application
+Icon=milkytracker
+Categories=AudioVideo;Audio;Video;

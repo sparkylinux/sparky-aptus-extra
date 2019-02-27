@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=QasConfig
+Comment=ALSA configuration
+Comment[de]=ALSA-Konfiguration
+Comment[he]=תצורת ALSA
+Comment[it]=Configurazione ALSA
+Comment[pl]=Konfiguracja ALSA
+Comment[ru]=Конфигурация ALSA
+Exec=remsu /usr/bin/sparky-aptus-extra qasconfig
+Icon=qasconfig
+StartupNotify=false
+Terminal=false
+Categories=AudioVideo;Audio;

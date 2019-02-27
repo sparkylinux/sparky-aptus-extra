@@ -15,7 +15,6 @@ Comment[ru]=Интернет-радиопоток
 Comment[sv]=Online radio streaming spelare
 Exec=remsu /usr/bin/sparky-aptus-extra radiotray
 Icon=radiotray
-Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

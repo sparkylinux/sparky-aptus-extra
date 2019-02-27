@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Encoding=UTF-8
-Name=KDE Spectacle
+Name=KDE Spectale
 Comment=Screenshot Capture Utility
 Comment[ar]=أداة لأخذ اللقطات
 Comment[bg]=Инструмент за заснемане на екрана
@@ -36,8 +36,8 @@ Comment[tr]=Ekran Görüntüsü Yakalama Aracı
 Comment[uk]=Програма для створення знімків екрана
 Comment[zh_CN]=屏幕截图工具
 Comment[zh_TW]=畫面擷取工具
-Exec=remsu /usr/bin/sparky-aptus-extra kde-spectacle
-Icon=spectacle
+Exec=remsu /usr/bin/sparky-aptus-extra kde-spectale
+Icon=spectale
 Terminal=false
 Type=Application
 Categories=Applications;System

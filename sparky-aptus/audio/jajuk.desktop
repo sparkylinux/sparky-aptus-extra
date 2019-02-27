@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Jajuk
+Comment=Jajuk Advanced Jukebox
+Comment[pl]=Zaawansowana szafa grająca Jajuk
+Exec=remsu /usr/bin/sparky-aptus-extra jajuk
+Icon=jajuk
+Terminal=false
+Type=Application
+Categories=AudioVideo;

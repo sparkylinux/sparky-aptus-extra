@@ -15,6 +15,5 @@ Comment[ru]=Воспроизведение музыкальной коллекц
 Comment[sv]=Spela din musiksamling
 Exec=remsu /usr/bin/sparky-aptus-extra musique
 Icon=musique
-Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;

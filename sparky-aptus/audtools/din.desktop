@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=DIN Is Noise
+Comment=A musical instrument
+Comment[fr]=Un instrument musical
+Comment[pl]=Instrument muzyczny
+Exec=remsu /usr/bin/sparky-aptus-extra din
+Icon=din
+Type=Application
+Categories=Application;AudioVideo;Audio;Midi;Music;

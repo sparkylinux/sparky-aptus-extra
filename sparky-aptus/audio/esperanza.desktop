@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Esperanza
+Comment=XMMS2 client
+Comment[pl]=Klient XMMS2
+Type=Application
+Exec=remsu /usr/bin/sparky-aptus-extra esperanza
+Icon=xmms2
+Categories=AudioVideo;Audio;

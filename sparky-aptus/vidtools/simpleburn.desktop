@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=SimpleBurn
+Comment=Disc Burner
+Comment[pl]=Nagrywanie płyt
+Exec=remsu /usr/bin/sparky-aptus-extra simpleburn
+Icon=simpleburn
+Type=Application
+StartupNotify=true
+Categories=AudioVideo;

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Mixxx
+Comment=A digital DJ interface
+Comment[de]=Ein digitales DJ-System
+Comment[fr]=Une interface numérique pour DJ
+Comment[pl]=Cyfrowy DJ interfejs
+Exec=remsu /usr/bin/sparky-aptus-extra mixxx
+Terminal=false
+Icon=mixxx_icon
+Type=Application
+StartupNotify=true
+Categories=AudioVideo;Audio;

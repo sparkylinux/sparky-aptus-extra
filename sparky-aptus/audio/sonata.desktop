@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Sonata
+Comment=An elegant GTK+ MPD client
+Comment[pl]=Elegancki GTK+ klient dla MPD
+Exec=remsu /usr/bin/sparky-aptus-extra sonata
+Terminal=false
+Type=Application
+Icon=sonata
+Categories=AudioVideo;

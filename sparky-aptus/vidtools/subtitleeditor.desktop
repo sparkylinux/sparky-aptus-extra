@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=Subtitle Editor
+Comment=A subtitle editor based on GStreamer and Gtk+
+Comment[bg]=Редактор на субтитри, базиращ се на GStreamer и Gtk+
+Comment[cs]=Titulkový editor založený na GStreameru and GTK+
+Comment[de]=Ein auf GStreamer und Gtk+ basierender Editor für Untertitel
+Comment[el]=Ένας επεξεργαστής υπότιτλων βασισμένος σε GStreamer και Gtk+
+Comment[en_GB]=A subtitle editor based on GStreamer and Gtk+
+Comment[eo]=Redaktilo por subtekstoj bazita je GStreamer kaj Gtk+
+Comment[es]=Un editor de subtítulos basado en GStreamer y Gtk+
+Comment[fr]=Un éditeur de sous-titres basé sur GStreamer et Gtk+
+Comment[gl]=Un editor de subtítulos basado en GStreamer e Gtk+
+Comment[lt]=Subtitrų tvarkyklė paremta GStreamer ir Gtk+
+Comment[pl]=Edytor napisów oparty o GStreamera i GTK+
+Comment[pt_BR]=Um editor de legendas baseado no GStreamer e no Gtk+
+Comment[ru]=Редактор субтитров на базе GStreamer и Gtk+
+Comment[tr]=GStreamer ve Gtk+ üzerine geliştirilmiş altyazı düzenleyicisi
+Comment[zh_CN]=一个基于 GStreamer 和 Gtk+ 的字幕编辑器
+Comment[zh_TW]=一個基於 GStreamer 和 Gtk+ 的字幕編輯器
+Exec=remsu /usr/bin/sparky-aptus-extra subtitleeditor
+Terminal=false
+Type=Application
+Icon=subtitleeditor
+Categories=Video;AudioVideo;

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Schism Tracker
+Comment=Impulse Tracker clone
+Comment[fr]=Clone d'Impulse Tracker
+Comment[pl]=Klon Impulse Tracker
+Terminal=false
+Exec=remsu /usr/bin/sparky-aptus-extra schism
+Type=Application
+Icon=schism-icon-128
+Categories=Audio;

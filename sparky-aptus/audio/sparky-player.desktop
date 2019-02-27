@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Sparky Player
+Comment=Sparky Media Player
+Exec=remsu /usr/bin/sparky-aptus-extra sparky-player
+Icon=gnome-player
+Type=Application
+Categories=AudioVideo;

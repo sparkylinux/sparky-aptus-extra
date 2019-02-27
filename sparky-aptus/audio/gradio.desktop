@@ -14,8 +14,7 @@ Comment[pt]=Encontre e ouça estações de rádio da Internet
 Comment[ru]=Поиск и прослушивание интернет-радиостанций
 Comment[sv]=Hitta och lyssna på internetradiostationer
 Exec=remsu /usr/bin/sparky-aptus-extra gradio
-Icon=de.haeckerfelix.gradio
-Terminal=false
+Icon=radio
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

@@ -15,7 +15,5 @@ Comment[ru]=Музыкальный проигрыватель
 Comment[sv]=Musikspelare
 Exec=remsu /usr/bin/sparky-aptus-extra spotify-client
 Icon=spotify-client
-Terminal=false
 Type=Application
-Categories=Applications;System
-
+Categories=Audio;

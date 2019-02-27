@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Goggles Music Manager
+Comment=Play and organize your music collection
+Comment[nl]=Luister and beheer uw muziekcollectie
+Comment[pl]=Odtwarzaj i zarządzaj kolekcją muzyki
+Comment[pt]=Reprodução e organização de músicas
+Exec=remsu /usr/bin/sparky-aptus-extra gogglesmm
+Type=Application
+Icon=gogglesmm
+Categories=AudioVideo;Audio;

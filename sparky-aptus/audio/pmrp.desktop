@@ -15,7 +15,6 @@ Comment[ru]=Сценарий интернет-радиоприемника, на
 Comment[sv]=Ett Internet-radiospelare skrivet i bash
 Exec=remsu /usr/bin/sparky-aptus-extra pmrp
 Icon=applications-audio
-Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

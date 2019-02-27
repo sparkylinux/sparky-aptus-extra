@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debiam, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2019 under the GNU GPL2 License
-# Last updated 2019/02/16
+# Last updated 2019/02/27 22:50
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -72,15 +72,21 @@ WORKDIR="/tmp/aptus-extra-tmp"
 
 # recive package name
 case $1 in
-#####audio###################################################
+#####audio players###################################################
   alsaplayer-gtk)
 	PACKAGE="alsaplayer-gtk"
      ;;
   amarok)
 	PACKAGE="amarok"
      ;;
+  ario)
+	PACKAGE="ario"
+     ;;
   audacious)
 	PACKAGE="audacious"
+     ;;
+  betaradio)
+	PACKAGE="betaradio"
      ;;
   cantata)
 	PACKAGE="cantata"
@@ -91,6 +97,9 @@ case $1 in
   cmus)
 	PACKAGE="cmus"
      ;;
+  daisy-palyer)
+	PACKAGE="daisy-player"
+     ;;
   deadbeef)
 	if [ "$ARCHARM" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
@@ -98,8 +107,14 @@ case $1 in
 	fi
 	PACKAGE="deadbeef"
      ;;
+  deepin-music)
+	PACKAGE="deepin-music"
+     ;;
   dradio)
 	PACKAGE="dradio"
+     ;;
+  esperanza)
+	PACKAGE="esperanza"
      ;;
   exaile)
 	PACKAGE="exaile"
@@ -113,8 +128,17 @@ case $1 in
   gnome-music)
 	PACKAGE="gnome-music"
      ;;
+  gogglesmm)
+	PACKAGE="gogglesmm"
+     ;;
+  goobox)
+	PACKAGE="goobox"
+     ;;
   gradio)
 	PACKAGE="gradio"
+     ;;
+  jajuk)
+	PACKAGE="jajuk"
      ;;
   juk)
 	PACKAGE="juk"
@@ -160,12 +184,30 @@ case $1 in
 	fi
 	PACKAGE="sayonara"
      ;;
+  silverjuke)
+	PACKAGE="silverjuke"
+     ;;
+  sonata)
+	PACKAGE="sonata"
+     ;;
+  sparky-play)
+	PACKAGE="sparky-play"
+     ;;
+  sparky-player)
+	PACKAGE="sparky-player"
+     ;;
+  sparky-tube)
+	PACKAGE="sparky-tube"
+     ;;
   spotify-client)
 	if [ "$ARCHARM" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
 	PACKAGE="spotify-client"
+     ;;
+  stretchplayer)
+	PACKAGE="stratchplayer"
      ;;
   xmms2)
 	PACKAGE="xmms2"
@@ -176,6 +218,181 @@ case $1 in
 		exit 1
 	fi
 	PACKAGE="yarock"
+     ;;
+#####audio tools###################################################
+  aeolus)
+	PACKAGE="aeolus"
+     ;;
+  alsamixewrgui)
+	PACKAGE="alsamixergui"
+     ;;
+  ardour)
+	PACKAGE="ardour"
+     ;;
+  audacity)
+	PACKAGE="audacity"
+     ;;
+  buzztrax)
+	PACKAGE="buzztrax"
+     ;;
+  cecilia)
+	PACKAGE="cecilia"
+     ;;
+  denemo)
+	PACKAGE="denemo"
+     ;;
+  dgedit)
+	PACKAGE="dgedit"
+     ;;
+  din)
+	PACKAGE="din"
+     ;;
+  easytag)
+	PACKAGE="easytag"
+     ;;
+  exfalso)
+	PACKAGE="exfalso"
+     ;;
+  foo-yc20)
+	PACKAGE="foo-yc20"
+     ;;
+  freedv)
+	PACKAGE="freedv"
+     ;;
+  gespeaker)
+	PACKAGE="gespeaker"
+     ;;
+  gnome-sound-recorder)
+	PACKAGE="gnome-sound-recorder"
+     ;;
+  grig)
+	PACKAGE="grig"
+     ;;
+  guitarix)
+	PACKAGE="guitarix"
+     ;;
+  hydrogen)
+	PACKAGE="hydrogen"
+     ;;
+  idjc)
+	PACKAGE="idjc"
+     ;;
+  jaaa)
+	PACKAGE="jaaa"
+     ;;
+  jack-keyboard)
+	PACKAGE="jack-keyboard"
+     ;;
+  jack-mixer)
+	PACKAGE="jack-mixer"
+     ;;
+  jnoisemeter)
+	PACKAGE="jnoisemeter"
+     ;;
+  kluppe)
+	PACKAGE="kluppe"
+     ;;
+  kmix)
+	PACKAGE="kmix"
+     ;;
+  kwave)
+	PACKAGE="kwave"
+     ;;
+  lmms)
+	PACKAGE="lmms"
+     ;;
+  meterbridge)
+	PACKAGE="meterbridge"
+     ;;
+  milkytracker)
+	PACKAGE="milkytracker"
+     ;;
+  mixxx)
+	PACKAGE="mixxx"
+     ;;
+  mudita24)
+	PACKAGE="mudita24"
+     ;;
+  patchage)
+	PACKAGE="patchage"
+     ;;
+  pavucontrol)
+	PACKAGE="pavucontrol"
+     ;;
+  paulstretch)
+	PACKAGE="paulstretch"
+     ;;
+  phasex)
+	PACKAGE="phasex"
+     ;;
+  puredata)
+	PACKAGE="puredata"
+     ;;
+  qasconfig)
+	PACKAGE="qasconfig"
+     ;;
+  qasmixer)
+	PACKAGE="qasmixer"
+     ;;
+  qjackctl)
+	PACKAGE="qjackctl"
+     ;;
+  qsampler)
+	PACKAGE="qsampler"
+     ;;
+  qsynth)
+	PACKAGE="qsynth"
+     ;;
+  qtractor)
+	PACKAGE="qtractor"
+     ;;
+  rakarrack)
+	PACKAGE="rakarrack"
+     ;;
+  rosegarden)
+	PACKAGE="rosegarden"
+     ;;
+  samplv1)
+	PACKAGE="samplv1"
+     ;;
+  schism)
+	PACKAGE="schism"
+     ;;
+  sonic-visualiser)
+	PACKAGE="sonic-visualiser"
+     ;;
+  sooperlooper)
+	PACKAGE="sooperlooper"
+     ;;
+  soundconverter)
+	PACKAGE="soundconverter"
+     ;;
+  sound-juicer)
+	PACKAGE="sound-juicer"
+     ;;
+  soundkonverter)
+	PACKAGE="soundkonverter"
+     ;;
+  spek)
+	PACKAGE="spek"
+     ;;
+  swami)
+	PACKAGE="swami"
+     ;;
+  sweep)
+	PACKAGE="sweep"
+     ;;
+  timemachine)
+	PACKAGE="timemachine"
+     ;;
+  tuxguitar)
+	PACKAGE="tuxguitar"
+     ;;
+  vkeybd)
+	PACKAGE="vkeybd"
+     ;;
+  yoshimi)
+	PACKAGE="yoshimi"
      ;;
 ######email clients##########################################
   alpine)
@@ -598,7 +815,7 @@ case $1 in
   tickr)
 	PACKAGE="tickr"
      ;;
-#####video####################################################
+#####video players####################################################
   gnome-mpv)
 	PACKAGE="gnome-mpv"
      ;;
@@ -624,6 +841,9 @@ case $1 in
   parole)
 	PACKAGE="parole"
      ;;
+  qtav-players)
+	PACKAGE="qtav-players"
+     ;;
   rage)
 	if [ "$ARCHARM" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
@@ -643,11 +863,72 @@ case $1 in
   vlc)
 	PACKAGE="vlc"
      ;;
+  xine-ui)
+	PACKAGE="xine-ui"
+     ;;
+#####video tools####################################################
+  acidrip)
+	PACKAGE="acidrip"
+     ;;
+  avidemux)
+	PACKAGE="avidemux"
+     ;;
+  brasero)
+	PACKAGE="brasero"
+     ;;
+  devede)
+	PACKAGE="devede"
+     ;;
+  dvd95)
+	PACKAGE="dvd95"
+     ;;
+  flowblade)
+	PACKAGE="flowblade"
+     ;;
+  gnome-subtitles)
+	PACKAGE="gnome-subtitles"
+     ;;
+  gtk-recordmydesktop)
+	PACKAGE="gtk-recordmydesktop"
+     ;;
+  k3b)
+	PACKAGE="k3b"
+     ;;
+  kdenlive)
+	PACKAGE="kdenlive"
+     ;;
+  lives)
+	PACKAGE="lives"
+     ;;
+  ogmrip)
+	PACKAGE="ogmrip"
+     ;;
+  openshot)
+	PACKAGE="openshot"
+     ;;
+  pitivi)
+	PACKAGE="pitivi"
+     ;;
+  qstopmotion)
+	PACKAGE="qstopmotion"
+     ;;
+  simpleburn)
+	PACKAGE="simpleburn"
+     ;;
+  stopmotion)
+	PACKAGE="stopmotion"
+     ;;
+  subtitleeditor)
+	PACKAGE="subtitleeditor"
+     ;;
   vokoscreen)
 	PACKAGE="vokoscreen"
      ;;
-  xine-ui)
-	PACKAGE="xine-ui"
+  winff)
+	PACKAGE="winff"
+     ;;
+  xfburn)
+	PACKAGE="xfburn"
      ;;
 esac
 ###############################################################

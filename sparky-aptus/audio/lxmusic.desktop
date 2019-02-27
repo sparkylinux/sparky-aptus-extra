@@ -53,7 +53,6 @@ Comment[zh_CN]=轻松播放您的音乐文件
 Comment[zh_TW]=簡易播放音樂檔案
 Exec=remsu /usr/bin/sparky-aptus-extra lxmusic
 Icon=lxmusic
-Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

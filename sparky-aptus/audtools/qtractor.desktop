@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Qtractor
+Version=1.0
+Comment=Qtractor is an Audio/MIDI multi-track sequencer application
+Comment[fr]=Qtractor est un séquenceur multi-pistes audio/MIDI
+Comment[pl]=Qtractor to aplikacja sekwencera wielu ścieżek audio/MIDI
+Exec=remsu /usr/bin/sparky-aptus-extra qtractor
+Icon=qtractor
+Categories=Audio;AudioVideo;
+Terminal=false
+Type=Application

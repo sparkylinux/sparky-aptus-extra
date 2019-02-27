@@ -58,4 +58,4 @@ Exec=remsu /usr/bin/sparky-aptus-extra yarock
 Icon=application-x-yarock
 Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;

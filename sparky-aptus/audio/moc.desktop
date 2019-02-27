@@ -17,5 +17,5 @@ Exec=remsu /usr/bin/sparky-aptus-extra moc
 Icon=applications-audio
 Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

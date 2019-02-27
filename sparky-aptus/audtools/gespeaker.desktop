@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Name=Gespeaker
+Comment=A GTK frontend for espeak
+Type=Application
+Comment[ar]=واجهة رسومية بإستخدام GTK لبرنامج espeak
+Comment[bg]=GTK обвивка за espeak
+Comment[de]=Ein GTK-Frontend für espeak
+Comment[en]=A GTK frontend for espeak
+Comment[es]=Interfaz en GTK para espeak
+Comment[fr]=Une interface GTK pour espeak
+Comment[it]=Un'interfaccia in GTK per espeak
+Comment[pl]=Frontend GTK dla espeak
+Comment[tr]=Espeak için bir GTK önyüzü
+Comment[vi]=Sử dụng GTK cho espeak
+Exec=remsu /usr/bin/sparky-aptus-extra gespeaker
+Icon=/usr/share/gespeaker/data/icons/gespeaker.svg
+Terminal=false
+Categories=AudioVideo;Audio;

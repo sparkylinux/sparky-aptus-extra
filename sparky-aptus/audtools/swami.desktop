@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Swami
+Name[ru]=Редактор сэмплов Swami
+Comment=Create, play and organize MIDI instruments and sounds
+Comment[pl]=Twórz, odtwarzaj i organizuj instrumenty i dźwięki MIDI
+Comment[ru]=Создание, воспроизведение и организация звуковых сэмплов
+Exec=remsu /usr/bin/sparky-aptus-extra swami
+Icon=swami
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;

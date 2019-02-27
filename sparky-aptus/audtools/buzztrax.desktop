@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Application
+Name=Buzztrax
+Comment=Edit buzztrax song files
+Comment[cs]=Upravit soubory s písněmi Buzztraxu
+Comment[da]=Rediger buzztrax sangfiler
+Comment[de]=Buzzztard Musikstücke bearbeiten
+Comment[fi]=Muokkaa buzztrax-musiikkikappaletiedostoja
+Comment[fr]=Éditer les fichiers musicaux buzztrax
+Comment[id]=Edit berkas lagu buzztrax
+Comment[nl]=Buzztraxnummerbestanden bewerken
+Comment[nn]=Redigerer buzztrax-songfiler
+Comment[pl]=Edytuj pliki piosenek buzztrax
+Comment[sv]=Redigera buzztrax-sångfiler
+Comment[vi]=Sửa các tập tin âm thanh buzztrax
+Comment[zh_CN]=编辑buzztrax歌曲文件
+Exec=remsu /usr/bin/sparky-aptus-extra buzztrax
+Terminal=false
+Icon=buzztrax
+Categories=AudioVideo;Audio;

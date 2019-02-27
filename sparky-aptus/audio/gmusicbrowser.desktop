@@ -2,7 +2,7 @@
 Version=1.0
 Encoding=UTF-8
 Name=gmusicbrowser
-Comment=Jukebox for large collections of mp3/ogg/flac/mpc
+Comment=Jukebox for large collections of mp3 / ogg/ flac / mpc
 Comment[de]=Musikbox für große Sammlungen von mp3 / ogg / flac / mpc
 Comment[el]=Juke κουτί για μεγάλες συλλογές mp3 / ogg / flac / mpc
 Comment[es]=Jukebox para grandes colecciones de mp3 / ogg / flac / mpc
@@ -17,5 +17,5 @@ Exec=remsu /usr/bin/sparky-aptus-extra gmusicbrowser
 Icon=gmusicbrowser
 Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

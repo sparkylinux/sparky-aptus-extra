@@ -23,5 +23,5 @@ Exec=remsu /usr/bin/sparky-aptus-extra exaile
 Icon=exaile
 Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

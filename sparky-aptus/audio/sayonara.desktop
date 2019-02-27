@@ -15,7 +15,5 @@ Comment[ru]=Музыкальный проигрыватель
 Comment[sv]=Musikspelare
 Exec=remsu /usr/bin/sparky-aptus-extra sayonara
 Icon=sayonara
-Terminal=false
 Type=Application
-Categories=Applications;System
-
+Categories=Audio;

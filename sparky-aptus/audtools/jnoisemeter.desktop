@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Jnoisemeter
+Comment=Audio test signals meter for JACK
+Comment[pl]=Miernik sygnałów testowych audio dla JACK
+Icon=jnoisemeter_32x32
+Exec=remsu /usr/bin/sparky-aptus-extra jnoisemeter
+Terminal=false
+Categories=AudioVideo;Audio;

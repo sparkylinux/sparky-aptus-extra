@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Foo YC20
+Version=1.0
+Comment=Organ synthesizer
+Comment[pl]=Syntezator organowy
+Exec=remsu /usr/bin/sparky-aptus-extra foo-yc20
+Icon=/usr/share/foo-yc20/graphics/icon.png
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio
+
+

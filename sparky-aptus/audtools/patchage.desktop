@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Patchage
+Comment=Connect audio and MIDI applications together and manage audio sessions
+Comment[pl]=Połącz ze sobą aplikacje audio i MIDI i zarządzaj sesjami audio
+Exec=remsu /usr/bin/sparky-aptus-extra patchage
+Terminal=false
+Icon=patchage
+Type=Application
+Categories=AudioVideo;Audio;

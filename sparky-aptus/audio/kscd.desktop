@@ -47,7 +47,5 @@ Comment[zh_CN]=CD 播放器
 Comment[zh_TW]=CD 播放器
 Exec=remsu /usr/bin/sparky-aptus-extra kscd
 Icon=kscd
-Terminal=false
 Type=Application
-Categories=Applications;System
-
+Categories=Audio;

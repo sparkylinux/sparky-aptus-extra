@@ -5,7 +5,6 @@ Name=xmms2
 Comment=Client/server based media player system
 Exec=remsu /usr/bin/sparky-aptus-extra xmms2
 Icon=applications-audio
-Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

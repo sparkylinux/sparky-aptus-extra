@@ -23,7 +23,6 @@ Comment[zh_CN]=基于Qt的多媒体播放器
 Comment[zh_TW]=基于Qt的多媒體播放器
 Exec=remsu /usr/bin/sparky-aptus-extra qmmp
 Icon=qmmp
-Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
 

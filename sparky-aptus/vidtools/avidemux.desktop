@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Avidemux
+Comment=Qt Video Editor
+Comment[pl]=Edytor wideo Qt
+Exec=remsu /usr/bin/sparky-aptus-extra avidemux
+Icon=avidemux
+Terminal=false
+Type=Application
+Categories=AudioVideo

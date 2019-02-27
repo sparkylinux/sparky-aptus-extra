@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=AcidRip
+Comment=DVD Ripper
+Exec=remsu /usr/bin/sparky-aptus-extra acidrip
+Icon=acidrip
+Type=Application
+Categories=AudioVideo;

@@ -34,7 +34,5 @@ Comment[zh_CN]=听、浏览或者编辑您的音频收藏
 Comment[zh_TW]=收聽、瀏覽，或編輯您的音訊收藏
 Exec=remsu /usr/bin/sparky-aptus-extra quodlibet
 Icon=quodlibet
-Terminal=false
 Type=Application
-Categories=Applications;System
-
+Categories=Audio;

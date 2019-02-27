@@ -1,0 +1,27 @@
+[Desktop Entry]
+Name=EasyTAG
+Comment=Edit audio file metadata
+Comment[bs]=Edituj adio file metadata
+Comment[ca]=Edita les metadades del fitxer d'àudio
+Comment[cs]=Upravujte si metadata zvukových souborů
+Comment[de]=Metadaten von Audio-Datei bearbeiten
+Comment[es]=Editar los metadatos de archivos de sonido
+Comment[fr]=Modifier les méta-données de fichiers audio
+Comment[hr]=Uredi metapodatke glazbene datoteke
+Comment[hu]=Hangfájlok metaadatainak szerkesztése
+Comment[ko]=소리 파일 메타데이터를 편집합니다
+Comment[nb]=Rediger metadata i lydfiler
+Comment[oc]=Modificar las metadonadas dels fichièrs àudio
+Comment[pl]=Modyfikowanie metadanych plików dźwiękowych
+Comment[pt]=Editar metadados de ficheiros de áudio
+Comment[pt_BR]=Edite metadados de arquivo de áudio
+Comment[sr]=Уређујте метаподатке звучних датотека
+Comment[sr@latin]=Uređujte metapodatke zvučnih datoteka
+Comment[sv]=Redigera metadata för ljudfil
+Comment[tr]=Ses dosyası üstverilerini düzenleyin
+Comment[zh_TW]=編輯音訊檔案的元數據
+Type=Application
+Icon=easytag
+Categories=AudioVideo;Audio;
+Exec=remsu /usr/bin/sparky-aptus-extra easytag
+Terminal=false

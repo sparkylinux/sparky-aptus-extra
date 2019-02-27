@@ -73,6 +73,5 @@ Comment[zh_CN]=播放并组织您的音乐收藏
 Comment[zh_TW]=播放及管理音樂收藏
 Exec=remsu /usr/bin/sparky-aptus-extra rhythmbox
 Icon=rhythmbox
-Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;

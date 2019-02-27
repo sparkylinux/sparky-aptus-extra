@@ -21,6 +21,5 @@ Comment[uk]=Слухайте та керуйте музикою
 Comment[zh_CN]=管理和听音乐
 Exec=remsu /usr/bin/sparky-aptus-extra prahga
 Icon=pragha
-Terminal=false
 Type=Application
-Categories=Applications;System
+Categories=Audio;
