@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debiam, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2019 under the GNU GPL2 License
-# Last updated 2019/04/22
+# Last updated 2019/09/08
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -16,6 +16,8 @@ elif [ "`cat /etc/default/locale | grep es`" != "" ]; then
 . $DEFLOCDIR/es
 elif [ "`cat /etc/default/locale | grep fr`" != "" ]; then
 . $DEFLOCDIR/fr
+elif [ "`cat /etc/default/locale | grep hu`" != "" ]; then
+. $DEFLOCDIR/hu
 elif [ "`cat /etc/default/locale | grep id_ID`" != "" ]; then
 . $DEFLOCDIR/id_ID
 elif [ "`cat /etc/default/locale | grep it`" != "" ]; then
@@ -734,6 +736,13 @@ case $1 in
   lostirc)
 	PACKAGE="lostirc"
      ;;
+  nheko)
+	if [ "$SPARKYVERCHECK4" != "" ] || [ "$DEBIANVERCHECK9" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="nheko"
+     ;;
   pidgin)
 	PACKAGE="pidgin"
      ;;
@@ -742,6 +751,13 @@ case $1 in
      ;;
   psi)
 	PACKAGE="psi"
+     ;;
+  quaternion)
+	if [ "$SPARKYVERCHECK4" != "" ] || [ "$DEBIANVERCHECK9" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="quaternion"
      ;;
   quassel)
 	PACKAGE="quassel"
@@ -756,6 +772,13 @@ case $1 in
   ring)
 	PACKAGE="ring"
      ;;
+  riot)
+	if [ "$ARCH64" = "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="riot-web"
+    ;;
   scrollz)
 	PACKAGE="scrollz"
      ;;
