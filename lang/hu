@@ -3,9 +3,7 @@
 # Under the GNU GPL v2
 # Last update 2018/05/04 by pavroo
 LOCAL4="Valami hibás!
-Talán leállította a telepítést vagy a fő tárolószerver nem érhető el.
-Ellenkező esetben ellenőrizze Internet kapcsolatát, frissítse a csomaglistát és próbálja újra."
-Kilépés...
+Talán leállította a telepítést vagy a fő tárolószerver nem érhető el.\nEllenkező esetben ellenőrizze Internet kapcsolatát, frissítse a csomaglistát és próbálja újra." \n\nKilépés...
 LOCAL63="Kilépés"
 LOCAL90="Kilépés (folyamatban)..."
 LOCAL102="Eltávolítás"
@@ -13,9 +11,7 @@ LOCAL103="Újratelepítés"
 LOCAL104="Telepítés"
 LOCAL105="Ez a csomag telepítve van."
 LOCAL106="Mit kíván most tenni?"
-LOCAL107="Az Internet kapcsolati teszt sikertelen!
-Lehet, hogy Ön NEM kapcsolódik az Internet-hálózatra vagy a fő tárolószerver nem érhető el.
-Ellenőrizze és próbálja újra!”
+LOCAL107="Az Internet kapcsolati teszt sikertelen!\n\nLehet, hogy Ön NEM kapcsolódik az Internet-hálózatra vagy a fő tárolószerver nem érhető el.\n\nEllenőrizze és próbálja újra!”
 LOCAL108="Telepíthetem az Ön által kiválasztott csomagot?"
 LOCAL109="A csomag sikeresen telepítve."
 LOCAL110="Ez a csomag az Ön rendszere változatáshoz nem érhető el."
