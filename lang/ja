@@ -1,19 +1,20 @@
 # Japanese localization file for Sparky APTus Extra.
 # Copyright 2015 Paweł‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/20
 # Under the GNU GPL v2
-# Translated to Japanese by BALLOON a.k.a. Fu-sen.
 # Last update 2018/05/04 by pavroo
-LOCAL4="何か問題があります！ \nインストールを停止しているか、リポジトリサーバがダウンしています。\nそれ以外の場合は、インターネット接続を確認し、パッケージリストを更新してから、再度行って下さい \n\n終了します..."
+# Translated to Japanese by BALLOON a.k.a. Fu-sen.
+# Translated to Japanese by FuRuYa7.
+LOCAL4="問題があります！ \nインストールを停止したか、リポジトリサーバがダウンしています。\nそれ以外の場合は、インターネット接続を確認し、パッケージリストを更新してから、もう一度試してください。\n\n終了します..."
 LOCAL63="終了"
-LOCAL90="Exiting..."
-LOCAL102="Remove"
-LOCAL103="Reinstall"
-LOCAL104="Install"
-LOCAL105="This package is already installed."
-LOCAL106="What would you like to do now?"
-LOCAL107="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the main repository server is down.\n\nCheck it out and try again."
-LOCAL108="Should I install the package you have chosen?"
-LOCAL109="The package has been successfully installed."
-LOCAL110="This package is not available for your system version."
+LOCAL90="終了しています..."
+LOCAL102="削除"
+LOCAL103="再インストール"
+LOCAL104="インストール"
+LOCAL105="このパッケージはすでにインストールされています。"
+LOCAL106="今何がしたいですか？"
+LOCAL107="インターネット接続に失敗しました！\n\nおそらくインターネットに接続されていないか、メインのリポジトリサーバがダウンしています。\n\n確認して、もう一度試してください。"
+LOCAL108="選択したパッケージをインストールしますか？"
+LOCAL109="パッケージが正常にインストールされました。"
+LOCAL110="このパッケージは、ご使用のシステムバージョンでは使用できません。"
 ### .desktop file to be translated too
-# Comment[ja_JP]=SparkyLinux リポジトリから追加アプリケーションをインストールします
+# Comment[ja_JP]=SparkyLinux リポジトリから追加アプリケーションをインストール
