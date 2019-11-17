@@ -1,17 +1,17 @@
 # Greek localization file for Sparky APTus Extra.
 # Translate to Greek by jidan 2017/01/02
-# Last update 2018/05/04 by pavroo
-LOCAL4="Κάτι πήγε λάθος! \nΠιθανότατα έχετε σταματήσει την εγκατάσταση ή τα αποθετήρια έχουν πέσει.\nΕναλλακτικά ελέγξτε τη σύνδεσή σας στο διαδίκτυο, ανανεώστε τη λίστα των πακέτων και δοκιμάστε ξανά. \n\nΠραγματοποιείται έξοδος..."
+# Last update 2019/11/05 by jidan
+LOCAL4="Κάτι δεν πήγε καλά! \nΠιθανόν να έχετε σταματήσει την εγκατάσταση ή ο διακομιστής των αποθετηρίων έχει πέσει.\nΕλέγξτε τη σύνδεσή σας στο διαδίκτυο, ανανεώστε τη λίστα των πακέτων και δοκιμάστε ξανά. \n\nΠραγματοποιείται έξοδος..."
 LOCAL63="Έξοδος"
-LOCAL90="Exiting..."
-LOCAL102="Remove"
-LOCAL103="Reinstall"
-LOCAL104="Install"
-LOCAL105="This package is already installed."
-LOCAL106="What would you like to do now?"
-LOCAL107="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the main repository server is down.\n\nCheck it out and try again."
-LOCAL108="Should I install the package you have chosen?"
-LOCAL109="The package has been successfully installed."
-LOCAL110="This package is not available for your system version."
+LOCAL90="Πραγματοποιείται έξοδος..."
+LOCAL102="Απεγκατάσταση"
+LOCAL103="Επανεγκατάσταση"
+LOCAL104="Εγκατάσταση"
+LOCAL105="Η εφαρμογή έχει ήδη εγκατασταθεί."
+LOCAL106="Τι θα θέλατε να γίνει τώρα;"
+LOCAL107="Ο έλεγχος της σύνδεσής σας στο διαδίκτυο απέτυχε!\n\nΠιθανόν ΔΕΝ έχετε συνδεθεί με το διαδίκτυο ή ο διακομιστής του αποθετηρίου έχει πέσει.\n\nΕλέγξτε το και δοκιμάστε ξανά."
+LOCAL108="Να εγκατασταθεί η επιλεγμένη εφαρμογή;"
+LOCAL109="Η εφαρμογή εγκαταστάθηκε με επιτυχία."
+LOCAL110="Αυτή η εφαρμογή δεν είναι διαθέσιμη για την έκδοση του συστήματός σας."
 ### .desktop file to be translated too
 # Comment[el_GR]=Εγκατάσταση επιπλέον λογισμικού από τα αποθετήρια του Sparkylinux
