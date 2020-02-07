@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debiam, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2020 under the GNU GPL2 License
-# Last updated 2020/01/18
+# Last updated 2020/02/07
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -674,6 +674,13 @@ case $1 in
 	PACKAGE="xpaint"
      ;;
 #####im######################################################
+  android-messages-desktop)
+	if [ "$ARCH64" = "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="android-messages-desktop"
+    ;;
   bti)
 	PACKAGE="bti"
      ;;
