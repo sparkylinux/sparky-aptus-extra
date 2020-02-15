@@ -1,0 +1,28 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Celluloid
+Comment=GTK+ frontend for mpv
+Comment[bg]=GTK+ интерфейс за MPV
+Comment[ca]=Frontal en GTK+ per a l’mpv
+Comment[cs]=GTK+ rozhraní nad mpv
+Comment[de]=Eine GTK-Oberfläche für den Medienspieler mpv
+Comment[es]=Frontend de GTK+ para MPV
+Comment[fr]=Interface en GTK+ pour mpv
+Comment[hu]=GTK+ felület az mpv-hez
+Comment[it]=Un frontend in GTK+ per MPV
+Comment[ja]=MPVのGTKフロントエンド
+Comment[nl]=GTK+ frontend voor mpv
+Comment[pl]=Interfejs GTK do obsługi programu MPV
+Comment[pt]=Interface GTK+ para mpv
+Comment[ru]=GTK+ интерфейс для MPV
+Comment[sr]=GTK+ прочеље за mpv
+Comment[sv]=GTK+ gränssnitt för mpv
+Comment[zh_CN]=MPV 的 GTK 前端程序
+Comment[zh_TW]=MPV 之 GTK 前端程式
+Exec=remsu /usr/bin/sparky-aptus-extra celluloid
+Icon=gnome-mpv
+Terminal=false
+Type=Application
+Categories=Applications;System
+
