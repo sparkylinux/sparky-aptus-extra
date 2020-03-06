@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ClipGrab
+Comment=Downloader and converter for YouTube, Vimeo, Facebook and many other online video sites
+Comment[pl]=Menedżer pobierania i konwerter wideo z serwisów YouTube, Vimeo, Dailymotion i wielu innych
+Exec=remsu /usr/bin/sparky-aptus-extra clipgrab
+Icon=clipgrab
+Type=Application
+Categories=AudioVideo;
