@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debiam, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2020 under the GNU GPL2 License
-# Last updated 2020/03/06
+# Last updated 2020/03/22
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -660,6 +660,13 @@ case $1 in
   peek)
 	PACKAGE="peek"
      ;;
+  photoflare)
+	if [ "$SPARKYVERCHECK4" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="photoflare"
+     ;;
   rawtherapee)
 	PACKAGE="rawtherapee"
      ;;
@@ -1001,7 +1008,7 @@ case $1 in
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
-	if [ "$SPARKYVERCHECK6" = "" ]; then
+	if [ "$SPARKYVERCHECK4" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
