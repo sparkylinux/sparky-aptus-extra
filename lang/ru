@@ -1,18 +1,18 @@
 # Файл русской локализации для Sparky APTus Extra.
 # Copyright 2016 Igor Klyushnyov <inklu@yandex.ru> 2016/01/05
 # Под лицензией GNU GPL v2
-# Last update 2018/05/04 by pavroo
+# Last update 2020/04/16 by ChourS2008
 LOCAL4="Что-то не так! \nВероятно, вы остановили установку или сервер репозитория выключен.\nВ противном случае проверьте своё интернет-соединение, обновите список пакетов и повторите попытку. \n\nЗавершение..."
-LOCAL60="Приложение графической настройки Grub2/BURG"
-LOCAL90="Exiting..."
-LOCAL102="Remove"
-LOCAL103="Reinstall"
-LOCAL104="Install"
-LOCAL105="This package is already installed."
-LOCAL106="What would you like to do now?"
-LOCAL107="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the main repository server is down.\n\nCheck it out and try again."
-LOCAL108="Should I install the package you have chosen?"
-LOCAL109="The package has been successfully installed."
-LOCAL110="This package is not available for your system version."
+LOCAL63="Выходим"
+LOCAL90="Выходим..."
+LOCAL102="Удалить"
+LOCAL103="Переустановить"
+LOCAL104="Установить"
+LOCAL105="Этот пакет уже установлен."
+LOCAL106="Что бы вы хотели сделать сейчас?"
+LOCAL107="Тест подключения к интернету не пройден!\n\nВозможно, вы НЕ подключены к Интернету или основной сервер хранилища не работает.\n\nПроверьте это и попробуйте снова."
+LOCAL108="Установить пакет, который вы выбрали?"
+LOCAL109="Пакет был успешно установлен."
+LOCAL110="Этот пакет недоступен для вашей версии системы."
 ### .desktop file to be translated too
 # Comment[ru_RU]=Установка дополнительных приложений из репозитория SparkyLinux
