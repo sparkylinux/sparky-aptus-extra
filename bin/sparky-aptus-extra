@@ -815,7 +815,7 @@ case $1 in
 	PACKAGE="rambox"
      ;;
   ring)
-  	if [ "$SPARKYVERCHECK4" = "" ] || [ "$DEBIANVERCHECK9" = "" ]; then
+  	if [ "$SPARKYVERCHECK4" = "" ] || [ "$SPARKYVERCHECK5" = "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
