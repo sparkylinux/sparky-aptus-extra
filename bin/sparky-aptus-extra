@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debiam, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2020 under the GNU GPL2 License
-# Last updated 2020/05/06
+# Last updated 2020/05/09
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -203,9 +203,6 @@ case $1 in
      ;;
   sparky-player)
 	PACKAGE="sparky-player"
-     ;;
-  sparky-tube)
-	PACKAGE="sparky-tube"
      ;;
   spotify-client)
 	if [ "$ARCHARM" != "" ]; then
@@ -512,6 +509,9 @@ case $1 in
   rtorrent)
 	PACKAGE="rtorrent"
      ;;
+  sparky-tube)
+	PACKAGE="sparky-tube"
+     ;;
   spideroakone)
 	if [ "$ARCHARM" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
@@ -533,6 +533,9 @@ case $1 in
      ;;
   wget)
 	PACKAGE="wget"
+     ;;
+  xdman)
+	PACKAGE="xdman"
      ;;
   youtube-dlg)
 	PACKAGE="youtube-dlg"
