@@ -22,6 +22,7 @@ apt
 coreutils
 grep
 iputils-ping
+sparky-info
 sparky-remsu
 sparky-xterm (>= 0.2.0)
 wget

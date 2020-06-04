@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debiam, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2020 under the GNU GPL2 License
-# Last updated 2020/06/03
+# Last updated 2020/06/04
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -66,12 +66,9 @@ UNINSTALL="apt-get purge"
 ARCH64="`uname -m | grep x86_64`"
 ARCH32="`uname -m | grep 686`"
 ARCHARM="`uname -m | grep arm`"
-SPARKYVERCHECK4="`cat /etc/issue | grep 4`"
-SPARKYVERCHECK5="`cat /etc/issue | grep 5`"
-SPARKYVERCHECK6="`cat /etc/issue | grep 6`"
-DEBIANVERCHECK9="`cat /etc/issue | grep stretch`"
-DEBIANVERCHECK10="`cat /etc/issue | grep buster`"
-DEBIANVERCHECK11="`cat /etc/issue | grep bullseye`"
+SPARKYVERCHECK4="`cat /etc/lsb-release | grep Tyche`"
+SPARKYVERCHECK5="`cat /etc/lsb-release | grep Nibiru`"
+SPARKYVERCHECK6="`cat /etc/lsb-release | grep Tolo`"
 PINGTEST=$(ping -c 1 debian.org | grep [0-9])
 WORKDIR="/tmp/aptus-extra-tmp"
 
@@ -164,7 +161,7 @@ case $1 in
 	PACKAGE="pmrp"
      ;;
   pragha)
-	if [ "$SPARKYVERCHECK4" != "" ] || [ "$DEBIANVERCHECK9" != "" ]; then
+	if [ "$SPARKYVERCHECK4" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
@@ -184,6 +181,10 @@ case $1 in
 	PACKAGE="radiotray"
      ;;
   radiostation)
+  	if [ "$SPARKYVERCHECK4" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
 	PACKAGE="radiostation"
      ;;
   rhythmbox)
@@ -501,7 +502,7 @@ case $1 in
 	PACKAGE="nicotine"
      ;;
   persepolis)
-	if [ "$SPARKYVERCHECK4" != "" ] || [ "$DEBIANVERCHECK9" != "" ]; then
+	if [ "$SPARKYVERCHECK4" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
@@ -789,7 +790,7 @@ case $1 in
 	PACKAGE="lostirc"
      ;;
   nheko)
-	if [ "$SPARKYVERCHECK4" != "" ] || [ "$DEBIANVERCHECK9" != "" ]; then
+	if [ "$SPARKYVERCHECK4" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
@@ -812,7 +813,7 @@ case $1 in
 	PACKAGE="qtox"
      ;;
   quaternion)
-	if [ "$SPARKYVERCHECK4" != "" ] || [ "$DEBIANVERCHECK9" != "" ]; then
+	if [ "$SPARKYVERCHECK4" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
@@ -861,7 +862,7 @@ case $1 in
 	PACK64SKYPE="skypeforlinux-64.deb"
      ;;
   telegram-desktop)
-	if [ "$SPARKYVERCHECK4" != "" ] || [ "$DEBIANVERCHECK9" != "" ]; then
+	if [ "$SPARKYVERCHECK4" != "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
@@ -1061,7 +1062,7 @@ case $1 in
 	PACKAGE="subtitleeditor"
      ;;
   videomass)
-	if [ "$SPARKYVERCHECK6" = "" ] || [ "$DEBIANVERCHECK11" = "" ]; then
+	if [ "$SPARKYVERCHECK6" = "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
 		exit 1
 	fi
