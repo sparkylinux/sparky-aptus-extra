@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=Watch Movies and TV Shows instantly
+Name=Popcorn-Time
+Exec=remsu /usr/bin/sparky-aptus-extra popcorn
+Icon=butter
+StartupNotify=false
+Categories=AudioVideo;Video;
+Type=Application
+
