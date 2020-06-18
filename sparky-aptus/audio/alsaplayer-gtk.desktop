@@ -13,6 +13,7 @@ Comment[pl]=GTK interfejs AlsaPlayer
 Comment[pt]=Interface AlsaPlayer GTK
 Comment[ru]=Интерфейс AlsaPlayer GTK
 Comment[sv]=AlsaPlayer GTK-gränssnitt
+Comment[zh_CN]=AlsaPlayer GTK 界面
 Exec=remsu /usr/bin/sparky-aptus-extra alsaplayer-gtk
 Icon=alsaplayer
 Terminal=false
