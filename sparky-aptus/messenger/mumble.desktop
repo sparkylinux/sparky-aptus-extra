@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Mumble
+Comment=Low latency encrypted VoIP client
+Comment[pl]=Szyfrowany klient VoIP o niskiej latencji 
+Exec=remsu /usr/bin/sparky-aptus-extra mumble
+Icon=mumble
+Terminal=false
+Type=Application
+Categories=Applications;System
+
