@@ -22,6 +22,7 @@ GenericName[pt_BR]=Reprodutor Multimídia
 GenericName[ru]=Клиент музыкального проигрывателя
 GenericName[sq]=Clienti player muzike
 GenericName[tr]=Muzik Çalıcı İstemcisi
+GenericName[zh_CN]=音乐播放客户端
 Exec=remsu /usr/bin/sparky-aptus-extra cantata
 Icon=cantata
 Terminal=false
