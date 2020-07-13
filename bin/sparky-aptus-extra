@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debiam, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2020 under the GNU GPL2 License
-# Last updated 2020/07/03
+# Last updated 2020/07/13
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -918,6 +918,9 @@ case $1 in
 	PACKAGE="tickr"
      ;;
 #####video players####################################################
+  bino)
+	PACKAGE="bino"
+     ;;
   celluloid)
 	if [ "$SPARKYVERCHECK6" = "" ]; then
 		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
@@ -1064,6 +1067,13 @@ case $1 in
   qstopmotion)
 	PACKAGE="qstopmotion"
      ;;
+  shutter-encoder)
+	if [ "$ARCH64" = "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="shutter-encoder"
+    ;;
   simpleburn)
 	PACKAGE="simpleburn"
      ;;
