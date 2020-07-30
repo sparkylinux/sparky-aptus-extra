@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Sparky APTus Extra is a simply GUI frontend for APT-GET
-# It lets you install aditional software from Debiam, Sparky and 3th party repositories
+# It lets you install aditional software from Debian, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2020 under the GNU GPL2 License
-# Last updated 2020/07/13
+# Last updated 2020/07/30
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -747,6 +747,13 @@ case $1 in
   ekg2)
 	PACKAGE="ekg2-ui-gtk"
      ;;
+  element-desktop)
+	if [ "$ARCH64" = "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="element-desktop"
+    ;;
   empathy)
 	PACKAGE="empathy"
      ;;
@@ -841,13 +848,6 @@ case $1 in
 	fi
 	PACKAGE="ring"
      ;;
-  riot)
-	if [ "$ARCH64" = "" ]; then
-		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
-		exit 1
-	fi
-	PACKAGE="riot-desktop"
-    ;;
   scrollz)
 	PACKAGE="scrollz"
      ;;

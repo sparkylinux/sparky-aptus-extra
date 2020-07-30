@@ -2,7 +2,7 @@
 # Copyright 2015 Carlo, "malato" Troiani <assolutooccidentale@gmail.com> 20/10/2015
 # Rilasciato sotto licenza GNU GPL v2
 # Last update 2018/11/21 by carlo
-LOCAL4="Qualcosa e' andato storto! \nProbailmente hai fermato l'installazione ovvero il server che contiene i repositories Ã¨ offline.\nSe cosÃ¬ non fosse controlla la tua connessione internet, aggiorna la lista dei pacchetti e prova di nuovo. \n\nSto uscendo..."
+LOCAL4="Qualcosa e' andato storto! \nProbailmente hai fermato l'installazione ovvero il server che contiene i repositories e' offline.\nSe cosi' non fosse controlla la tua connessione internet, aggiorna la lista dei pacchetti e prova di nuovo. \n\nSto uscendo..."
 LOCAL63="Esci"
 LOCAL90="Sto uscendo..."
 LOCAL102="Rimuovi"

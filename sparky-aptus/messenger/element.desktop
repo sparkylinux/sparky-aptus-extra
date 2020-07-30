@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Encoding=UTF-8
-Name=Riot
+Name=Element
 Comment=A feature-rich client for Matrix.org
-Exec=remsu /usr/bin/sparky-aptus-extra riot
-Icon=riot-web
+Exec=remsu /usr/bin/sparky-aptus-extra element-desktop
+Icon=element-desktop
 Terminal=false
 Type=Application
 Categories=Applications;System
