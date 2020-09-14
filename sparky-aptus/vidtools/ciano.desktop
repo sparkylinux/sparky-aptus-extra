@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ciano
+Comment=A multimedia file converter focused on simplicity.
+Comment[pl]=Prosty konwerter plikow multimedialnych
+Exec=remsu /usr/bin/sparky-aptus-extra ciano
+Icon=avidemux
+Type=Application
+Categories=AudioVideo;
