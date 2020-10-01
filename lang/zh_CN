@@ -1,7 +1,7 @@
 # Chinese(Simplified) localization file for Sparky APTus Extra.
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/20
 # Under the GNU GPL v2
-# Last update 2020/06/18 by xingjiapeng
+# Last update 2020/10/01 by xingjiapeng
 LOCAL4="出错了！ \n也许因为您终止了安装，也可能因为网络断开。\n请检查网络链接，刷新软件包列表并重试。 \n\n退出……"
 LOCAL63="退出"
 LOCAL90="退出……"
