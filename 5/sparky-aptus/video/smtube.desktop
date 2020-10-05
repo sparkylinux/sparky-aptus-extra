@@ -1,0 +1,33 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=SMTube
+Comment[am]=ከ ዩቲዩብ መቃኛ እና መፈጊያ
+Comment[bg]=Прелистване и търсене в YouTube
+Comment[cs]=Procházet a hledat na YouTube
+Comment[da]=Gennemse og søg fra YouTube
+Comment[de]=YouTube durchsuchen
+Comment[el]=Περιήγηση και αναζήτηση στο YouTube
+Comment[es]=Permite buscar vídeos de YouTube
+Comment[fa]=مرور و جست و جو در یوتیوب
+Comment[fr]=Naviguer et chercher sur YouTube
+Comment[gl]=Navegar e buscar en YouTube
+Comment[he]=עיין וחפש מתוך YouTube
+Comment[hr]=Pregledavajte i pretražujte YouTube
+Comment[it]=Naviga e ricerca su YouTube
+Comment[ja]=YouTube を閲覧し検索します
+Comment[ko]=유투브 검색하기
+Comment[pl]=Przeglądanie i przeszukiwanie YouTube
+Comment[pt]=Explorar e pesquisar vídeos no YouTube
+Comment[pt_BR]=Navegar e procurar no YouTube
+Comment[ru]=Просмотр и поиск по YouTube
+Comment[sv]=Bläddra och sök från YouTube
+Comment[uk]=Перегляд і пошук на YouTube
+Comment[zh_CN]=浏览 YouTube 或者搜索
+Comment[zh_TW]=在 YouTube 上瀏覽並搜尋
+Exec=remsu /usr/bin/sparky-aptus-extra smtube
+Icon=smtube
+Terminal=false
+Type=Application
+Categories=Applications;System
+

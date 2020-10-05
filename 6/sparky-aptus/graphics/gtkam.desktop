@@ -1,0 +1,25 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Gtkam
+Comment=Gtkam Digital Camera Browser
+Comment[cs]=Prohlížeč pro digitální fotoaparáty Gtkam
+Comment[de]=GTKam Digitalkamera Browser
+Comment[eo]=Gtkam Ciferec-Kamerao-Rigardilo
+Comment[fi]=Gtkam-digitaalikameraselain
+Comment[id]=Peramban Kamera Digital Gtkam
+Comment[it]=Gtkam esploratore di fotocamere digitali
+Comment[is]=Gtkam vafri fyrir stafrænar myndavélar
+Comment[ja]=Gtkam デジタルカメラ ブラウザー
+Comment[nl]=Gtkam bladerprogramma voor digitale camera
+Comment[pl]=Przeglądarka aparatu cyfrowego programu Gtkam
+Comment[ru]=Просмотрщик изображений с цифровых камер Gtkam
+Comment[sv]=Digitalkamerabläddraren Gtkam
+Comment[vi]=Bộ Duyệt Máy Ảnh Điện Số Gtkam
+Comment[zh_CN]=Gtkam 数码相机浏览器
+Exec=remsu /usr/bin/sparky-aptus-extra gtkam
+Icon=gtkam-camera
+Terminal=false
+Type=Application
+Categories=Applications;System
+

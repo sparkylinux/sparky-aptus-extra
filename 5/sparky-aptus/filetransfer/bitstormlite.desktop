@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=BitStormLite
+Comment=A small and fast BitTorrent client
+Comment[de]=Ein kleiner und schneller BitTorrent-Client
+Comment[el]=Ένα μικρό και γρήγορο πρόγραμμα-πελάτη BitTorrent
+Comment[es]=Un cliente BitTorrent pequeño y rápido
+Comment[fr]=Un client BitTorrent petit et rapide
+Comment[it]=Un client BitTorrent piccolo e veloce
+Comment[ja]=小さくて速いBitTorrentクライアント
+Comment[pl]=Mały i szybki klient BitTorrent
+Comment[pt]=Um pequeno e rápido cliente BitTorrent
+Comment[ru]=Небольшой и быстрый клиент BitTorrent
+Comment[sv]=En liten och snabb BitTorrent-klient
+Comment[zh_CN]=一个轻巧快速的BitTorrent客户端
+Exec=remsu /usr/bin/sparky-aptus-extra bitstormlite
+Icon=bittorrent
+Terminal=false
+Type=Application
+Categories=Applications;System
+

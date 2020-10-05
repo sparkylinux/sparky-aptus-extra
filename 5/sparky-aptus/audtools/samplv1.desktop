@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=samplv1
+Version=1.0
+Comment=samplv1 is an old school polyphonic sampler
+Comment[fr]=samplv1 est un échantillonneur polyphonique à l'ancienne
+Comment[pl]=samplv1 to oldschoolowy próbnik polifoniczny
+Exec=remsu /usr/bin/sparky-aptus-extra samplv1
+Icon=samplv1
+Categories=Audio;AudioVideo;
+Terminal=false
+Type=Application

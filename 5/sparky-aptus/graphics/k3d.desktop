@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=K-3D
+Comment=3D modeling and animation software
+Comment[de]=3D-Modellierung und Animationssoftware
+Comment[el]=Λογισμικό 3D μοντελοποίησης και κινούμενης εικόνας
+Comment[es]=Software de modelado y animación 3D
+Comment[fr]=Logiciel de modélisation et d'animation 3D
+Comment[it]=Software di modellizzazione e animazione 3D
+Comment[ja]=3Dモデリングとアニメーションソフトウェア
+Comment[pl]=Oprogramowanie do modelowania i animacji 3D
+Comment[pt]=Software de modelagem e animação 3D
+Comment[ru]=Программное обеспечение для 3D-моделирования и анимации
+Comment[sv]=3D modellerings- och animationsprogram
+Exec=remsu /usr/bin/sparky-aptus-extra k3d
+Icon=/usr/share/k3d/icons/k3d.png
+Terminal=false
+Type=Application
+Categories=Applications;System
+

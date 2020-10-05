@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=StretchPlayer
+Comment=Audio file player with time stretch
+Exec=remsu /usr/bin/sparky-aptus-extra stretchplayer
+Icon=alsaplayer
+Type=Application
+Categories=Audio;

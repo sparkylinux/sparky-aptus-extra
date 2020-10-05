@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=JACK Keyboard
+Comment=Virtual keyboard for JACK MIDI
+Comment[pl]=Wirtualna klawiatura dla JACK MIDI
+Exec=remsu /usr/bin/sparky-aptus-extra jack-keyboard
+Icon=jack-keyboard
+Categories=AudioVideo;Audio;Midi;
+Terminal=false
+Type=Application

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Flowblade
+Comment=Movie Editor
+Comment[pl]=Edytor filmów
+Exec=remsu /usr/bin/sparky-aptus-extra flowblade
+Type=Application
+Icon=flowblade
+Categories=AudioVideo;

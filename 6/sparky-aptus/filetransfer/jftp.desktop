@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=JFTP
+Comment=Java GUI client for FTP, SMB, SFTP and NFS
+Comment[de]=Java GUI Client für FTP, SMB, SFTP und NFS
+Comment[el]=Java GUI client για FTP, SMB, SFTP και NFS
+Comment[es]=Cliente GUI de Java para FTP, SMB, SFTP y NFS
+Comment[fr]=Client graphique Java pour FTP, SMB, SFTP et NFS
+Comment[it]=Client Java GUI per FTP, SMB, SFTP e NFS
+Comment[ja]=FTP、SMB、SFTP、NFS用のJava GUIクライアント
+Comment[pl]=Java klient GUI dla FTP, SMB, SFTP i NFS
+Comment[pt]=Cliente da GUI Java para FTP, SMB, SFTP e NFS
+Comment[ru]=Java GUI-клиент для FTP, SMB, SFTP и NFS
+Comment[sv]=Java GUI-klient för FTP, SMB, SFTP och NFS
+Exec=remsu /usr/bin/sparky-aptus-extra jftp
+Icon=jftp
+Terminal=false
+Type=Application
+Categories=Applications;System
+

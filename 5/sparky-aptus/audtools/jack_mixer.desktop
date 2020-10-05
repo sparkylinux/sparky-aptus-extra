@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Jack Mixer
+Exec=remsu /usr/bin/sparky-aptus-extra jack-mixer
+Comment=Jack Mixer
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;
+Icon=jack_mixer

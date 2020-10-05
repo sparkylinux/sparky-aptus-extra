@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=gscreenshot
+Comment=A simple screenshot utility
+Comment[de]=Ein einfaches Screenshot-Dienstprogramm
+Comment[el]=Ένα απλό βοηθητικό πρόγραμμα screenshot
+Comment[es]=Una simple utilidad de captura de pantalla
+Comment[fr]=Un utilitaire de capture d'écran simple
+Comment[it]=Una semplice utility screenshot
+Comment[ja]=シンプルなスクリーンショットユーティリティ
+Comment[pl]=Proste narzędzie do zrzutu ekranu
+Comment[pt]=Um utilitário simples de captura de tela
+Comment[ru]=Простая утилита для скриншотов
+Comment[sv]=Ett enkelt skärmdump verktyg
+Exec=remsu /usr/bin/sparky-aptus-extra gscreenshot
+Icon=gscreenshot
+Terminal=false
+Type=Application
+Categories=Applications;System
+

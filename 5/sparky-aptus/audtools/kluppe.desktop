@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Kluppe
+Comment=Audio loop-player and recorder
+Comment[pl]=Odtwarzacz pętli i nagrywarka audio
+Exec=remsu /usr/bin/sparky-aptus-extra kluppe
+Icon=kluppe
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;

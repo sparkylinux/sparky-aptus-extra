@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Flameshot
+Comment=Powerful yet simple to use screenshot software
+Comment[de]=Leistungsstarke und dennoch einfach zu bedienende Screenshot-Software
+Comment[el]=Ισχυρό αλλά και απλό στη χρήση λογισμικό οθόνης
+Comment[es]=Potente pero fácil de usar software de captura de pantalla
+Comment[fr]=Logiciel de capture d'écran puissant mais simple à utiliser
+Comment[it]=Software di screenshot potente ma semplice da usare
+Comment[ja]=強力でしかもシンプルなスクリーンショットソフトウェア
+Comment[pl]=Potężne, ale proste w obsłudze oprogramowanie do zrzutu ekranu
+Comment[pt]=Poderoso, mas simples de usar software de captura de tela
+Comment[ru]=Мощное, но простое в использовании программное обеспечение для скриншотов
+Comment[sv]=Kraftfull men enkel att använda skärmdump programvara
+Comment[zh_CN]=强大又易用的屏幕截图软件
+Exec=remsu /usr/bin/sparky-aptus-extra flameshot
+Icon=flameshot
+Terminal=false
+Type=Application
+Categories=Applications;System
+

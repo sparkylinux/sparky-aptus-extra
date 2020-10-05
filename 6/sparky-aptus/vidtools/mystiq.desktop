@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=MystiQ
+Exec=remsu /usr/bin/sparky-aptus-extra mystiq
+Comment=Qt5/C++ FFmpeg Media Converter 
+Icon=avidemux
+Categories=AudioVideo;

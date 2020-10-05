@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Gradio
+Comment=Find and listen to internet radio stations
+Comment[de]=Finden und hören Sie Internetradiosender
+Comment[el]=Βρείτε και ακούστε ραδιοφωνικούς σταθμούς διαδικτύου
+Comment[es]=Encuentra y escucha emisoras de radio por internet
+Comment[fr]=Trouver et écouter des stations de radio internet
+Comment[it]=Trova e ascolta le stazioni radio internet
+Comment[ja]=インターネットラジオ局を探して聞く
+Comment[pl]=Znajdź i słuchaj internetowych stacji radiowych
+Comment[pt]=Encontre e ouça estações de rádio da Internet
+Comment[ru]=Поиск и прослушивание интернет-радиостанций
+Comment[sv]=Hitta och lyssna på internetradiostationer
+Exec=remsu /usr/bin/sparky-aptus-extra gradio
+Icon=radio
+Type=Application
+Categories=Audio;
+

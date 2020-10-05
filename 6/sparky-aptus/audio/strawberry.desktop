@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Strawberry
+Comment=Plays music
+Comment[pl]=Odtwarzanie muzyki
+Exec=remsu /usr/bin/sparky-aptus-extra strawberry
+Icon=strawberry
+Terminal=false
+Categories=AudioVideo;Player;Qt;Audio;
+StartupNotify=false

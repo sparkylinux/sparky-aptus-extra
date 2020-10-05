@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=BitTorrent GUI
+Comment=BitTorrent GUI
+Exec=remsu /usr/bin/sparky-aptus-extra bittorrent-gui
+Icon=bittorrent
+Terminal=false
+Type=Application
+Categories=Applications;System
+

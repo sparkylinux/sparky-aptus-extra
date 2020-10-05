@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=gmusicbrowser
+Comment=Jukebox for large collections of mp3 / ogg/ flac / mpc
+Comment[de]=Musikbox für große Sammlungen von mp3 / ogg / flac / mpc
+Comment[el]=Juke κουτί για μεγάλες συλλογές mp3 / ogg / flac / mpc
+Comment[es]=Jukebox para grandes colecciones de mp3 / ogg / flac / mpc
+Comment[fr]=Juke box pour les grandes collections de mp3 / ogg / flac / mpc
+Comment[it]=Scatola Juke per grandi collezioni di mp3 / ogg / flac / mpc
+Comment[ja]=mp3 / ogg / flac / mpcの大規模なコレクションのためのジュークボックス
+Comment[pl]=Szafa grająca dla dużych kolekcji mp3 / ogg / flac / mpc
+Comment[pt]=Juke box para grandes coleções de mp3 / ogg / flac / mpc
+Comment[ru]=Juke box для больших коллекций mp3 / ogg / flac / mpc
+Comment[sv]=Juke box för stora samlingar av mp3 / ogg / flac / mpc
+Exec=remsu /usr/bin/sparky-aptus-extra gmusicbrowser
+Icon=gmusicbrowser
+Terminal=false
+Type=Application
+Categories=Audio;
+

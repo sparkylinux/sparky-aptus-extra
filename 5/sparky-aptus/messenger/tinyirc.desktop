@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=TinyIRC
+Comment=Tiny IRC client
+Comment[de]=Kleiner IRC-Client
+Comment[el]=Μικροί πελάτες IRC
+Comment[es]=Cliente Tiny IRC
+Comment[fr]=Client IRC minuscule
+Comment[it]=Piccolo client IRC
+Comment[ja]=小さなIRCクライアント
+Comment[pl]=Malutki klient IRC
+Comment[pt]=Cliente de IRC minúsculo
+Comment[ru]=Крошечный IRC-клиент
+Comment[sv]=Liten IRC-klient
+Exec=remsu /usr/bin/sparky-aptus-extra tinyirc
+Icon=irc
+Terminal=false
+Type=Application
+Categories=Applications;System
+

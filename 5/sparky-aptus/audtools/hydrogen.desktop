@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Hydrogen
+Comment=Create drum sequences
+Comment[de]=Schlagzeugsequenzen erstellen
+Comment[ru]=Создание партий ударных инструментов
+Comment[hu]=Dobszekvenciákat lehet vele készíteni
+Comment[tr]=Davul partisyonu yaz
+Comment[fr]=Créer des séquences rythmiques
+Comment[pl]=Tworzenie sekwencji perkusyjnych
+Version=1.0
+Type=Application
+Categories=AudioVideo;Audio;
+Exec=remsu /usr/bin/sparky-aptus-extra hydrogen
+Terminal=false
+Icon=hydrogen

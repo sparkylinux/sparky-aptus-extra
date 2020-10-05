@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=ImageMagick
+Comment=Display and edit image files
+Comment[de]=Anzeige und Bearbeitung von Bilddateien
+Comment[el]=Εμφάνιση και επεξεργασία αρχείων εικόνας
+Comment[es]=Mostrar y editar archivos de imagen
+Comment[fr]=Affiche et édite des fichiers images
+Comment[it]=Visualizza e modifica i file di immagine
+Comment[ja]=画像ファイルの表示と編集
+Comment[pl]=Wyświetlaj i edytuj pliki obrazów
+Comment[pt]=Exiba e edite arquivos de imagem
+Comment[ru]=Просмотр и редактирование файлов изображений
+Comment[sv]=Visa och redigera bildfiler
+Exec=remsu /usr/bin/sparky-aptus-extra imagemagick
+Icon=imagemagick
+Terminal=false
+Type=Application
+Categories=Applications;System
+

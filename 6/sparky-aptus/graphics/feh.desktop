@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Feh
+Comment=Image viewer
+Comment[de]=Bildbetrachter
+Comment[el]=Πρόγραμμα προβολής εικόνων
+Comment[es]=Visor de imágenes
+Comment[fr]=Visualisateur d'image
+Comment[it]=Visualizzatore di immagini
+Comment[ja]=画像ビューア
+Comment[pl]=Przeglądarka obrazów
+Comment[pt]=Visualizador de imagens
+Comment[ru]=Просмотр изображений
+Comment[sv]=Bildvisare
+Exec=remsu /usr/bin/sparky-aptus-extra feh
+Icon=image-viewer
+Terminal=false
+Type=Application
+Categories=Applications;System

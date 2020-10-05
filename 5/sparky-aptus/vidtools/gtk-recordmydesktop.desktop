@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=RecordMyDesktop
+Comment=Record a video of your desktop
+Comment[fr]=Enregistrer une vidéo de votre bureau
+Comment[es]=Graba en vídeo las acciones que haces en tu escritorio
+Comment[pl]=Nagraj wideo swojego pulpitu
+Comment[zh_CN]=把屏幕录制成视频
+Exec=remsu /usr/bin/sparky-aptus-extra gtk-recordmydesktop
+Terminal=false
+Type=Application
+Icon=gtk-recordmydesktop.png
+Categories=AudioVideo;

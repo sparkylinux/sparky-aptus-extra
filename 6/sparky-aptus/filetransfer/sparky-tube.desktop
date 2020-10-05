@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Sparky Tube
+Comment=Download videos
+Comment[de]=Videos herunterladen
+Comment[fr]=Téléchargement de vidéos
+Comment[pl]=Pobierz wideo
+Comment[pt_BR]=Baixar vídeos
+Type=Application
+Terminal=false
+Exec=remsu /usr/bin/sparky-aptus-extra sparky-tube
+Icon=multimedia-audio-player
+Categories=AudioVideo;

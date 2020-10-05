@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Sparky Play MP3
+Comment=Play MP3 Music
+Comment[it]=Riproduci canzoni formato MP3
+Comment[pl]=Graj Muzykę MP3
+Comment[pt_BR]=Reproduzir Músicas em MP3
+Type=Application
+Terminal=false
+Exec=remsu /usr/bin/sparky-aptus-extra sparky-play
+Icon=mpv
+Categories=Audio;

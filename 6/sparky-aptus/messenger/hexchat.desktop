@@ -1,0 +1,36 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=HexChat
+Comment=Chat with other people online
+Comment[ca]=Xategeu amb altres persones en línia
+Comment[cs]=Chatujte online s ostatními lidmi
+Comment[da]=Chat med andre personer online
+Comment[de]=Online mit anderen Menschen chatten
+Comment[el]=Συνομιλήστε με άλλους χρήστες σε απευθείας σύνδεση
+Comment[es]=Chatea con otras personas en línea
+Comment[et]=Vestle teiste kasutajatega internetis
+Comment[fi]=Keskustele muiden kanssa verkossa
+Comment[fr]=Discutez avec d'autres personnes en ligne
+Comment[id]=Mengobrol dengan orang lain daring
+Comment[it]=Chiacchiera con altri utenti online
+Comment[ja]=他の人とオンラインチャットをします
+Comment[ko]=온라인에 있는 여러 사람과 대화합니다
+Comment[lt]=Kalbėkite su kitais žmonėmis internete
+Comment[lv]=Tērzēt ar citiem cilvēkiem tiešsaistē
+Comment[nb]=Prat med andre folk på nettet
+Comment[pl]=Rozmawiaj z innymi ludźmi przez internet
+Comment[pt_PT]=Conversa com outras pessoas online
+Comment[pt_BR]=Converse com outras pessoas na rede
+Comment[ru]=Общаться с другими людьми онлайн
+Comment[sq]=Bisedoni në linjë me persona të tjerë
+Comment[sr]=Ћаскајте са пријатељима онлајн
+Comment[sv]=Chatta med andra människor online
+Comment[tr]=Başka insanlarla çevrimiçi sohbet edin
+Comment[zh_CN]=与其他人在线聊天
+Exec=remsu /usr/bin/sparky-aptus-extra hexchat
+Icon=hexchat
+Terminal=false
+Type=Application
+Categories=Applications;System
+

@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=xine
+Comment=Video Player
+Comment[de]=Videoplayer
+Comment[el]=Βίντεο
+Comment[es]=Reproductor de video
+Comment[fr]=Lecteur vidéo
+Comment[it]=Lettore video
+Comment[ja]=ビデオプレーヤー
+Comment[pl]=Odtwarzacz wideo
+Comment[ru]=Видео проигрыватель
+Comment[sv]=Videospelare
+Exec=remsu /usr/bin/sparky-aptus-extra xine-ui
+Icon=xine
+Terminal=false
+Type=Application
+Categories=Applications;System
+

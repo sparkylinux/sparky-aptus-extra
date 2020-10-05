@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Guitarix
+Comment=Simple mono amplifier simulation
+Comment[fr]=Simulation d'ampli mono simple
+Comment[pl]=Prosta symulacja wzmacniacza mono
+Exec=remsu /usr/bin/sparky-aptus-extra guitarix
+Icon=gx_head
+Categories=AudioVideo;Audio;
+Terminal=false
+Type=Application

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Aeolus
+Comment=Organ Emulator
+Comment[pl]=Emulator Organowy
+Exec=remsu /usr/bin/sparky-aptus-extra aeolus
+Terminal=false
+Type=Application
+Icon=audio-x-generic
+Categories=AudioVideo;Audio;

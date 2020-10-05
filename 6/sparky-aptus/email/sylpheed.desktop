@@ -1,0 +1,24 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Sylpheed
+Comment=E-Mail client
+Comment[de]=E-Mail Programm
+Comment[el]=Πελάτη ηλεκτρονικού ταχυδρομείου
+Comment[es]=Cliente de correo electrónico
+Comment[fr]=Client de messagerie électronique
+Comment[hu]=Grafikus email kliens
+Comment[it]=Client di posta elettronica
+Comment[ja]=電子メールクライアント
+Comment[pl]=Klient poczty elektronicznej
+Comment[pt]=Cliente de e-mail
+Comment[tr]=E-Posta İstemcisi
+Comment[ru]=E-Mail клиент
+Comment[sv]=E-postklient
+Comment[uk]=E-Mail клієнт
+Exec=remsu /usr/bin/sparky-aptus-extra sylpheed
+Icon=sylpheed
+Terminal=false
+Type=Application
+Categories=Applications;System
+

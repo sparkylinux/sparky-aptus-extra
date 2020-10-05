@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=rtorrent
+Comment=ncurses BitTorrent client
+Comment[de]=ncurses BitTorrent-Client
+Comment[el]=ncurses BitTorrent πελάτη
+Comment[es]=ncurses Cliente BitTorrent
+Comment[fr]=Client BitTorrent ncurses
+Comment[it]=ncurses Client BitTorrent
+Comment[ja]=BitTorrentクライアントをncurses
+Comment[pl]=ncurses klient BitTorrent
+Comment[pt]=ncurses cliente BitTorrent
+Comment[ru]=ncurses Клиент BitTorrent
+Comment[sv]=ncurses BitTorrent-klient
+Exec=remsu /usr/bin/sparky-aptus-extra rtorrent
+Icon=bittorrent
+Terminal=false
+Type=Application
+Categories=Applications;System
+

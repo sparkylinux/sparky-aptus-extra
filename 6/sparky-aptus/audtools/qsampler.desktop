@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Qsampler
+Version=1.0
+Comment=Qsampler is a LinuxSampler Qt GUI Interface
+Comment[fr]=Qsampler est une interface graphique Qt pour LinuxSampler
+Comment[pl]=Qsampler to interfejs GUI LinuxSampler Qt
+Exec=remsu /usr/bin/sparky-aptus-extra qsampler
+Icon=qsampler
+Categories=Audio;AudioVideo;
+Terminal=false
+Type=Application

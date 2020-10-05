@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=pmrp
+Comment=An Internet radio player script written in bash
+Comment[de]=Ein Internet-Radio-Player-Skript in bash geschrieben
+Comment[el]=Μια δέσμη ενεργειών ραδιοφωνικού σταθμού Internet γραμμένο σε bash
+Comment[es]=Un guion de jugador de radio por Internet escrito en bash
+Comment[fr]=Un script de lecteur de radio Internet écrit en bash
+Comment[it]=Uno script per lettore radio Internet scritto in bash
+Comment[ja]=bashで書かれたインターネットラジオプレーヤーのスクリプト
+Comment[pl]=Skrypt radia internetowego napisany w bashu
+Comment[pt]=Um script de player de rádio da Internet escrito em bash
+Comment[ru]=Сценарий интернет-радиоприемника, написанный в bash
+Comment[sv]=Ett Internet-radiospelare skrivet i bash
+Exec=remsu /usr/bin/sparky-aptus-extra pmrp
+Icon=applications-audio
+Type=Application
+Categories=Audio;
+

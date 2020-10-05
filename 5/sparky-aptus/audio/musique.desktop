@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Musique
+Comment=Play your music collection
+Comment[de]=Spielen Sie Ihre Musiksammlung ab
+Comment[el]=Παίξτε τη μουσική σας συλλογή
+Comment[es]=Juega tu colección de música
+Comment[fr]=Jouez votre collection de musique
+Comment[it]=Ascolta la tua collezione musicale
+Comment[ja]=音楽コレクションを再生する
+Comment[pl]=Odtwórz swoją kolekcję muzyki
+Comment[pt]=Jogue sua coleção de músicas
+Comment[ru]=Воспроизведение музыкальной коллекции
+Comment[sv]=Spela din musiksamling
+Exec=remsu /usr/bin/sparky-aptus-extra musique
+Icon=musique
+Type=Application
+Categories=Audio;

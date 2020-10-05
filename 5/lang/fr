@@ -1,0 +1,18 @@
+﻿# Fichier de localisation française de Sparky APTus Extra.
+# Copyright 2016 hiver <hiver@club-internet.fr> 2016/06/05
+# Sous licence GNU GPL v2
+# Dernière mise à jour 2018/09/25
+LOCAL4="Il y a un problème! \nPeut-être avez-vous stoppé l'installation ou bien le serveur de dépôt est hors-service.\nVérifiez la connexion internet, mettez à jour la liste des paquets et essayez à nouveau. \n\nSortie..."
+LOCAL63="Quitter"
+LOCAL90="Clôture..."
+LOCAL102="Enlèvement"
+LOCAL103="Réinstallation"
+LOCAL104="Installation"
+LOCAL105="Ce paquet est déjà installé."
+LOCAL106="Que voulez-vous faire à présent?"
+LOCAL107="Échec du test de la connexion internet!\n\nVous n'êtes probablement pas connecté à Internet ou bien le serveur du projet est hors-service.\n\nVérifiez et essayez à nouveau."
+LOCAL108="Dois-je installer le paquet que vous avez choisi?"
+LOCAL109="Le paquet a été installé avec succès."
+LOCAL110="Ce paquet n'est pas disponible pour votre version du système."
+### .desktop file to be translated too
+# Comment[fr_FR]=Installer des applications supplémentaires depuis le dépôt SparkyLinux 

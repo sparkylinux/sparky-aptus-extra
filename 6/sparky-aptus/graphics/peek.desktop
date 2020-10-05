@@ -1,0 +1,34 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Peek
+Comment=Record short animated GIF images from your screen
+Comment[ar]=تسجيل صور متحركة قصيرة من شاشة حاسوبك
+Comment[cs]=Nahrávat dění na obrazovce do formátu GIF
+Comment[de]=Kurze GIF-Animationen vom Bildschirm aufnehmen
+Comment[eo]=Registri mallongajn GIF-movbildojn de via ekrano
+Comment[es]=Grabe GIF animados cortos desde su pantalla
+Comment[eu]=Grabatu zure pantailaren gif animatu txikiak
+Comment[fr]=Enregistrer des courtes images GIF animés de votre écran
+Comment[hr]=Snimi kratku GIF animaciju slika s pozadine
+Comment[id]=Rekam gambar animasi GIF pendek dari layar anda
+Comment[it]=Registra piccole animazioni GIF dal tuo schermo
+Comment[ko]=화면에서 짧은 애니메이션 GIF 이미지들을 녹화합니다
+Comment[lt]=Įrašinėti trumpus animuotus GIF paveikslus iš jūsų ekrano
+Comment[nb]=Ta opp korte animerte GIF-avbildninger av skjermen din
+Comment[nl]=Korte bewegende GIF-afbeeldingen opnemen van uw scherm
+Comment[pl]=Nagraj krótkie animowane obrazy GIF z twojego ekranu
+Comment[pt_BR]=Grave pequenas GIFs animadas a partir da sua tela
+Comment[pt_PT]=Grava uma curta animação de imagens GIF a partir do ecrã
+Comment[ru]=Записывайте короткие анимированные GIF со своего экрана
+Comment[sr]=Снимајте кратке анимиране GIF слике на вашем екрану
+Comment[sv]=Spela in korta animerade GIF-bilder från skärmen
+Comment[uk_UA]=Запис коротких анімованих GIF зображень з екрану
+Comment[zh_CN]=录制屏幕，制成小巧的 GIF 动画
+Comment[zh_TW]=從您的螢幕上錄製簡短的 GIF 動畫
+Exec=remsu /usr/bin/sparky-aptus-extra peek
+Icon=com.uploadedlobster.peek
+Terminal=false
+Type=Application
+Categories=Applications;System
+

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=SpiderOakONE
+Comment=File Backup and Synchronizer
+Comment[de]=Dateisicherung und Synchronizer
+Comment[el]=Αρχείο αντιγράφων ασφαλείας και συγχρονιστής
+Comment[es]=Copia de seguridad de archivos y sincronizador
+Comment[fr]=Fichier de sauvegarde et de synchronisation
+Comment[it]=Backup di file e sincronizzatore
+Comment[ja]=ファイルバックアップとシンクロナイザー
+Comment[pl]=Tworzy kopię zapasową plików i synchronizuje
+Comment[pt]=Backup de Arquivo e Sincronizador
+Comment[ru]=Резервное копирование файлов и синхронизатор
+Comment[sv]=File Backup och Synchronizer
+Exec=remsu /usr/bin/sparky-aptus-extra spideroakone
+Icon=SpiderOakONE
+Terminal=false
+Type=Application
+Categories=Applications;System
+

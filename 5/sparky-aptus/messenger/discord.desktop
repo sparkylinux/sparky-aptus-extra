@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Discord
+Comment=All-in-one voice and text chat for gamers
+Comment[de]=All-in-One Sprach- und Text-Chat für Gamer
+Exec=remsu /usr/bin/sparky-aptus-extra discord
+Icon=discord
+Terminal=false
+Type=Application
+Categories=Applications;System
+

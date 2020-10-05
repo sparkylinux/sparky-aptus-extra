@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=MotionBox
+Comment=Video Browser
+Comment[de]=Videobrowser
+Comment[el]=Πρόγραμμα περιήγησης βίντεο
+Comment[es]=Navegador de video
+Comment[fr]=Navigateur vidéo
+Comment[it]=Browser video
+Comment[ja]=ビデオブラウザ
+Comment[pl]=Przeglądarka wideo
+Comment[pt]=Navegador de Vídeo
+Comment[ru]=Браузер видео
+Comment[sv]=Videobrowser
+Exec=remsu /usr/bin/sparky-aptus-extra motionbox
+Icon=motionbox
+Terminal=false
+Type=Application
+Categories=Applications;System
+

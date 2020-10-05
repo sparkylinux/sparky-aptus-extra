@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=Pure Data
+Comment=Visual dataflow programming platform for multimedia
+Comment[ca]=Plataforma de programació visual per aplicacions multimèdia
+Comment[de]=Grafische Datenflussprogrammierung für Multimedia
+Comment[es]=Plataforma de programación visual para aplicaciones multimedia
+Comment[fr]=Plateforme de programmation visuelle pour applications multimédia
+Comment[it]=Piattaforma di programmazione visuale per applicazioni multimedia
+Comment[pl]=Wizualna platforma programowania danych dla multimediów
+Comment[pt]=Plataforma de programação visuais para multimedia
+Icon=puredata.xpm
+Exec=remsu /usr/bin/sparky-aptus-extra puredata
+Terminal=false
+Categories=AudioVideo;Audio;

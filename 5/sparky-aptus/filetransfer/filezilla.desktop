@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=FileZilla
+Comment=Download and upload files via FTP, FTPS and SFTP
+Comment[da]=Download og upload filer via FTP, FTPS og SFTP
+Comment[de]=Dateien über FTP, FTPS und SFTP übertragen
+Comment[el]=Λήψη και μεταφόρτωση αρχείων μέσω FTP, FTPS και SFTP
+Comment[es]=Descargar y cargar archivos a través de FTP, FTPS y SFTP
+Comment[fr]=Transférer des fichiers via FTP, FTPS et SFTP
+Comment[it]=Scarica e carica file tramite FTP, FTPS e SFTP
+Comment[ja]=FTP、FTPS、SFTP経由でファイルをダウンロードしてアップロードする
+Comment[pl]=Pobierz i prześlij pliki przez FTP, FTPS i SFTP
+Comment[pt]=Faça o download e upload de arquivos via FTP, FTPS e SFTP
+Comment[ru]=Загружайте и загружайте файлы через FTP, FTPS и SFTP
+Comment[sv]=Hämta och ladda upp filer via FTP, FTPS och SFTP
+Exec=remsu /usr/bin/sparky-aptus-extra filezilla
+Icon=filezilla
+Terminal=false
+Type=Application
+Categories=Applications;System
+

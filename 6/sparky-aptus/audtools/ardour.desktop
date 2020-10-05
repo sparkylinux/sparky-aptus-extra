@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Ardour
+Comment=Record, mix and master multi-track audio
+Comment[fr]=Enregistrer, mixer et mastériser de l'audio multi-piste
+Comment[pl]=Nagrywaj i miksuj utwory audio
+Exec=remsu /usr/bin/sparky-aptus-extra ardour
+Icon=ardour
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=XnViewMP
+Comment=Graphic viewer, browser, converter
+Comment[de]=Grafischer Betrachter, Browser, Konverter
+Comment[el]=Γραφικό πρόγραμμα προβολής, πρόγραμμα περιήγησης, μετατροπέα
+Comment[es]=Visor gráfico, navegador, convertidor
+Comment[fr]=Visualiseur graphique, navigateur, convertisseur
+Comment[it]=Visualizzatore grafico, browser, convertitore
+Comment[ja]=グラフィックビューア、ブラウザ、コンバータ
+Comment[pl]=Przeglądarka graficzna, konwerter
+Comment[pt]=Visualizador gráfico, navegador, conversor
+Comment[ru]=Графический просмотрщик, браузер, конвертер
+Comment[sv]=Grafisk betraktare, webbläsare, omvandlare
+Exec=remsu /usr/bin/sparky-aptus-extra xnview
+Icon=/opt/XnView/xnview.png
+Terminal=false
+Type=Application
+Categories=Applications;System
+

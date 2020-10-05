@@ -1,0 +1,33 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Liferea
+Comment=Read news feeds and blogs
+Comment[ar]=اقرأ تلقيمات الأخبار و المدونات
+Comment[ca]=Llegiu canals de notícies i blocs
+Comment[da]=Læs nyheds- og blogkilder
+Comment[de]=News-Feeds und Blogs lesen
+Comment[es]=Lector de canales de noticias y blogs
+Comment[eu]=Irakurri berri jarioak eta blogak
+Comment[fi]=Lue uutissyötteitä ja blogeja
+Comment[fr]=Lecteurs de nouvelles et de blogs
+Comment[he]=קרא ערוצי חדשות ובלוגים
+Comment[hu]=Hírforrások és blogok olvasása
+Comment[id]=Baca feed berita dan blog
+Comment[it]=Leggi notizie e blog
+Comment[lv]=Lasīt ziņu plūsmas un blogus
+Comment[nl]=Nieuwsfeeds en blogs lezen
+Comment[pl]=Odczytuje zawartość kanałów wiadomości i blogów
+Comment[pt_BR]=Leia fontes de notícias e blogs
+Comment[ru]=Читайте ленты новостей и блоги
+Comment[sq]=Lexoni blogje dhe prurje lajmesh
+Comment[sv]=Läs nyhetsflöden och bloggar
+Comment[tr]=Haber beslemelerini ve blogları oku
+Comment[uk]=Читання подач новин та блогів
+Comment[vi]=Đọc các tin mới và blog
+Exec=remsu /usr/bin/sparky-aptus-extra liferea
+Icon=liferea
+Terminal=false
+Type=Application
+Categories=Applications;System
+

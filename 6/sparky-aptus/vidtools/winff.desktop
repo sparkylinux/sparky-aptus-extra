@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=WinFF
+Exec=remsu /usr/bin/sparky-aptus-extra winff
+Icon=winff
+Terminal=false
+Type=Application
+Categories=AudioVideo;
+Comment=Video converter
+Comment[en]=Video converter
+Comment[nl]=Video converteerder
+Comment[pl]=Konwerter wideo

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Categories=AudioVideo;Audio;
+Exec=remsu /usr/bin/sparky-aptus-extra rakarrack
+Name=Rakarrack
+Comment=Guitar Effects Processor
+Comment[pl]=Procesor efektów gitatowych
+Terminal=false
+Icon=icono_rakarrack_128x128

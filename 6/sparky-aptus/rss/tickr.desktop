@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Tickr
+Comment=GTK-based highly graphically-customizable Feed Ticker
+Comment[de]=GTK-basierter hoch graphisch anpassbarer Feed Ticker
+Comment[el]=GTK βασισμένο σε εξαιρετικά γραφικά προσαρμόσιμο Feed Ticker
+Comment[es]=Ticker de alimentación altamente gráfico y personalizable basado en GTK
+Comment[fr]=Feed Ticker hautement personnalisable graphiquement et basé sur GTK
+Comment[it]=Feed Ticker altamente personalizzabile e basato su GTK
+Comment[pl]=Oparty na GTK, wysoce dopasowany graficzny Feed Ticker
+Comment[pt]=Feed Ticker altamente graficamente personalizável baseado em GTK
+Comment[ru]=GTK-ориентированный графически настраиваемый тикер
+Comment[sv]=GTK-baserad mycket grafiskt anpassningsbar Feed Ticker
+Exec=remsu /usr/bin/sparky-aptus-extra tickr
+Icon=rss
+Terminal=false
+Type=Application
+Categories=Applications;System
+

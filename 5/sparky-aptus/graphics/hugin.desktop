@@ -1,0 +1,24 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Hugin
+Comment=Hugin Panorama Creator
+Comment[cs]=Pro skládání panoramat
+Comment[de]=Panorama-Editor
+Comment[el]=Πανόραμα Δημιουργός
+Comment[es]=Panorama Creador
+Comment[fr]=Créateur de panoramas
+Comment[hu]=Panoráma készítő
+Comment[it]=Assemblatore di panorami
+Comment[ja]=パノラマクリエイター
+Comment[pl]=Tworzenie panoram
+Comment[pt]=Criador de Panorama
+Comment[ru]=Сшиватель панорам
+Comment[sk]=Pre skladanie panorám
+Comment[sv]=Panorama Skapare
+Exec=remsu /usr/bin/sparky-aptus-extra hugin
+Icon=hugin
+Terminal=false
+Type=Application
+Categories=Applications;System
+

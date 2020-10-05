@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=SMPlayer
+Comment=Front-end for MPlayer and mpv
+Comment[de]=Frontend für MPlayer und mpv
+Comment[el]=Front-end για MPlayer και mpv
+Comment[es]=Parte frontal para MPlayer y mpv
+Comment[fr]=Front end pour MPlayer et MPV
+Comment[it]=Front-end per MPlayer e mpv
+Comment[ja]=MPlayerとmpvのフロントエンド
+Comment[pl]=Interfejs dla MPlayer i mpv 
+Comment[pt]=Front end para MPlayer e MPV
+Comment[ru]=Передняя часть для MPlayer и mpv
+Comment[sv]=Frontänden för MPlayer och mpv
+Exec=remsu /usr/bin/sparky-aptus-extra smplayer
+Icon=smplayer
+Terminal=false
+Type=Application
+Categories=Applications;System
+

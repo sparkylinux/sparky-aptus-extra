@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Caprine
+Comment=Elegant Facebook Messenger desktop app
+Exec=remsu /usr/bin/sparky-aptus-extra caprine
+Icon=caprine
+Terminal=false
+Type=Application
+Categories=Applications;System
+

@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=EKG2 (GTK)
+Comment=Instant messenger and IRC client for UNIX systems
+Comment[de]=Instant Messenger und IRC-Client für UNIX-Systeme
+Comment[el]=Instant messenger και πελάτη IRC για συστήματα UNIX
+Comment[es]=Mensajero instantáneo y cliente de IRC para sistemas UNIX
+Comment[fr]=Client de messagerie instantanée et IRC pour les systèmes UNIX
+Comment[it]=Instant messenger e client IRC per sistemi UNIX
+Comment[pl]=Komunikator internetowy i klient IRC dla systemów UNIX
+Comment[pt]=Mensageiro instantâneo e cliente de IRC para sistemas UNIX
+Comment[ru]=Мгновенный мессенджер и клиент IRC для UNIX-систем
+Comment[sv]=Instant messenger och IRC-klient för UNIX-system
+Exec=remsu /usr/bin/sparky-aptus-extra ekg2
+Icon=emesene
+Terminal=false
+Type=Application
+Categories=Applications;System
+

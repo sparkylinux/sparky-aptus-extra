@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Qsynth
+Version=1.0
+Comment=Qsynth is a FluidSynth Qt GUI Interface
+Comment[sr]=Програм за управљање програмом Флуид-синт, у графичком окружењу.
+Comment[fr]=Interface graphique pour Fluidsynth
+Comment[pl]=Graficzny interfejs Qt dla FluidSynth
+Exec=remsu /usr/bin/sparky-aptus-extra qsynth
+Icon=qsynth
+Categories=Audio;AudioVideo;
+Terminal=false
+Type=Application

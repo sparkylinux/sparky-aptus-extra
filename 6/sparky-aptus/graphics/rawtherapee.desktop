@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=RawTherapee
+Comment=Raw photo editor
+Comment[cs]=Editor raw obrázků
+Comment[fr]=Éditeur d'images raw
+Comment[pl]=Edytor zdjęć raw
+Exec=remsu /usr/bin/sparky-aptus-extra rawtherapee
+Icon=rawtherapee
+Terminal=false
+Type=Application
+Categories=Applications;System
+

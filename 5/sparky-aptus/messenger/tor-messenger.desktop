@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=TOR Messenger
+Comment=An instant messaging client that works in the TOR anonymity network
+Comment[de]=Ein Instant Messenger, der in einem anonymen TOR-Netzwerk arbeitet
+Comment[el]=Ένας άμεσος αγγελιοφόρος που λειτουργεί σε ένα ανώνυμο δίκτυο TOR
+Comment[es]=Un mensajero instantáneo que opera en una red TOR anónima
+Comment[fr]=Un messager instantané fonctionnant sur un réseau TOR TOR
+Comment[it]=Un instant messenger che opera su una rete TOR anonima
+Comment[ja]=匿名のTORネットワーク上で動作するインスタントメッセンジャー
+Comment[pl]=Komunikator internetowy działający w anonimowej sieci TOR 
+Comment[pt]=Um mensageiro instantâneo operando em uma rede TOR anônima
+Comment[ru]=Мгновенный агент, работающий в анонимной сети TOR
+Comment[sv]=En snabbmeddelande som arbetar på ett anonymt TOR-nätverk
+Exec=remsu /usr/bin/sparky-aptus-extra tor-messenger
+Icon=/opt/tor-messenger/Browser/chrome/icons/default/default48.png
+Terminal=false
+Type=Application
+Categories=Applications;System
+

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=AlsaPlayer GUI
+Comment=AlsaPlayer GTK interface
+Comment[de]=AlsaPlayer GTK-Schnittstelle
+Comment[el]=Διασύνδεση AlsaPlayer GTK
+Comment[es]=Interfaz AlsaPlayer GTK
+Comment[fr]=Interface AlsaPlayer GTK
+Comment[it]=Interfaccia AlsaPlayer GTK
+Comment[ja]=AlsaPlayer GTKインターフェース
+Comment[pl]=GTK interfejs AlsaPlayer
+Comment[pt]=Interface AlsaPlayer GTK
+Comment[ru]=Интерфейс AlsaPlayer GTK
+Comment[sv]=AlsaPlayer GTK-gränssnitt
+Exec=remsu /usr/bin/sparky-aptus-extra alsaplayer-gtk
+Icon=alsaplayer
+Terminal=false
+Type=Application
+Categories=Applications;System
+

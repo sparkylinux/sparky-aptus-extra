@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=MLDonkey
+Comment=Graphical frontend for MLDonkey
+Comment[de]=Grafisches Frontend für MLDonkey
+Comment[el]=Γραφικό μενού για το MLDonkey
+Comment[es]=Interfaz gráfica para MLDonkey
+Comment[fr]=Interface graphique pour MLDonkey
+Comment[it]=Frontend grafico per MLDonkey
+Comment[ja]=MLDonkeyのグラフィカルフロントエンド
+Comment[pl]=Graficzna nakładka dla MLDonkey
+Comment[pt]=Frontend gráfico para o MLDonkey
+Comment[ru]=Графический интерфейс для MLDonkey
+Comment[sv]=Grafisk frontend för MLDonkey
+Exec=remsu /usr/bin/sparky-aptus-extra mldonkey-gui
+Icon=mlgui
+Terminal=false
+Type=Application
+Categories=Applications;System
+

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Exec=remsu /usr/bin/sparky-aptus-extra denemo
+Icon=denemo
+Terminal=false
+Type=Application
+Categories=Audio;AudioVideo;Music;
+Name=GNU Denemo
+Comment=Edit musical scores
+Comment[de]=Partituren editieren
+Comment[en]=Edit musical scores
+Comment[fr]=Éditeur de partitions musicales
+Comment[it]=Compone gli spartiti musicali
+Comment[pl]=Edytuj wyniki muzyczne

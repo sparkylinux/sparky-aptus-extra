@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=ncftp
+Comment=User-friendly and well-featured FTP client
+Comment[de]=Benutzerfreundlicher und gut ausgestatteter FTP-Client
+Comment[el]=Φιλικός και φιλικός προς το χρήστη πελάτης FTP
+Comment[es]=Cliente FTP fácil de usar y con muchas funciones
+Comment[fr]=Client FTP convivial et bien conçu
+Comment[it]=Client FTP user-friendly e ben caratterizzato
+Comment[ja]=ユーザーフレンドリーで機能性の高いFTPクライアント
+Comment[pl]=Przyjazny dla użytkownika i dobrze wyposażony klient FTP
+Comment[pt]=Cliente de FTP amigável e bem caracterizado
+Comment[ru]=Удобный и хорошо известный FTP-клиент
+Comment[sv]=Användarvänlig och välfungerande FTP-klient
+Exec=remsu /usr/bin/sparky-aptus-extra ncftp
+Icon=download
+Terminal=false
+Type=Application
+Categories=Applications;System
+

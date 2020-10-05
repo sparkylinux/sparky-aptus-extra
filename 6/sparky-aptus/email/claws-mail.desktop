@@ -1,0 +1,29 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Claws Mail
+Comment=Lightweight and Fast GTK+ based Mail Client
+Comment[ca]=Client de correu electrònic ràpid i lleuger basat en GTK+
+Comment[cs]=Lehký a rychlý mailový klient založený na GTK+
+Comment[da]=Letvægts og hurtig GTK+ baseret e-post klient
+Comment[de]=Leichter und schneller GTK+ basierter Mail-Client
+Comment[es]=Cliente de correo rápido y ligero basado en GTK+
+Comment[fi]=Kevyt ja nopea GTK+-pohjainen sähköpostiohjelma
+Comment[fr]=Client de messagerie électronique, rapide et léger, en GTK+
+Comment[he]=לקוח דואר קל משקל ומהיר מבוסס +GTK
+Comment[hu]=Pehelysúlyú és gyors GTK+ alapú levelezőkliens
+Comment[id]=Pembaca e-mail berbasis GTK+ yang cepat dan ringan
+Comment[ja]=軽量で早いGTK+ベースのEメールクライアント
+Comment[lt]=Lengvas ir greitas el. pašto klientas GTK+ pagrindu
+Comment[pl]=Lekki program pocztowy używający GTK+
+Comment[pt]=Cliente de e-mail leve e rápido, baseado em GTK+
+Comment[ru]=Быстрый почтовый клиент на базе GTK+
+Comment[sk]=Odľahčený a rýchly poštový klient, založený na GTK+
+Comment[sv]=Lättviktig och snabb GTK+-baserad E-postklient
+Comment[tr]=GTK+ temelli hafif ve hızlı bir E-posta İstemcisi
+Exec=remsu /usr/bin/sparky-aptus-extra claws-mail
+Icon=claws-mail
+Terminal=false
+Type=Application
+Categories=Applications;System
+

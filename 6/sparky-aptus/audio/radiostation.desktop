@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=RadioStation
+Comment=Online radio streaming player
+Comment[de]=Online-Radio-Streaming-Player
+Comment[el]=Διαδικτυακή ραδιοφωνική συσκευή αναπαραγωγής
+Comment[es]=Reproductor de transmisión de radio en línea
+Comment[fr]=Lecteur de streaming radio en ligne
+Comment[it]=Riproduttore di streaming radio online
+Comment[ja]=オンラインラジオストリーミングプレーヤー
+Comment[pl]=Internetowy odtwarzacz strumieniowego radia
+Comment[pt]=Leitor de streaming de rádio online
+Comment[ru]=Интернет-радиопоток
+Comment[sv]=Online radio streaming spelare
+Exec=remsu /usr/bin/sparky-aptus-extra radiostation
+Icon=radiotray
+Type=Application
+Categories=Audio;
+

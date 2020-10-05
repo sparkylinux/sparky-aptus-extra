@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Daisy Player
+Exec=remsu /usr/bin/sparky-aptus-extra daisy-player
+Icon=daisy-player
+Terminal=true
+Type=Application
+Categories=AudioVideo;Audio;
+Comment=Player for DAISY Books
+Comment[en]=Player for DAISY Books
+Comment[de]=Spieler für DAISY Bücher
+Comment[nl]=Speler voor DAISY boeken
+Comment[pl]=Odtwarzacz dla książek DAISY

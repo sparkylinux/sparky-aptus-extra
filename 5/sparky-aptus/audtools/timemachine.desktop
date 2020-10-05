@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Timemachine
+Exec=remsu /usr/bin/sparky-aptus-extra timemachine
+Comment=JACK audio recorder
+Comment[pl]=Dźwiękowy rejestrator JACK
+Terminal=false
+Icon=/usr/share/timemachine/pixmaps/timemachine-icon.png
+Type=Application
+Categories=AudioVideo;Audio;

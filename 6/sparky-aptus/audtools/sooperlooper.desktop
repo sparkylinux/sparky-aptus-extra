@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=SooperLooper
+Comment=Looping Sampler
+Icon=sooperlooper
+Exec=remsu /usr/bin/sparky-aptus-extra sooperlooper
+Terminal=false
+Categories=AudioVideo;Audio;

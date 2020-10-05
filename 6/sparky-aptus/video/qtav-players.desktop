@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=QtAV Player
+Comment=QtAV Multimedia Player
+Comment[pl]=Odtwarzacz Multimedialny QtAV
+Comment[zh]=多媒体播放器
+Icon=QtAV
+Exec=remsu /usr/bin/sparky-aptus-extra qtav-players
+Terminal=false
+Categories=AudioVideo;Audio;Video;

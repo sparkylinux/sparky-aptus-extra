@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Alsamixergui
+Comment=Graphical audio mixer
+Comment[pl]=Graficzny mixer audio
+Exec=remsu /usr/bin/sparky-aptus-extra alsamixergui
+Icon=alsamixergui
+Terminal=false
+Type=Application
+Categories=AudioVideo;

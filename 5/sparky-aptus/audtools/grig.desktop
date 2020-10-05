@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Grig
+Comment=Ground Station Software Suite
+Comment[pl]=Pakiet oprogramowania stacji naziemnej
+Exec=remsu /usr/bin/sparky-aptus-extra grig
+Icon=ic910
+Terminal=false
+Type=Application
+Categories=Audio;

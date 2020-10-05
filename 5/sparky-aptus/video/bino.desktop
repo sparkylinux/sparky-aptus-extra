@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Bino
+Comment=3D video player
+Comment[de]=3D Videospieler
+Comment[fr]=Lecteur vidéo 3D
+Comment[pl]=Odtwarzacz 3D
+Comment[ru]=3D видео плеер
+Exec=remsu /usr/bin/sparky-aptus-extra bino
+Icon=bino
+Terminal=false
+Type=Application
+Categories=Applications;System
+

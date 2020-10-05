@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Meterbridge
+Comment=Audio level meter for JACK
+Comment[pl]=Miernik poziomu dźwięku dla JACK
+Icon=meterbridge32x32.xpm
+Exec=remsu /usr/bin/sparky-aptus-extra meterbridge
+Terminal=false
+Categories=AudioVideo;Audio;

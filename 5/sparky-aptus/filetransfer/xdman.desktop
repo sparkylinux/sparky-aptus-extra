@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=XDM
+Comment=Xtreme Download Manager is a powerful tool to increase download speed
+Type=Application
+Terminal=false
+Exec=remsu /usr/bin/sparky-aptus-extra xdman
+Icon=xdman
+Categories=AudioVideo;

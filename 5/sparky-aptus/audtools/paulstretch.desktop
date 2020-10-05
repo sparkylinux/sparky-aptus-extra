@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Paulstretch
+Comment=Suitable for extreme sound stretching of audio (like 50x)
+Comment[pl]=Nadaje się do ekstremalnego rozciągania dźwięku (np. 50x)
+Exec=remsu /usr/bin/sparky-aptus-extra paulstretch
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;

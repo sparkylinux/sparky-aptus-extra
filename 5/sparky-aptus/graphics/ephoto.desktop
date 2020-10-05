@@ -1,0 +1,26 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Ephoto
+Comment=Enlightened Photo Viewer
+Comment[ca]=Visor de fotos Enlightened
+Comment[de]=Enlightened-Fotobetrachter
+Comment[eo]=Foto-vidigilo de Enlightenment
+Comment[es]=Visualizador de fotos de Enlightenment
+Comment[fi]=Valaistunut valokuvakatselin
+Comment[fr]=Visionneuse photo pour Enlightenment
+Comment[gl]=Visualizador de fotos de Enlightenment
+Comment[it]=Visualizzatore di foto per Enlightenment
+Comment[lt]=Nuotraukų peržiūros programa
+Comment[ms]=Pelihat Foto Enlightenment
+Comment[pl]=Przeglądarka grafiki dla Enlightenment
+Comment[pt]=Visualizador de fotos do Enlightenment
+Comment[ru]=Просмотр фото
+Comment[sr]=Просвећени прегледник слика
+Comment[tr]=Fotoğraf görüntüleyici
+Exec=remsu /usr/bin/sparky-aptus-extra ephoto
+Icon=ephoto
+Terminal=false
+Type=Application
+Categories=Applications;System
+

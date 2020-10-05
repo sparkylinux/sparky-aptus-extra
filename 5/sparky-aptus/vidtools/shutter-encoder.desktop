@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Shutter Encoder
+Comment=Free encoding software for converting images, videos, and audio files
+Comment[pl]=Konwerter obrazów, wideo i audio
+Exec=remsu /usr/bin/sparky-aptus-extra shutter-encoder
+Icon=avidemux
+Terminal=false
+Type=Application
+Categories=AudioVideo

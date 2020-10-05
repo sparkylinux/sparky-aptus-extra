@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=tuxguitar
+Comment=Edit, playback guitar tablatures
+Comment[es]=Edita, reproduce tablaturas de guitarra
+Comment[fr]=Edite, joue des tablatures de guitare
+Comment[pl]=Edytuj, odtwarzaj tabulatury gitarowe
+Exec=remsu /usr/bin/sparky-aptus-extra tuxguitar
+Icon=tuxguitar
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;

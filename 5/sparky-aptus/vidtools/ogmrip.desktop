@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=OGMRip
+Comment=A DVD encoder
+Comment[cs]=DVD enkodér
+Comment[de]=Ein DVD-Kodierer
+Comment[fr]=Un encodeur de DVD
+Comment[nb]=Konverteringsverktøy for DVD
+Comment[pl]=Enkoder DVD
+Comment[ru]=DVD кодировщик
+Exec=remsu /usr/bin/sparky-aptus-extra ogmrip
+Icon=ogmrip
+Terminal=false
+Type=Application
+Categories=AudioVideo;

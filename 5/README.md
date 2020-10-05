@@ -15,3 +15,32 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Dependencies:
+-------------
+apt
+coreutils
+grep
+iputils-ping
+sparky-remsu
+sparky-xterm (>= 0.2.0)
+wget
+yad
+
+Conflicts:
+-------------
+skype-installer
+
+Replaces:
+-------------
+skype-installer
+
+Install:
+-------------
+su (or sudo) 
+./install.sh
+
+Uninstall:
+-------------
+su (or sudo)
+./install.sh uninstall

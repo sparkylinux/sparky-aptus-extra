@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Alpine
+Comment=Text-based email client
+Comment[de]=Textbasierter E-Mail-Client
+Comment[el]=Κείμενο πελάτη ηλεκτρονικού ταχυδρομείου
+Comment[es]=Cliente de correo electrónico basado en texto
+Comment[fr]=Client de messagerie textuel
+Comment[it]=Client di posta elettronica basato su testo
+Comment[pl]=Tekstowy klient poczty e-mail
+Comment[pt]=Cliente de email baseado em texto
+Comment[ru]=Текстовый почтовый клиент
+Comment[sv]=Textbaserad e-postklient
+Exec=remsu /usr/bin/sparky-aptus-extra alpine
+Icon=e-mail
+Terminal=false
+Type=Application
+Categories=Applications;System
+

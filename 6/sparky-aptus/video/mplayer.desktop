@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=MPlayer
+Comment=Movie player for Unix-like systems
+Comment[de]=Movie-Player für Unix-ähnliche Systeme
+Comment[el]=Αναπαραγωγή ταινιών για συστήματα παρόμοια με το Unix
+Comment[es]=Reproductor de películas para sistemas tipo Unix
+Comment[fr]=Lecteur de films pour les systèmes de type Unix
+Comment[it]=Movie player per sistemi simil-Unix
+Comment[ja]=Unixライクなシステムのムービープレーヤ
+Comment[pl]=Odtwarzacz filmów dla systemów uniksopodobnych
+Comment[pt]=Movie player para sistemas semelhantes ao Unix
+Comment[ru]=Фильм для Unix-подобных систем
+Comment[sv]=Filmspelare för Unix-liknande system
+Exec=remsu /usr/bin/sparky-aptus-extra mplayer
+Icon=mplayer
+Terminal=false
+Type=Application
+Categories=Applications;System
+

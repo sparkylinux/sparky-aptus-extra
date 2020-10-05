@@ -1,0 +1,27 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=GNOME Paint
+Comment=Create and Edit Drawings or Images
+Comment[ar]=أنشئ وحرّر الرسوم والصور
+Comment[cs]=Vytvořit a upravit kresby či obrázky
+Comment[da]=Opret og rediger tegninger eller billeder
+Comment[de]=Zeichnungen und Bilder erstellen und bearbeiten
+Comment[es]=Crear y editar dibujos o imágenes
+Comment[fr]=Créer et modifier des images ou des dessins
+Comment[he]=יצירה ועריכה של איורים או תמונות
+Comment[it]=Creare o modificare immagini o disegni
+Comment[nb]=Opprett og Rediger Tegninger heller Bilder
+Comment[pt]=Criar e Editar Desenhos ou Imagens
+Comment[pt_BR]=Crie e Edite Desenhos ou Imagens
+Comment[ru]=Создание и редактирование рисунков и изображений
+Comment[tr]=Çizim veya Görüntü Oluşturun ve Düzenleyin
+Comment[vi]=Tạo và chỉnh sửa hình vẽ hay ảnh
+Comment[zh_CN]=创建并编辑图像
+Comment[zh_TW]=建立與編輯繪畫或影像
+Exec=remsu /usr/bin/sparky-aptus-extra gnome-paint
+Icon=applications-graphics
+Terminal=false
+Type=Application
+Categories=Applications;System
+

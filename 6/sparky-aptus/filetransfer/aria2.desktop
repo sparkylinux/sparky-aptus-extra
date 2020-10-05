@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=aria2
+Comment=High speed download utility
+Comment[de]=Hochgeschwindigkeits-Download-Dienstprogramm
+Comment[el]=Υψηλής ταχύτητας χρησιμότητα λήψης
+Comment[es]=Utilidad de descarga de alta velocidad
+Comment[fr]=Utilitaire de téléchargement haute vitesse
+Comment[it]=Utilità di download ad alta velocità
+Comment[ja]=高速ダウンロードユーティリティ
+Comment[pl]=Narzędzie do szybkiego pobierania plików
+Comment[pt]=Utilitário de download de alta velocidade
+Comment[ru]=Высокая скорость загрузки
+Comment[sv]=Hög hastighet nedladdning verktyg
+Exec=remsu /usr/bin/sparky-aptus-extra aria2
+Icon=download
+Terminal=false
+Type=Application
+Categories=Applications;System
+

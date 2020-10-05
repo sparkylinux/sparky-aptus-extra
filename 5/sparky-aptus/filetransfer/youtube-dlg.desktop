@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=YouTube DL GUI
+Comment=GUI downloader of videos from YouTube and other sites
+Comment[de]=GUI Downloader von Videos von YouTube und anderen Seiten
+Comment[el]=GUI downloader βίντεο από το YouTube και άλλους ιστότοπους
+Comment[es]=Descargador de GUI de videos de YouTube y otros sitios
+Comment[fr]=GUI téléchargeur de vidéos de YouTube et d'autres sites
+Comment[it]=Downloader GUI di video da YouTube e altri siti
+Comment[ja]=YouTubeや他のサイトからのビデオのGUIダウンローダ
+Comment[pl]=Pobieranie z GUI filmów z YouTube i innych stron
+Comment[pt]=GUI downloader de vídeos do YouTube e outros sites
+Comment[ru]=GUI загрузчик видео с YouTube и других сайтов
+Comment[sv]=GUI-nedladdare av videoklipp från YouTube och andra webbplatser
+Exec=remsu /usr/bin/sparky-aptus-extra youtube-dlg
+Icon=youtube-dl-gui
+Terminal=false
+Type=Application
+Categories=Applications;System
+

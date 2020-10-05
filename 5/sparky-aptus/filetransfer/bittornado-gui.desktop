@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Bittornado Client
+Comment=Bittorrent Client
+Comment[de]=Bittorrent-Client
+Comment[el]=Bittorrent Client
+Comment[es]=Cliente Bittorrent
+Comment[fr]=Bittorrent Client
+Comment[it]=Client BitTorrent
+Comment[ja]=Bittorrentクライアント
+Comment[pl]=Kilent Bittorrent
+Comment[pt]=Cliente Bittorrent
+Comment[ru]=Клиент Bittorrent
+Comment[sv]=Bittorrent Client
+Exec=remsu /usr/bin/sparky-aptus-extra bittornado-gui
+Icon=bittornado
+Terminal=false
+Type=Application
+Categories=Applications;System
+

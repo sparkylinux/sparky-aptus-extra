@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Stremio
+GenericName=Stremio
+Comment=The next generation media center
+Comment[pl]=Centrum multimedialne następnej generacji
+Exec=remsu /usr/bin/sparky-aptus-extra stremio
+Icon=/opt/stremio/icons/smartcode-stremio_24.png
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;AudioVideo;
+

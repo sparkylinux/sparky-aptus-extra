@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=gFTP
+Comment=Download and upload files using multiple file transfer protocols
+Comment[de]=Laden und laden Sie Dateien mit mehreren Dateiübertragungsprotokollen hoch
+Comment[el]=Κάντε λήψη και μεταφόρτωση αρχείων χρησιμοποιώντας πολλά πρωτόκολλα μεταφοράς αρχείων
+Comment[es]=Descargue y cargue archivos usando múltiples protocolos de transferencia de archivos
+Comment[fr]=Télécharge des fichiers en utilisant le protocole FTP
+Comment[it]=Scarica e carica file utilizzando più protocolli di trasferimento file
+Comment[ja]=複数のファイル転送プロトコルを使用してファイルをダウンロードおよびアップロードする
+Comment[pl]=Pobierz i prześlij pliki przy użyciu wielu protokołów przesyłania plików
+Comment[pt]=Faça o download e upload de arquivos usando vários protocolos de transferência de arquivos
+Comment[ru]=Загрузка и загрузка файлов с использованием нескольких протоколов передачи файлов
+Comment[sv]=Hämta och ladda upp filer med flera filöverföringsprotokoll
+Exec=remsu /usr/bin/sparky-aptus-extra gftp
+Icon=gftp
+Terminal=false
+Type=Application
+Categories=Applications;System
+

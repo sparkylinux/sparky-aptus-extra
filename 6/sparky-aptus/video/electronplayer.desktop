@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=ElectronPlayer
+GenericName=ElectronPlayer
+Comment=An Electron based web video services player
+Comment[pl]=Bazujący na Electron odtwarzacz sieciowych serwisów wideo
+Exec=remsu /usr/bin/sparky-aptus-extra electronplayer
+Icon=gnome-mpv
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;AudioVideo;
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Jaaa
+Comment=Analyse or generate an Audio signal through JACK
+Comment[pl]=Analiza i generowanie sygnału audio za pośrednictwem JACK
+Exec=remsu /usr/bin/sparky-aptus-extra jaaa
+Icon=jaaa
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Dropbox
+Comment=File Synchronizer
+Comment[de]=Dateisynchronisierung
+Comment[el]=Συγχρονιστής αρχείων
+Comment[es]=Sincronizador de archivos
+Comment[fr]=Fichier Synchronizer
+Comment[it]=File Synchronizer
+Comment[ja]=ファイル同期装置
+Comment[pl]=Synchronizator plików
+Comment[pt]=File Synchronizer
+Comment[ru]=Синхронизатор файлов
+Comment[sv]=Filsynkroniserare
+Exec=remsu /usr/bin/sparky-aptus-extra dropbox
+Icon=dropbox
+Terminal=false
+Type=Application
+Categories=Applications;System
+

@@ -1,0 +1,19 @@
+# Arquivo de localização para o Português do Brasil do  aplicativo Sparky APTus Extra.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/20
+# Sob a licença GNU GPL v2
+# Traduzido por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 2015/12/06
+# Last update 2018/05/04 by pavroo
+LOCAL4="Algo está errado!\nProvavelmente você parou a instalação ou o servidor de repositório está inativo.\nVerifique sua conexão com a Internet, atualize a lista de pacotes e tente novamente.\n\nSaindo..."
+LOCAL63="Sair"
+LOCAL90="Saindo..."
+LOCAL102="Remover"
+LOCAL103="Reinstalar"
+LOCAL104="Instalar"
+LOCAL105="Esse pacote já está instalado."
+LOCAL106="O que você gostaria de fazer agora?"
+LOCAL107="Falha no teste de conexão com a Internet!\n\nProvavelmente você NÃO está conectado à Internet ou o servidor de repositório principal está desativado.\n\nVerifique e tente novamente."
+LOCAL108="Gostaria de instalar o pacote que você escolheu?"
+LOCAL109="O pacote foi instalado com sucesso."
+LOCAL110="Esse pacote não está disponível para a versão do seu sistema."
+### .desktop file to be translated too
+#Comment[pt_BR]=Instale aplicações extras do repositório do SparkyLinux

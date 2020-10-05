@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Silverjuke
+Comment=Music Player
+Comment[de]=Musikabspieler
+Comment[pl]=Odtwarzacz muzyki
+Exec=remsu /usr/bin/sparky-aptus-extra silverjuke
+Icon=silverjuke
+Categories=AudioVideo;Audio;Player;Music

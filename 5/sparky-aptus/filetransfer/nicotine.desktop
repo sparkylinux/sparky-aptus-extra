@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Nicotine-Plus
+Comment=Python client for the SoulSeek P2P file sharing network
+Comment[de]=Python-Client für das SoulSeek P2P-Filesharing-Netzwerk
+Comment[el]=Πελάτη Python για το δίκτυο κοινής χρήσης αρχείων του SoulSeek P2P
+Comment[es]=Cliente de Python para la red de intercambio de archivos SoulSeek P2P
+Comment[fr]=Client Python pour le réseau de partage de fichiers P2P SoulSeek
+Comment[it]=Client Python per la rete di condivisione di file P2P SoulSeek
+Comment[ja]=SoulSeek P2Pファイル共有ネットワークのPythonクライアント
+Comment[pl]=Klient Python dla sieci udostępniania plików SoulSeek P2P
+Comment[pt]=Cliente Python para a rede de compartilhamento de arquivos P2P SoulSeek
+Comment[ru]=Клиент Python для сети обмена файлами SoulSeek P2P
+Comment[sv]=Python-klient för SoulSeek P2P-fildelningsnätverket
+Exec=remsu /usr/bin/sparky-aptus-extra nicotine
+Icon=nicotine-plus
+Terminal=false
+Type=Application
+Categories=Applications;System
+

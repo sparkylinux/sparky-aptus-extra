@@ -1,0 +1,32 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Psi
+Comment=Communicate over the XMPP network
+Comment[be]=Размаўляйце ў сетцы XMPP
+Comment[bg]=Комуникирайте през XMPP мрежата
+Comment[ca]=Comuniqui's a través de la xarxa XMPP
+Comment[cs]=Komunikujte přes XMPP po síti
+Comment[de]=Im XMPP-Netzwerk kommunizieren
+Comment[eo]=Komunikiĝu per la ĵabbera reto
+Comment[es]=Comunícate a través de la red XMPP
+Comment[fr]=Communiquez via le réseau XMPP
+Comment[he]=תקשר על פני רשת XMPP
+Comment[it]=Comunica sulla rete XMPP
+Comment[ja]=XMPPネットーワーク通信
+Comment[mk]=Комуницирајте преку XMPP мрежата
+Comment[nl]=Communiceer over het XMPP netwerk
+Comment[pl]=Komunikacja poprzez sieć XMPP
+Comment[pt_BR]=Comunique-se através da rede XMPP
+Comment[ru]=Общение в сети XMPP
+Comment[sl]=Takojšnje sporočanje prek omrežij XMPP
+Comment[sv]=Kommunicera över XMPPnätverket
+Comment[uk]=Програма для спілкування в мережі XMPP
+Comment[vi]=Liên lạc qua mạng XMPP nhé
+Comment[zh_TW]=在 XMPP 網路上交談
+Exec=remsu /usr/bin/sparky-aptus-extra psi
+Icon=psi
+Terminal=false
+Type=Application
+Categories=Applications;System
+

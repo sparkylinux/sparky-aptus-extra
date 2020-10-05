@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Skype
+Comment=The VoIP videocalling program
+Comment[de]=Das VoIP-Videocalling-Programm
+Comment[el]=Το πρόγραμμα τηλεδιάσκεψης VoIP
+Comment[es]=El programa de videollamadas VoIP
+Comment[fr]=Le programme de vidéoconférence VoIP
+Comment[it]=l programma di videochiamata VoIP
+Comment[ja]=VoIPビデオコーリングプログラム
+Comment[pl]=Program wideokonferencji VoIP
+Comment[pt]=O programa de videoconferência VoIP
+Comment[ru]=Программа видеосвязи VoIP
+Comment[sv]=VoIP videocalling-programmet
+Exec=remsu /usr/bin/sparky-aptus-extra skypeforlinux
+Icon=skype
+Terminal=false
+Type=Application
+Categories=Applications;System
+

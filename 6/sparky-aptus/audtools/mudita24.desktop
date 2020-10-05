@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Mudita24
+Comment=ALSA GUI control tool for Envy24 (ice1712) soundcards
+Comment[fr]=Outil graphique de contrôle ALSA pour les interfaces audio Envy24 (ice1712)
+Comment[pl]=Narzędzie kontrolne ALSA GUI dla kart dźwiękowych Envy24 (ice1712)
+Icon=mudita24
+Exec=remsu /usr/bin/sparky-aptus-extra mudita24
+Categories=AudioVideo;Audio;

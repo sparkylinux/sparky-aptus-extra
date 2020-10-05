@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Element
+Comment=A feature-rich client for Matrix.org
+Exec=remsu /usr/bin/sparky-aptus-extra element-desktop
+Icon=element-desktop
+Terminal=false
+Type=Application
+Categories=Applications;System
+

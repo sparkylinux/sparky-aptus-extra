@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Cecilia
+Comment=Sound synthesis and audio signal processor
+Comment[pl]=Syntezator dźwięku i procesor sygnału audio
+Icon=cecilia
+Type=Application
+Categories=AudioVideo;Audio;
+Exec=remsu /usr/bin/sparky-aptus-extra cecilia

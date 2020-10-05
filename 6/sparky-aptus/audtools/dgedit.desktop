@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=DGEdit
+Comment=DrumGizmo drum kit editor
+Comment[es]=Editor de kit de batería para DrumGizmo
+Comment[fr]=Éditeur de kit de batterie pour DrumGizmo
+Comment[pl]=DrumGizmo edytor perkusji
+Exec=remsu /usr/bin/sparky-aptus-extra dgedit
+Icon=dgedit
+Categories=Audio;

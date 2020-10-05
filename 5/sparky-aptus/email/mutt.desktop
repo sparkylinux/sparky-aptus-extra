@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Mutt
+Comment=Simple text-based Mail User Agent
+Comment[de]=Einfaches, Text-basiertes Mailprogramm
+Comment[el]=Απλός πράκτορας αλληλογραφίας με βάση το κείμενο
+Comment[es]=Agente de usuario de correo simple basado en texto
+Comment[fr]=Agent d'utilisateur de messagerie textuel simple
+Comment[it]=Semplice Mail User Agent basato su testo
+Comment[pl]=Prosty tekstowy agent pocztowy
+Comment[pt]=Agente de Usuário de Correio baseado em texto simples
+Comment[ru]=Простой текстовый агент пользователя почты
+Comment[sv]=Enkel textbaserad Mail User Agent
+Exec=remsu /usr/bin/sparky-aptus-extra mutt
+Icon=mutt
+Terminal=false
+Type=Application
+Categories=Applications;System
+

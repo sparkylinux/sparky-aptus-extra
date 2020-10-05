@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=qStopMotion
+Comment=Program to create stop-motion animations
+Comment[pl]=Program do tworzenia animacji poklatkowych
+Exec=remsu /usr/bin/sparky-aptus-extra qstopmotion
+Icon=qstopmotion
+Terminal=false
+Type=Application
+Categories=AudioVideo;Video;

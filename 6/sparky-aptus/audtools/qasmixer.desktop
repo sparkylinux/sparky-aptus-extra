@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=QasMixer
+Comment=Sound volume mixer
+Comment[de]=Klanglautstärkenregler
+Comment[he]=מערבל צלילי עוצמת שמע
+Comment[it]=Mixer volume audio
+Comment[pl]=Mixer poziomu dźwięku
+Comment[ru]=Микшер для звуковой системы
+Exec=remsu /usr/bin/sparky-aptus-extra qasmixer
+Icon=qasmixer
+Terminal=false
+Categories=AudioVideo;Audio;

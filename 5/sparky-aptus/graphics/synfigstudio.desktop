@@ -1,0 +1,33 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Synfig Studio
+Comment=2D vector animation studio
+Comment[ar]=استوديو الرسوم المتجهية المتحركة ثنائيى الابعاد 2d
+Comment[ca]=Estudi d'animació vectorial 2D
+Comment[cs]=2D vektorové animační studio
+Comment[da]=2D vektor animationsstudie
+Comment[de]=2D-Vektor-Animationsstudio
+Comment[es]=Estudio de animación vectorial 2D
+Comment[eu]=2D animazio bektorialaren estudioa
+Comment[fr]=Studio d'animation vectorielle 2D
+Comment[hu]=2D vektoros animációs stúdió
+Comment[it]=Studio animazione vettoriale 2D
+Comment[ja]=２次元ベクター・アニメーション・スタジオ
+Comment[lt]=2D vektorinės animacijos studija
+Comment[nl]=2D vectoranimatiestudio
+Comment[pl]=Studio wektorowej animacji 2D
+Comment[pt_BR]=Estúdio de animação vetorial 2D
+Comment[ru]=Студия двухмерной векторной анимации
+Comment[sk]=2D vektorové animačné štúdio
+Comment[sr]=Творац 2-димензионалних покретних слика
+Comment[sv]=2D-vektoranimationsstudio
+Comment[tr]=2 boyutlu vektör animasyon studio
+Comment[zh_CN]=2D 矢量动画工作室
+Comment[zh_TW]=2D 向量動畫工作室
+Exec=remsu /usr/bin/sparky-aptus-extra synfigstudio
+Icon=synfig_icon
+Terminal=false
+Type=Application
+Categories=Applications;System
+

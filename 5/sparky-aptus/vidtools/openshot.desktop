@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=OpenShot
+Comment=Video Editor
+Comment[de]=Video-Editor
+Comment[pl]=Edytor wideo
+Exec=remsu /usr/bin/sparky-aptus-extra openshot
+Terminal=false
+Type=Application
+Icon=openshot
+Categories=AudioVideo;Video;

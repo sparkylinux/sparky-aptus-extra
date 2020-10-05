@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=sic
+Comment=Simple irc client
+Comment[de]=Ein einfacher IRC-Client
+Comment[el]=Ένας απλός πελάτης IRC
+Comment[es]=Un cliente simple de IRC
+Comment[fr]=Un simple client IRC
+Comment[it]=Un semplice client IRC
+Comment[ja]=単純なIRCクライアント
+Comment[pl]=Prosty klient IRC
+Comment[pt]=Um simples cliente de IRC
+Comment[ru]=Простой клиент IRC
+Comment[sv]=En enkel IRC-klient
+Exec=remsu /usr/bin/sparky-aptus-extra sic
+Icon=irc
+Terminal=false
+Type=Application
+Categories=Applications;System
+

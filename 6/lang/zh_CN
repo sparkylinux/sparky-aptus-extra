@@ -1,0 +1,18 @@
+# Chinese(Simplified) localization file for Sparky APTus Extra.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/20
+# Under the GNU GPL v2
+# Last update 2020/10/01 by xingjiapeng
+LOCAL4="出错了！ \n也许因为您终止了安装，也可能因为网络断开。\n请检查网络链接，刷新软件包列表并重试。 \n\n退出……"
+LOCAL63="退出"
+LOCAL90="退出……"
+LOCAL102="卸载"
+LOCAL103="重新安装"
+LOCAL104="安装"
+LOCAL105="该软件包已经安装。"
+LOCAL106="您现在想要做什么？"
+LOCAL107="网络连接测试失败！\n\n也许您尚未连接到网络或者主软件仓库服务器不在线。\n\n请检查并重试。"
+LOCAL108="需要安装您选中的软件包吗？"
+LOCAL109="已成功安装该软件包。"
+LOCAL110="该软件包不适合您的系统版本。"
+### .desktop file to be translated too
+# Comment[zh_CN]=从 SparkyLinux 软件仓库中安装更多应用程序

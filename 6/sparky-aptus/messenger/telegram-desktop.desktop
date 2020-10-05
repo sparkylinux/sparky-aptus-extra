@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Telegram Desktop
+Comment=Telegram instant messaginger
+Comment[de]=elegramm von Instant Messenger
+Comment[el]=Τηλεγράφημα του άμεσου αγγελιοφόρου
+Comment[es]=Telegrama de mensajería instantánea
+Comment[fr]=Télégramme de messagerie instantanée
+Comment[it]=Telegram di instant messenger
+Comment[ja]=インスタントメッセンジャーの電報
+Comment[pl]=Telegram komunikator internetowy
+Comment[pt]=Telegrama do mensageiro instantâneo
+Comment[ru]=Телеграмма мессенджера
+Comment[sv]=Telegram av snabbmeddelande
+Exec=remsu /usr/bin/sparky-aptus-extra telegram-desktop
+Icon=telegram
+Terminal=false
+Type=Application
+Categories=Applications;System
+

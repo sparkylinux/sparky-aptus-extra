@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=LiVES
+Comment=A video editor and VJ program
+Comment[pl]=Edytor wideo
+Categories=AudioVideo;
+Exec=remsu /usr/bin/sparky-aptus-extra lives
+Icon=lives
+Type=Application
+Terminal=false

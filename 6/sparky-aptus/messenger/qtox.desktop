@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=qTox
+Comment=Tox client that follows the Tox design guidelines 
+Exec=remsu /usr/bin/sparky-aptus-extra qtox
+Icon=empathy
+Terminal=false
+Type=Application
+Categories=Applications;System
+

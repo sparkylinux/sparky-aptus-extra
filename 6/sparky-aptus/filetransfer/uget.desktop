@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=uGet
+Comment=Download multiple URLs
+Comment[de]=Laden Sie mehrere URLs herunter
+Comment[el]=Κάντε λήψη πολλών διευθύνσεων URL
+Comment[es]=Descargar varias URL
+Comment[fr]=Télécharger plusieurs URL
+Comment[it]=Scarica più URL
+Comment[ja]=複数のURLをダウンロードする
+Comment[pl]=Pobieranie z wielu adresów URL
+Comment[pt]=Faça o download de vários URLs
+Comment[ru]=Загрузите несколько URL-адресов
+Comment[sv]=Hämta flera webbadresser
+Exec=remsu /usr/bin/sparky-aptus-extra uget
+Icon=uget-icon
+Terminal=false
+Type=Application
+Categories=Applications;System
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Yoshimi
+Comment=Real Time Synthesizer
+Comment[fr]=Synthétiseur temps-réel
+Comment[pl]=Syntezator czasu rzeczywistego
+Type=Application
+Categories=AudioVideo;Audio;
+Exec=remsu /usr/bin/sparky-aptus-extra yoshimi
+Terminal=false
+Icon=yoshimi

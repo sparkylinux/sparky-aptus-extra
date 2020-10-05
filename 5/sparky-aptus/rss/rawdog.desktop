@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=rawdog
+Comment=A feed aggregator for Unix-like systems
+Comment[de]=Ein Feed-Aggregator für Unix-ähnliche Systeme
+Comment[el]=Συγκεντρωτής τροφοδοσίας για συστήματα παρόμοια με το Unix
+Comment[es]=Un agregador de feeds para sistemas tipo Unix
+Comment[fr]=Un agrégateur de flux pour les systèmes de type Unix
+Comment[it]=Un aggregatore di feed per sistemi simil-Unix
+Comment[pl]=Agregator kanałów dla systemów uniksopodobnych
+Comment[pt]=Um agregador de feeds para sistemas semelhantes ao Unix
+Comment[ru]=Агрегатор подачи для Unix-подобных систем
+Comment[sv]=En mataggregat för Unix-liknande system
+Exec=remsu /usr/bin/sparky-aptus-extra rawdog
+Icon=rss
+Terminal=false
+Type=Application
+Categories=Applications;System
+

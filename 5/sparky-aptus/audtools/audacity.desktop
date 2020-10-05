@@ -1,0 +1,23 @@
+[Desktop Entry]
+Name=Audacity
+Comment=Record and edit audio files
+Comment[ar]=سجل و حرر ملفات صوت
+Comment[ca]=Enregistreu i editeu els fitxers d'àudio
+Comment[da]=Optag og rediger lydfiler
+Comment[de]=Audio-Dateien aufnehmen und bearbeiten
+Comment[el]=Ηχογράφηση και επεξεργασία αρχείων ήχου
+Comment[fr]=Enregistrer et éditer des fichiers audio
+Comment[hi]=ऑडियो फ़ाइल अंकित व संपादित करता है
+Comment[ja]=録音とオーディオ編集
+Comment[nl]=Audiobestanden opnemen en bewerken
+Comment[pl]=Nagrywaj i edytuj pliki audio
+Comment[pt_BR]=Gravar e editar arquivos de áudio
+Comment[pt_PT]=Gravar e editar ficheiros de áudio
+Comment[ru]=Запись и редактирование звуковых файлов
+Comment[uk]=Запис і редагування звукових файлів
+Comment[zh_CN]=录音和编辑音频文件
+Comment[zh_TW]=錄音和編輯音訊檔案
+Icon=audacity
+Type=Application
+Categories=AudioVideo;Audio;
+Exec=remsu /usr/bin/sparky-aptus-extra audacity

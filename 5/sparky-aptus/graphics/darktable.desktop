@@ -1,0 +1,28 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Darktable
+Comment=Organize and develop images from digital cameras
+Comment[ca]=Organitza i revela imatges de càmeres digitals
+Comment[cs]=Správa a vyvolávání snímků z digitálních fotoaparátů
+Comment[da]=organisér og fremkald billeder fra digitale kameraer
+Comment[de]=Organisiere und entwickle Bilder von Digitalkameras
+Comment[el]=οργανώστε και εμφανίστε εικόνες απο ψηφιακές μηχανές
+Comment[es]=Organizar y revelar imágenes de cámaras digitales
+Comment[fr]=Organiser et développer les images d'un boîtier numérique
+Comment[he]=ארגן ופתח תמונות ממצלמות דיגיטליות
+Comment[hu]=Digitális fényképező képeinek rendezése, kidolgozása
+Comment[it]=Organizza e sviluppa le immagini della tua fotocamera digitale
+Comment[ja]=デジタルカメラ画像の現像と整理
+Comment[nl]=organiseer en ontwikkel afbeeldingen van digitale camera's
+Comment[pl]=Organizuj i obrabiaj zdjęcia z aparatów cyfrowych
+Comment[ru]=Организация и обработка цифровых фотографий
+Comment[sk]=Organizuje a vyvoláva obrázky z digitálnych fotoaprátov
+Comment[sl]=Organizira in razvija slike digitalnih kamer
+Comment[sv]=Organisera och utveckla bilder från digitalkameror
+Exec=remsu /usr/bin/sparky-aptus-extra darktable
+Icon=darktable
+Terminal=false
+Type=Application
+Categories=Applications;System
+

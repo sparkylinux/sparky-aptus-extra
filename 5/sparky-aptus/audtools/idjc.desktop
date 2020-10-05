@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=GTK;Network;
+Comment=Create your live radio show or podcast
+Comment[pl]=Tworzenie radia na żywo lub podkastów
+Comment[it]=Crea la tua live radio o podcast
+Comment[de]=Erstelle deine eigene Radiosendung oder Podcasts
+Comment[fr]=Créez votre spectacle radio en direct ou votre podcast
+Exec=remsu /usr/bin/sparky-aptus-extra idjc
+Icon=/usr/share/pixmaps/idjc.png
+Name=Internet DJ Console
+Type=Application
+Version=1.0

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Sweep
+Comment=Sweep Sound Editor
+Comment[pl]=Edytor dźwięku Sweep
+Categories=Application;AudioVideo;
+Encoding=UTF-8
+Exec=remsu /usr/bin/sparky-aptus-extra sweep
+Icon=sweep
+Terminal=false
+Type=Application

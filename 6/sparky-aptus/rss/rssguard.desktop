@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=RSS Guard
+Comment=Tiny yet feature rich Qt feed reader
+Comment[cs]=Velmi jednoduchá čtečka kanálů
+Comment[de]=Qt Feedreader mit großem Funktionsumfang bei geringem Ressourcenbedarf
+Comment[el]=Μικρό ακόμα διαθέτει πλούσιο αναγνώστη τροφοδοσίας Qt
+Comment[es]=Pequeño pero rico lector de alimentación Qt
+Comment[fr]=Lecteur de flux Qt minuscule mais riche en fonctionnalités
+Comment[it]=Piccolo ma ricco lettore di feed Qt
+Comment[pl]=Niewielki, ale funkcjonalny czytnik kanałów Qt
+Comment[pt]=Pequeno e rico leitor de feeds Qt
+Comment[ru]=Крошечный, но многофункциональный считыватель каналов Qt
+Exec=remsu /usr/bin/sparky-aptus-extra rssguard
+Icon=rssguard
+Terminal=false
+Type=Application
+Categories=Applications;System
+

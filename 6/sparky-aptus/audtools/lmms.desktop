@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=LMMS
+Comment=Easy music production for everyone!
+Comment[ca]=Producció fàcil de música per a tothom!
+Comment[pl]=Łatwa produkcja muzyki dla każdego!
+Icon=lmms
+Exec=remsu /usr/bin/sparky-aptus-extra lmms
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Loqui
+Comment=IRC client
+Comment[de]=IRC-Kunde
+Comment[el]=Πελάτη IRC
+Comment[es]=IRC client
+Comment[fr]=Client IRC
+Comment[it]=Client IRC
+Comment[ja]=IRCクライアント
+Comment[pl]=Klient IRC
+Comment[pt]=Cliente de IRC
+Comment[ru]=IRC-клиент
+Comment[sv]=IRC-klient
+Exec=remsu /usr/bin/sparky-aptus-extra loqui
+Icon=loqui
+Terminal=false
+Type=Application
+Categories=Applications;System
+

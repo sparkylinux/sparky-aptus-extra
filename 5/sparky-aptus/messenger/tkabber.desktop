@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Tkabber
+Comment=GUI client for XMPP (Jabber) instant messaging
+Comment[de]=GUI-Client für die XMPP-Nachrichtenübermittlung (Jabber)
+Comment[el]=Πελάτη GUI για άμεση ανταλλαγή μηνυμάτων XMPP (Jabber)
+Comment[es]=Cliente gráfico de mensajería instantánea XMPP (Jabber)
+Comment[fr]=Client GUI pour la messagerie instantanée XMPP (Jabber)
+Comment[it]=Client GUI per l'instant messaging XMPP (Jabber)
+Comment[ja]=XMPP（Jabber）インスタントメッセージングのためのGUIクライアント
+Comment[pl]=Graficzny klient do wymiany wiadomości błyskawicznych XMPP (Jabber)
+Comment[pt]=Cliente GUI para mensagens instantâneas XMPP (Jabber)
+Comment[ru]=GUI клиент для мгновенного обмена сообщениями XMPP (Jabber)
+Comment[sv]=GUI-klient för XMPP (Jabber) snabbmeddelanden
+Exec=remsu /usr/bin/sparky-aptus-extra tkabber
+Icon=emesene
+Terminal=false
+Type=Application
+Categories=Applications;System
+
