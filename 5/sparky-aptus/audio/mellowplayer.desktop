@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=MellowPlayer
+Comment=Cloud music player
+Comment[pl]=Odtwarzacz muzyki z serwisow internetowych
+Exec=remsu /usr/bin/sparky-aptus-extra mellowplayer
+Icon=mellowplayer
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;
+
