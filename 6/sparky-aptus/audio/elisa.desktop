@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Elisa
+Exec=remsu /usr/bin/sparky-aptus-extra elisa
+Icon=Elisa
+Terminal=true
+Type=Application
+Categories=Audio;
+Comment=Simple music player with Plasma integration and privacy
