@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Drawing
+Comment=Simple drawing application for the GNOME desktop
+Comment[pl]=Prosta aplikacja do rysowania dla pulpitu GNOME
+Exec=remsu /usr/bin/sparky-aptus-extra drawing
+Icon=applications-graphics
+Terminal=false
+Type=Application
+Categories=Applications;System
+
