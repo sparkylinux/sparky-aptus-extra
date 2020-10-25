@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=FFQueue
+Comment=A graphical user interface for FFMpeg
+Comment[pl]=Graficzny interfejs dla FFMpeg
+Exec=remsu /usr/bin/sparky-aptus-extra ffqueue
+Icon=ffqueue
+Type=Application
+Categories=AudioVideo;
