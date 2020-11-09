@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Lazpaint
+Comment=Graphics viewer and editor
+Comment[pl]=Przeglądarka i edytor grafiki
+Exec=remsu /usr/bin/sparky-aptus-extra lazpaint
+Icon=lazpaint
+Terminal=false
+Type=Application
+Categories=Applications;System
+
