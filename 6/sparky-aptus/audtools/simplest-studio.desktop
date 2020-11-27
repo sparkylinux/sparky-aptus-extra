@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Audacity
+Comment=Simplest Studio
+Comment=Audio encoder
+Icon=simplest-studio
+Type=Application
+Categories=AudioVideo;Audio;
+Exec=remsu /usr/bin/sparky-aptus-extra simplest-studio
