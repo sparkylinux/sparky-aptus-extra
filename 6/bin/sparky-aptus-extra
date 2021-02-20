@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debian, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2021 under the GNU GPL2 License
-# Last updated 2021/02/18
+# Last updated 2021/02/20
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -79,6 +79,13 @@ case $1 in
 #####audio players###################################################
   alsaplayer-gtk)
 	PACKAGE="alsaplayer-gtk"
+     ;;
+  amarok)
+  	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="amarok"
      ;;
   ario)
 	PACKAGE="ario"
@@ -742,6 +749,10 @@ case $1 in
 	PACKAGE="konversation"
      ;;
   kopete)
+  	if [ "$ARCHARM" != "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
 	PACKAGE="kopete"
      ;;
   kvirc)
