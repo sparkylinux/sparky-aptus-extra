@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Filmulator
+Comment=Streamlined photo editor
+Exec=remsu /usr/bin/sparky-aptus-extra filmulator-gui
+Icon=filmulator-gui64
+Terminal=false
+Categories=Graphics;

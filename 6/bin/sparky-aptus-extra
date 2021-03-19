@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debian, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2021 under the GNU GPL2 License
-# Last updated 2021/02/20
+# Last updated 2021/03/19
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -555,6 +555,13 @@ case $1 in
      ;;
   feh)
 	PACKAGE="feh"
+     ;;
+  filmulator-gui)
+	if [ "$ARCH64" = "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="filmulator-gui"
      ;;
   flameshot)
 	PACKAGE="flameshot"
