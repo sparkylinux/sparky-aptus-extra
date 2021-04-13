@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Rocket.Chat
+Comment=Rocket.Chat native cross-platform desktop application
+Exec=remsu /usr/bin/sparky-aptus-extra rocketchat
+Icon=rocketchat-desktop
+Terminal=false
+Type=Application
+Categories=Applications;System
+

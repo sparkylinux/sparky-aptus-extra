@@ -4,7 +4,7 @@
 # It lets you install aditional software from Debian, Sparky and 3th party repositories
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2021 under the GNU GPL2 License
-# Last updated 2021/03/19
+# Last updated 2021/04/13
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-aptus-extra"
@@ -803,6 +803,13 @@ case $1 in
 	fi
 	PACKAGE="rambox"
      ;;
+  rocketchat)
+	if [ "$ARCH64" = "" ]; then
+		$DIALOG $TEXT"\n$LOCAL110\n\n$LOCAL90" $TITLE"$TITLETEXT" $MSGBOX
+		exit 1
+	fi
+	PACKAGE="rocketchat"
+    ;;
   scrollz)
 	PACKAGE="scrollz"
      ;;
@@ -1035,6 +1042,8 @@ if [ "$1" = "lightzone" ]; then
 	CHECKPACKAGE="/usr/lib/$PACKAGE"
 elif [ "$1" = "popcorn" ]; then
 	CHECKPACKAGE="/opt/Popcorn-Time"
+elif [ "$1" = "rocketchat" ]; then
+	CHECKPACKAGE="/usr/share/doc/rocketchat"
 elif [ "$1" = "stremio" ]; then
 	CHECKPACKAGE="/opt/stremio"
 elif [ "$1" = "xnview" ]; then
