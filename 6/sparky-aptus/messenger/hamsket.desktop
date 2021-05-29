@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Hamsket
+Comment=A messaging and emailing app
+Exec=remsu /usr/bin/sparky-aptus-extra hamsket
+Icon=hamsket
+Terminal=false
+Type=Application
+Categories=Applications;System
+
